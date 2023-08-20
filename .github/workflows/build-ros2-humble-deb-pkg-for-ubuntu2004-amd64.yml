@@ -17,7 +17,7 @@ jobs:
 
     - name: Build 
       run: |
-        apt install -y tree python3-vcstool
+        sudo apt install -y tree python3-vcstool
         vcs import src << user.repos
         tree src
 
