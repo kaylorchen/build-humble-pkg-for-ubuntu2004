@@ -17,6 +17,7 @@ do
     if [ -f "COLCON_IGNORE" ]; then
       echo "${i}/COLCON_IGNORE exist"
     else
+      source /opt/ros/${ROS_DISTRO}_compile/setup.bash
       PACKAGE_NAME=$(python3 ${MAIN_DIR}/get_package_name.py)
       rm debian -rf
       bloom-generate rosdebian --os-name ubuntu --ros-distro humble
