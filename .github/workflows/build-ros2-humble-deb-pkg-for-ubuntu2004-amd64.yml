@@ -1,0 +1,29 @@
+name: build ros2 humble deb pkg for ubuntu2004-amd64
+
+env:
+  CHANGELOG_AUTHOR_NAME: "Kaylor"
+  CHANGELOG_AUTHOR_EMAIL: "kaylor.chen@qq.com"
+
+on:
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v3
+
+    -name: Build 
+    run: |
+      apt install -y tree python3-vcstool
+      vcs import src << user.repos
+      tree src
+
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: all_pkgs
+        path: ./deb/
