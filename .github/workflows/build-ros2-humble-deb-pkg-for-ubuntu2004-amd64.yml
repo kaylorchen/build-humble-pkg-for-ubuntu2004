@@ -23,7 +23,7 @@ jobs:
         sudo apt install -y tree python3-vcstool
         mkdir -p src
         # vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
-        vcs import src << user.repos
+        vcs import src < user.repos
         tree src
 
     
