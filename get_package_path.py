@@ -14,5 +14,5 @@ def finder(pattern, root='.'):
     for dir in dirs:
             finder(pattern, root=dir)
 f = open('packages-path.txt', 'w')
-finder('package.xml',root='../src')
+finder('package.xml',root='./src')
 f.close()
