@@ -6,7 +6,7 @@ ARCH=amd64
 DIST=$(lsb_release -c | awk '{print $2}')
 echo "Arch is $ARCH and DIST is $DIST"
 mkdir -p  $MAIN_DIR/deb
-source /opt/ros/${ROS_DISTRO}_compile/setup.bash
+source /opt/ros/${ROS_DISTRO}/setup.bash
 printenv | grep ROS
 python3 get_package_path.py
 cat packages-path.txt | while read i
@@ -17,10 +17,9 @@ do
     if [ -f "COLCON_IGNORE" ]; then
       echo "${i}/COLCON_IGNORE exist"
     else
-      source /opt/ros/${ROS_DISTRO}_compile/setup.bash
       PACKAGE_NAME=$(python3 ${MAIN_DIR}/get_package_name.py)
       rm debian -rf
-      bloom-generate rosdebian --os-name ubuntu --ros-distro humble
+      bloom-generate rosdebian --os-name ubuntu --ros-distro ${ROS_DISTRO}
       NOW=$(date "+%Y%m%d.%H%M%S") 
       sed -i "0,/focal/s//focal.${NOW}/" debian/changelog 
       DEB_PREFIX=$(grep ${NOW} debian/changelog | awk '{print $1}')
