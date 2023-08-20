@@ -23,7 +23,7 @@ jobs:
         sudo apt update
         sudo apt install -y tree python3-vcstool
         mkdir -p src
-        # vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
+        vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
         vcs import src < user.repos
         # echo -e "src/ros2/ros_base/ros_core\n" > packages-path.txt
         docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu:ubuntu2004-ros2-humble-compile sh -c "cd /root/ros_humble && bash ./build.sh"
