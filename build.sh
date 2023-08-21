@@ -8,7 +8,7 @@ echo "Arch is $ARCH and DIST is $DIST"
 mkdir -p  $MAIN_DIR/deb
 source /opt/ros/${ROS_DISTRO}/setup.bash
 printenv | grep ROS
-python3 get_package_path.py
+#python3 get_package_path.py
 cat packages-path.txt | while read i
 do
   if [ -d "${i}" ]; then
