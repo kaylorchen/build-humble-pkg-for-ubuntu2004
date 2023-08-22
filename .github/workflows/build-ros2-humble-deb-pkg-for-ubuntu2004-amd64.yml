@@ -15,7 +15,7 @@ jobs:
     - name: Checkout Source Code
       uses: actions/checkout@v3
 
-    - name: Build 
+    - name: Get ROS2 source
       run: |
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
@@ -25,15 +25,14 @@ jobs:
         vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
         vcs import src < user.repos
         python3 get_package_path.py
-        num = $(cat packages-path.txt | wc -l)
-        echo packages' number total: $num
+        num=$(cat packages-path.txt | wc -l)
+        echo packages' number total: ${num}
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: all_pkgs
+        path: ./deb/
+
 #        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
 #        tree deb
-
-
-    
-#    - name: Upload artifact
-#      uses: actions/upload-artifact@v3
-#      with:
-#        name: all_pkgs
-#        path: ./deb/
