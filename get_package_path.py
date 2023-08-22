@@ -35,6 +35,7 @@ def finder(pattern, root='.'):
 f = open('packages-path.txt', 'w+')
 finder('package.xml',root='./src')
 f.close()
+os.system("sort packages-path.txt -o packages-path.txt")
 count = len(open('packages-path.txt', 'r').readlines())
 print(count)
 split_file_by_line('packages-path.txt', count/20)

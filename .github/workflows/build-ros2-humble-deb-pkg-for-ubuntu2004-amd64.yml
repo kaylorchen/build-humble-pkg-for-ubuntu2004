@@ -6,8 +6,8 @@ env:
 
 on:
   push:
-    branches:
-    - master
+    tags:
+      - 'v*'
 jobs:
   ros2_build:
     runs-on: ubuntu-latest
@@ -31,10 +31,11 @@ jobs:
           num=$(cat packages-path.txt | wc -l)
           echo "packages number total: ${num}"
           echo index is ${{ matrix.index }}
+          mkdir deb
+          cp packages-path.txt${{ matrix.index }} deb/
           mv packages-path.txt${{ matrix.index }} packages-path.txt
           num=$(cat packages-path.txt | wc -l)
           echo "new packages number total: ${num}"
-          mkdir deb
           echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
           docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
           tree deb
