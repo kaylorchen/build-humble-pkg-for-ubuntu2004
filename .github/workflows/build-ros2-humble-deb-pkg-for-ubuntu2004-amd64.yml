@@ -17,7 +17,6 @@ jobs:
     steps:
     - name: Checkout Source Code
       uses: actions/checkout@v3
-
     - name: Get ROS2 source
       run: |
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
