@@ -7,7 +7,7 @@ env:
 on:
   push:
     branches:
-    - master
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,33 +15,33 @@ jobs:
       matrix:
         index: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
     steps:
-    - name: Checkout Source Code
-      uses: actions/checkout@v3
+      - name: Checkout Source Code
+        uses: actions/checkout@v3
 
-    - name: Get ROS2 source
-      run: |
-        sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-        sudo apt update
-        sudo apt install -y tree python3-vcstool
-        mkdir -p src
-        vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
-        vcs import src < user.repos
-        python3 get_package_path.py
-        num=$(cat packages-path.txt | wc -l)
-        echo "packages number total: ${num}"
-        echo index is ${{ matrix.index }}
-        mv packages-path.txt${{ matrix.index }} packages-path.txt
-        num=$(cat packages-path.txt | wc -l)
-        echo "new packages number total: ${num}"
-        mkdir deb
-        echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
-#        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
-        tree deb
+      - name: Get ROS2 source
+        run: |
+               sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+               echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+               sudo apt update
+               sudo apt install -y tree python3-vcstool
+               mkdir -p src
+               vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
+               vcs import src < user.repos
+               python3 get_package_path.py
+               num=$(cat packages-path.txt | wc -l)
+               echo "packages number total: ${num}"
+               echo index is ${{ matrix.index }}
+               mv packages-path.txt${{ matrix.index }} packages-path.txt
+               num=$(cat packages-path.txt | wc -l)
+               echo "new packages number total: ${num}"
+               mkdir deb
+               echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
+          #        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
+               tree deb
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: all_pkg
-        path: ./deb
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: all_pkg
+          path: ./deb
 
