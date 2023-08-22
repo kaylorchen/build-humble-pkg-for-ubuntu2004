@@ -36,7 +36,6 @@ jobs:
           echo "new packages number total: ${num}"
           mkdir deb
           echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
-  #        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
           tree deb
 
       - name: Upload artifact
