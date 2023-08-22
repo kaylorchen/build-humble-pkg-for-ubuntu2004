@@ -9,8 +9,11 @@ on:
     branches:
     - master
 jobs:
-  source:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        index: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
     steps:
     - name: Checkout Source Code
       uses: actions/checkout@v3
@@ -27,24 +30,18 @@ jobs:
         python3 get_package_path.py
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
+        echo index is ${{ matrix.index }}
+        mv packages-path.txt${{ matrix.index }} packages-path.txt
+        num=$(cat packages-path.txt | wc -l)
+        echo "new packages number total: ${num}"
+        mkdir deb
+        echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
+#        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
+        tree deb
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: source
-        path: ./
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        index: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
+        name: all_pkg
+        path: ./deb
 
-      - name: Build
-        run: |
-          echo index is ${{ matrix.index }}
-
-      #        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
-#        tree deb

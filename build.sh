@@ -26,7 +26,7 @@ do
       # DEB=$(grep ${NOW} debian/changelog | awk '{print $1}')$(grep ${NOW} debian/changelog | awk '{print $2}')${ARCH}.deb
       # DEB=$(echo ${DEB} | sed -e 's/(/_/g' | sed -e 's/)/_/g')
       # echo DEB=${DEB}
-      DEB_BUILD_OPTIONS='parallel=7' fakeroot debian/rules binary
+      DEB_BUILD_OPTIONS='parallel=16' fakeroot debian/rules binary
       echo -e "\033[35m move ${DEB_PREFIX} package \033[0m"
       mv ../${DEB_PREFIX}*.deb ${MAIN_DIR}/deb
       mv ../${DEB_PREFIX}*.ddeb ${MAIN_DIR}/deb
