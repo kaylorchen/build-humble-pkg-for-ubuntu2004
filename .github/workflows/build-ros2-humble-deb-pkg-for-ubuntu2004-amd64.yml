@@ -9,9 +9,8 @@ on:
     branches:
     - master
 jobs:
-  build:
+  source:
     runs-on: ubuntu-latest
-    timeout-minutes: 2160
     steps:
     - name: Checkout Source Code
       uses: actions/checkout@v3
@@ -25,13 +24,16 @@ jobs:
         mkdir -p src
         vcs import --input https://raw.githubusercontent.com/ros2/ros2/humble/ros2.repos src
         vcs import src < user.repos
-        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
-        tree deb
+        python3 get_package_path.py
+        num = $(cat packages-path.txt | wc -l)
+        echo packages' number total: $num
+#        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
+#        tree deb
 
 
     
-    - name: Upload artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: all_pkgs
-        path: ./deb/
+#    - name: Upload artifact
+#      uses: actions/upload-artifact@v3
+#      with:
+#        name: all_pkgs
+#        path: ./deb/
