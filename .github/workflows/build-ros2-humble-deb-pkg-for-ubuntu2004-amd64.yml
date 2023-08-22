@@ -26,13 +26,25 @@ jobs:
         vcs import src < user.repos
         python3 get_package_path.py
         num=$(cat packages-path.txt | wc -l)
-        echo packages' number total: ${num}
+        echo "packages number total: ${num}"
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: all_pkgs
-        path: ./deb/
+        name: source
+        path: ./
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        index: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
 
-#        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
+      - name: Build
+        run: |
+          echo index is ${{ matrix.index }}
+
+      #        docker run --rm -v ${PWD}:/root/ros_humble kaylor/ubuntu2004_humble:latest sh -c "cd /root/ros_humble && bash ./build.sh"
 #        tree deb
