@@ -26,7 +26,7 @@ do
       # DEB=$(grep ${NOW} debian/changelog | awk '{print $1}')$(grep ${NOW} debian/changelog | awk '{print $2}')${ARCH}.deb
       # DEB=$(echo ${DEB} | sed -e 's/(/_/g' | sed -e 's/)/_/g')
       # echo DEB=${DEB}
-      sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info|' debian/rules
+      sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' debian/rules
       DEB_BUILD_OPTIONS='parallel=16' fakeroot debian/rules binary
       echo -e "\033[35m move ${DEB_PREFIX} package \033[0m"
       mv ../${DEB_PREFIX}*.deb ${MAIN_DIR}/deb
