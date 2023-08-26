@@ -10,6 +10,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: build
+      run: |
+        mkdir kaylor
+        date > kaylor/date.log
+    
+    - name: sync files
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr --delete
+        path: kaylor
+        remote_path: ~/
+        remote_host: ${{ secrets.HOST }}
+        remote_user: ${{ secrets.USERNAME }}
+        remote_key: ${{ secrets.SSH_KEY }}
+        remote_port: ${{ secrets.PORT }}
+
     - name: ssh test
       uses: appleboy/ssh-action@v1.0.0
       with:
@@ -17,7 +33,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.PORT }}
-        script: ls -al ~/
+        script: tree -L 2
 
 
 
