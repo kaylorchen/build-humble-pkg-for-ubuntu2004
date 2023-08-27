@@ -2,7 +2,7 @@ name: build rviz repository
 
 on: 
   workflow_dispatch:
-  # push:
+  push:
 
 jobs:
   build:
@@ -17,7 +17,7 @@ jobs:
     - name: build
       run: |
         git clone https://github.com/ros2-gbp/rviz-release.git -b ${{ matrix.branch }} --depth 1
-        docker run --rm -v ${PWD}/rviz-release:/root/src/rviz-release kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/rviz-release && bash source /opt/ros/humble/setup.bash && bloom-generate rosdebian --os-name ubuntu --ros-distro humble && sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' debian/rules && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
+        docker run --rm -v ${PWD}/rviz-release:/root/src/rviz-release kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/rviz-release && source /opt/ros/humble/setup.bash && bloom-generate rosdebian --os-name ubuntu --ros-distro humble && sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' debian/rules && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
         ls -alR rviz-release/deb
       
     - name: sync files
