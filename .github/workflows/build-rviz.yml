@@ -1,6 +1,8 @@
 name: build rviz repository
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch
+  push
 
 jobs:
   build:
@@ -42,7 +44,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           aptly repo add ros2_humble_focal rviz_deb/*
-          aptly publish update -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
+          aptly publish update -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
 
 
 
