@@ -1,0 +1,48 @@
+name: build rviz repository
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch: [ debian/ros-humble-rviz-assimp-vendor_11.2.7-1_jammy,
+                debian/ros-humble-rviz-common_11.2.7-1_jammy,
+                debian/ros-humble-rviz-default-plugins_11.2.7-1_jammy,
+                debian/ros-humble-rviz-ogre-vendor_11.2.7-1_jammy,
+                debian/ros-humble-rviz-rendering-tests_11.2.7-1_jammy,
+                debian/ros-humble-rviz-rendering_11.2.7-1_jammy,
+                debian/ros-humble-rviz-visual-testing-framework_11.2.7-1_jammy,
+                debian/ros-humble-rviz2_11.2.7-1_jammy ]
+    steps:
+    - name: build
+      run: |
+        git https://github.com/ros2-gbp/rviz-release.git -b ${{ matrix.branch }} --depth 1
+        docker run --rm -v ${PWD}/rviz-release:/root/src/rviz-release kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/rviz-release && bloom-generate rosdebian --os-name ubuntu --ros-distro humble && fakeroot debian/rules binary && mkdir deb && mv ../*.deb ../*.ddeb deb/"
+        tree rviz-release/deb
+      
+    - name: sync files
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr --delete
+        path: rviz-release/deb
+        remote_path: ~/rviz_deb
+        remote_host: ${{ secrets.HOST }}
+        remote_user: ${{ secrets.USERNAME }}
+        remote_key: ${{ secrets.SSH_KEY }}
+        remote_port: ${{ secrets.PORT }}
+  
+    - name: ssh test
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          aptly repo add ros2_humble_focal rviz_deb/*
+          aptly publish update focal ros2_humble_focal -passphrase="${{ secrets.GPG_PASSPHRASE}}"
+
+
+
