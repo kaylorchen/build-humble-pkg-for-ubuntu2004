@@ -17,7 +17,7 @@ jobs:
         sudo apt update
         sudo apt install -y tree python3-vcstool
         mkdir -p src
-        vcs import src < user.repos
+        vcs import src < addition.repos
         python3 get_package_path.py
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
