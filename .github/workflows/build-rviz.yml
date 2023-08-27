@@ -42,7 +42,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           aptly repo add ros2_humble_focal rviz_deb/*
-          aptly publish update focal ros2_humble_focal -passphrase="${{ secrets.GPG_PASSPHRASE}}"
+          aptly publish update -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
 
 
 
