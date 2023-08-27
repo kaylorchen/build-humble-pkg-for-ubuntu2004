@@ -20,7 +20,7 @@ jobs:
       run: |
         git clone https://github.com/ros2-gbp/rviz-release.git -b ${{ matrix.branch }} --depth 1
         docker run --rm -v ${PWD}/rviz-release:/root/src/rviz-release kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/rviz-release && bloom-generate rosdebian --os-name ubuntu --ros-distro humble && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
-        ls -R rviz-release/deb
+        ls -alR rviz-release/deb
       
     - name: sync files
       uses: burnett01/rsync-deployments@6.0.0
