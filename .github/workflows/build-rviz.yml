@@ -10,13 +10,9 @@ jobs:
     strategy:
       matrix:
         branch: [ debian/ros-humble-rviz-assimp-vendor_11.2.7-1_jammy,
-                debian/ros-humble-rviz-common_11.2.7-1_jammy,
-                debian/ros-humble-rviz-default-plugins_11.2.7-1_jammy,
                 debian/ros-humble-rviz-ogre-vendor_11.2.7-1_jammy,
                 debian/ros-humble-rviz-rendering-tests_11.2.7-1_jammy,
-                debian/ros-humble-rviz-rendering_11.2.7-1_jammy,
-                debian/ros-humble-rviz-visual-testing-framework_11.2.7-1_jammy,
-                debian/ros-humble-rviz2_11.2.7-1_jammy ]
+                debian/ros-humble-rviz-visual-testing-framework_11.2.7-1_jammy]
     steps:
     - name: build
       run: |
