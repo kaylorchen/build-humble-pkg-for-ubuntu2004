@@ -33,7 +33,7 @@ jobs:
         remote_key: ${{ secrets.SSH_KEY }}
         remote_port: ${{ secrets.PORT }}
   
-    - name: ssh test
+    - name: Aptly release
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{ secrets.HOST }}
