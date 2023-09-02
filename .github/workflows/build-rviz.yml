@@ -10,14 +10,20 @@ jobs:
     strategy:
       matrix:
         branch: [ debian/ros-humble-rviz-assimp-vendor_11.2.7-1_jammy,
-                debian/ros-humble-rviz-ogre-vendor_11.2.7-1_jammy,
-                debian/ros-humble-rviz-rendering-tests_11.2.7-1_jammy,
-                debian/ros-humble-rviz-visual-testing-framework_11.2.7-1_jammy]
+                  debian/ros-humble-rviz-common_11.2.7-1_jammy,
+                  debian/ros-humble-rviz-default-plugins_11.2.7-1_jammy,
+                  debian/ros-humble-rviz-ogre-vendor_11.2.7-1_jammy,
+                  debian/ros-humble-rviz-rendering-tests_11.2.7-1_jammy,
+                  debian/ros-humble-rviz-rendering_11.2.7-1_jammy,
+                  debian/ros-humble-rviz-visual-testing-framework_11.2.7-1_jammy,
+                  debian/ros-humble-rviz2_11.2.7-1_jammy]
     steps:
     - name: build
       run: |
         git clone https://github.com/ros2-gbp/rviz-release.git -b ${{ matrix.branch }} --depth 1
-        docker run --rm -v ${PWD}/rviz-release:/root/src/rviz-release kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/rviz-release && source /opt/ros/humble/setup.bash && bloom-generate rosdebian --os-name ubuntu --ros-distro humble && sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' debian/rules && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
+        sed -i 's/jammy/focal/g' rviz-release/debian/changelog
+        git diff rviz-release
+        docker run --rm -v ${PWD}/rviz-release:/root/src/rviz-release kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/rviz-release && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
         ls -alR rviz-release/deb
       
     - name: sync files
