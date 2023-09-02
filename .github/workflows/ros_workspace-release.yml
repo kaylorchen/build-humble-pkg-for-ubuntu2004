@@ -4,8 +4,9 @@ env:
   PKG: ros_workspace-release
 on: 
   workflow_dispatch:
-  # push:
-
+  push:
+    paths:
+      - ".github/workflows/ros_workspace-release.yml"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,6 +21,8 @@ jobs:
         cat ${PKG}/debian/changelog
         sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' ${PKG}/debian/rules
         cat ${PKG}/debian/rules
+        sed -i '/Conflicts/d' ${PKG}/debian/control
+        cat ${PKG}/debian/control
         docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/focal_humble_env:v1.1 sh -c "cd /root/src/${PKG} && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
         ls -alR ${PKG}/deb
       
