@@ -1,12 +1,12 @@
-name: build gmock_vendor-release repository
+name: build googletest-release repository
 
 env:
-  PKG: gmock_vendor-release
+  PKG: googletest-release
 on: 
   workflow_dispatch:
   push:
     paths:
-      - ".github/workflows/gmock_vendor-release.yml"
+      - ".github/workflows/googletest-release.yml"
   
 
 jobs:
