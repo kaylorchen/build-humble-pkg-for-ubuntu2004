@@ -22,7 +22,7 @@ jobs:
       run: |
         git clone https://github.com/ros2-gbp/rviz-release.git -b ${{ matrix.branch }} --depth 1
         sed -i 's/jammy/focal/g' rviz-release/debian/changelog
-        git diff rviz-release
+        cat rviz-release/debian/changelog
         docker run --rm -v ${PWD}/rviz-release:/root/src/rviz-release kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/rviz-release && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
         ls -alR rviz-release/deb
       
