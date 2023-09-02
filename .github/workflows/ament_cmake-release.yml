@@ -42,7 +42,7 @@ jobs:
         cat ${PKG}/debian/changelog
         sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' ${PKG}/debian/rules
         cat ${PKG}/debian/rules
-        docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/${PKG} && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
+        docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/focal_humble_env:v1.0 sh -c "cd /root/src/${PKG} && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
         ls -alR ${PKG}/deb
       
     - name: sync files
