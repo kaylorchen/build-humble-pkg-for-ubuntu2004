@@ -1,0 +1,68 @@
+name: build rviz repository
+
+env:
+  PKG: ament_cmake-release
+on: 
+  workflow_dispatch:
+  # push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch: [ debian/ros-humble-ament-cmake-auto_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-core_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-export-definitions_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-export-dependencies_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-export-include-directories_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-export-interfaces_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-export-libraries_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-export-link-flags_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-export-targets_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-gen-version-h_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-gmock_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-google-benchmark_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-gtest_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-include-directories_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-libraries_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-nose_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-pytest_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-python_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-target-dependencies_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-test_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-vendor-package_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake-version_1.3.5-1_jammy,
+                  debian/ros-humble-ament-cmake_1.3.5-1_jammy]
+    steps:
+    - name: build
+      run: |
+        git clone https://github.com/ros2-gbp/${PKG}.git -b ${{ matrix.branch }} --depth 1
+        sed -i 's/jammy/focal/g' ${PKG}/debian/changelog
+        cat ${PKG}/debian/changelog
+        sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' ${PKG}/debian/rules
+        cat ${PKG}/debian/rules
+        docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/ubuntu2004_humble:latest sh -c "cd /root/src/${PKG} && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
+        ls -alR ${PKG}/deb
+      
+    - name: sync files
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr
+        path: ${PKG}/deb/
+        remote_path: ~/github/rviz_deb
+        remote_host: ${{ secrets.HOST }}
+        remote_user: ${{ secrets.USERNAME }}
+        remote_key: ${{ secrets.SSH_KEY }}
+        remote_port: ${{ secrets.PORT }}
+  
+    - name: Aptly release
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          aptly repo add ros2_humble_focal github/*
+          aptly publish update -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
