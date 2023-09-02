@@ -1,4 +1,4 @@
-name: build rviz repository
+name: build ament_cmake-release repository
 
 env:
   PKG: ament_cmake-release
