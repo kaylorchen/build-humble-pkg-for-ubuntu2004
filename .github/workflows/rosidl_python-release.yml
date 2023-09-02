@@ -1,0 +1,49 @@
+name: build rosidl_python-release repository
+
+env:
+  PKG: rosidl_python-release
+on: 
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/rosidl_python-release.yml"
+  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch: [ debian/ros-humble-rosidl-generator-py_0.14.4-1_jammy ]
+    steps:
+    - name: build
+      run: |
+        git clone https://github.com/ros2-gbp/${PKG}.git -b ${{ matrix.branch }} --depth 1
+        sed -i 's/jammy/focal/g' ${PKG}/debian/changelog
+        cat ${PKG}/debian/changelog
+        sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' ${PKG}/debian/rules
+        cat ${PKG}/debian/rules
+        docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/focal_humble_env:v1.1 sh -c "cd /root/src/${PKG} && fakeroot debian/rules binary && mkdir deb && mv ../ros-* deb/"
+        ls -alR ${PKG}/deb
+      
+    - name: sync files
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr
+        path: ${PKG}/deb/
+        remote_path: ~/github/${PKG}
+        remote_host: ${{ secrets.HOST }}
+        remote_user: ${{ secrets.USERNAME }}
+        remote_key: ${{ secrets.SSH_KEY }}
+        remote_port: ${{ secrets.PORT }}
+  
+    - name: Aptly release
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          aptly repo add ros2_humble_focal github/*
+          aptly publish update -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
