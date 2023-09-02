@@ -1,12 +1,12 @@
-name: build package_name repository
+name: build variants-release repository
 
 env:
-  PKG: package_name
+  PKG: variants-release
 on: 
   workflow_dispatch:
   push:
     paths:
-      - ".github/workflows/package_name.yml"
+      - ".github/workflows/variants-release.yml"
   
 
 jobs:
@@ -14,7 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        branch: [ tag ]
+        branch: [ debian/ros-humble-desktop-full_0.10.0-1_jammy,
+                  debian/ros-humble-desktop_0.10.0-1_jammy,
+                  debian/ros-humble-perception_0.10.0-1_jammy,
+                  debian/ros-humble-ros-base_0.10.0-1_jammy,
+                  debian/ros-humble-ros-core_0.10.0-1_jammy,
+                  debian/ros-humble-simulation_0.10.0-1_jammy ]
     steps:
     - name: build
       run: |
