@@ -1,17 +1,29 @@
 repositories:
-  ros2/ros_base:
+  ros-humble-urdf:
     type: git
-    url: https://github.com/ros2/variants.git
-    version: master
-  fastcdr-release:
+    url: https://github.com/ros2-gbp/urdf-release.git
+    version: debian/ros-humble-urdf_2.6.0-2_jammy
+  ros-humble-desktop-full:
     type: git
-    url: https://github.com/ros2-gbp/fastcdr-release.git
-    version: debian/ros-humble-fastcdr_1.0.24-2_jammy
-  urdfdom_headers-release:
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-desktop-full_0.10.0-1_jammy
+  ros-humble-desktop:
     type: git
-    url: https://github.com/ros2-gbp/urdfdom_headers-release.git
-    version: debian/ros-humble-urdfdom-headers_1.0.6-2_jammy
-  ros_workspace-release:
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-desktop_0.10.0-1_jammy
+  ros-humble-rclcpp-action:
     type: git
-    url: https://github.com/ros2-gbp/ros_workspace-release.git
-    version: debian/ros-humble-ros-workspace_1.0.2-2_jammy
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-action_16.0.5-2_jammy
+  ros-humble-rclcpp-components:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-components_16.0.5-2_jammy
+  ros-humble-rclcpp-lifecycle:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-lifecycle_16.0.5-2_jammy
+  ros-humble-rclcpp:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp_16.0.5-2_jammy
