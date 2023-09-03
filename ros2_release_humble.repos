@@ -1,0 +1,4513 @@
+repositories:
+  acado_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/acado_vendor-release.git
+    version: debian/ros-humble-acado-vendor_1.0.0-4_jammy
+  ackermann_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ackermann_msgs-release.git
+    version: debian/ros-humble-ackermann-msgs_2.0.2-3_jammy
+  actuator_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/actuator_msgs-release.git
+    version: debian/ros-humble-actuator-msgs_0.0.1-1_jammy
+  adaptive_component-release0:
+    type: git
+    url: https://github.com/ros2-gbp/adaptive_component-release.git
+    version: debian/ros-humble-adaptive-component_0.2.1-2_jammy
+  aerostack2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-aerostack2_1.0.4-1_jammy
+  aerostack2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-alphanumeric-viewer_1.0.4-1_jammy
+  aerostack2-release2:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-behavior-tree_1.0.4-1_jammy
+  aerostack2-release3:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-behavior_1.0.4-1_jammy
+  aerostack2-release4:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-behaviors-motion_1.0.4-1_jammy
+  aerostack2-release5:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-behaviors-perception_1.0.4-1_jammy
+  aerostack2-release6:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-behaviors-platform_1.0.4-1_jammy
+  aerostack2-release7:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-behaviors-trajectory-generation_1.0.4-1_jammy
+  aerostack2-release8:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-cli_1.0.4-1_jammy
+  aerostack2-release9:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-core_1.0.4-1_jammy
+  aerostack2-release10:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-gazebo-classic-assets_1.0.4-1_jammy
+  aerostack2-release11:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-ign-gazebo-assets_1.0.4-1_jammy
+  aerostack2-release12:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-keyboard-teleoperation_1.0.4-1_jammy
+  aerostack2-release13:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-motion-controller_1.0.4-1_jammy
+  aerostack2-release14:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-motion-reference-handlers_1.0.4-1_jammy
+  aerostack2-release15:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-msgs_1.0.4-1_jammy
+  aerostack2-release16:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-platform-crazyflie_1.0.4-1_jammy
+  aerostack2-release17:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-platform-dji-osdk_1.0.4-1_jammy
+  aerostack2-release18:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-platform-ign-gazebo_1.0.4-1_jammy
+  aerostack2-release19:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-platform-tello_1.0.4-1_jammy
+  aerostack2-release20:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-python-api_1.0.4-1_jammy
+  aerostack2-release21:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-realsense-interface_1.0.4-1_jammy
+  aerostack2-release22:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-state-estimator_1.0.4-1_jammy
+  aerostack2-release23:
+    type: git
+    url: https://github.com/ros2-gbp/aerostack2-release.git
+    version: debian/ros-humble-as2-usb-camera-interface_1.0.4-1_jammy
+  ament_acceleration-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_acceleration-release.git
+    version: debian/ros-humble-ament-acceleration_0.2.0-2_jammy
+  ament_cmake_catch2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake_catch2-release.git
+    version: debian/ros-humble-ament-cmake-catch2_1.2.1-1_jammy
+  ament_cmake-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-auto_1.3.5-1_jammy
+  ament_cmake-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-core_1.3.5-1_jammy
+  ament_cmake-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-export-definitions_1.3.5-1_jammy
+  ament_cmake-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-export-dependencies_1.3.5-1_jammy
+  ament_cmake-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-export-include-directories_1.3.5-1_jammy
+  ament_cmake-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-export-interfaces_1.3.5-1_jammy
+  ament_cmake-release6:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-export-libraries_1.3.5-1_jammy
+  ament_cmake-release7:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-export-link-flags_1.3.5-1_jammy
+  ament_cmake-release8:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-export-targets_1.3.5-1_jammy
+  ament_cmake-release9:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-gen-version-h_1.3.5-1_jammy
+  ament_cmake-release10:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-gmock_1.3.5-1_jammy
+  ament_cmake-release11:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-google-benchmark_1.3.5-1_jammy
+  ament_cmake-release12:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-gtest_1.3.5-1_jammy
+  ament_cmake-release13:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-include-directories_1.3.5-1_jammy
+  ament_cmake-release14:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-libraries_1.3.5-1_jammy
+  ament_cmake-release15:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-nose_1.3.5-1_jammy
+  ament_cmake-release16:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-pytest_1.3.5-1_jammy
+  ament_cmake-release17:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-python_1.3.5-1_jammy
+  ament_cmake-release18:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-target-dependencies_1.3.5-1_jammy
+  ament_cmake-release19:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-test_1.3.5-1_jammy
+  ament_cmake-release20:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-vendor-package_1.3.5-1_jammy
+  ament_cmake-release21:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake-version_1.3.5-1_jammy
+  ament_cmake-release22:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake-release.git
+    version: debian/ros-humble-ament-cmake_1.3.5-1_jammy
+  ament_cmake_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake_ros-release.git
+    version: debian/ros-humble-ament-cmake-ros_0.10.0-3_jammy
+  ament_cmake_ros-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ament_cmake_ros-release.git
+    version: debian/ros-humble-domain-coordinator_0.10.0-3_jammy
+  ament_download-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_download-release.git
+    version: debian/ros-humble-ament-download_0.0.5-1_jammy
+  ament_index-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_index-release.git
+    version: debian/ros-humble-ament-index-cpp_1.4.0-2_jammy
+  ament_index-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ament_index-release.git
+    version: debian/ros-humble-ament-index-python_1.4.0-2_jammy
+  ament_lint-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-clang-format_0.12.7-2_jammy
+  ament_lint-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-clang-tidy_0.12.7-2_jammy
+  ament_lint-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-clang-format_0.12.7-2_jammy
+  ament_lint-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-clang-tidy_0.12.7-2_jammy
+  ament_lint-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-copyright_0.12.7-2_jammy
+  ament_lint-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-cppcheck_0.12.7-2_jammy
+  ament_lint-release6:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-cpplint_0.12.7-2_jammy
+  ament_lint-release7:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-flake8_0.12.7-2_jammy
+  ament_lint-release8:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-lint-cmake_0.12.7-2_jammy
+  ament_lint-release9:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-mypy_0.12.7-2_jammy
+  ament_lint-release10:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-pclint_0.12.7-2_jammy
+  ament_lint-release11:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-pep257_0.12.7-2_jammy
+  ament_lint-release12:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-pycodestyle_0.12.7-2_jammy
+  ament_lint-release13:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-pyflakes_0.12.7-2_jammy
+  ament_lint-release14:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-uncrustify_0.12.7-2_jammy
+  ament_lint-release15:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cmake-xmllint_0.12.7-2_jammy
+  ament_lint-release16:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-copyright_0.12.7-2_jammy
+  ament_lint-release17:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cppcheck_0.12.7-2_jammy
+  ament_lint-release18:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-cpplint_0.12.7-2_jammy
+  ament_lint-release19:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-flake8_0.12.7-2_jammy
+  ament_lint-release20:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-lint-auto_0.12.7-2_jammy
+  ament_lint-release21:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-lint-cmake_0.12.7-2_jammy
+  ament_lint-release22:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-lint-common_0.12.7-2_jammy
+  ament_lint-release23:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-lint_0.12.7-2_jammy
+  ament_lint-release24:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-mypy_0.12.7-2_jammy
+  ament_lint-release25:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-pclint_0.12.7-2_jammy
+  ament_lint-release26:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-pep257_0.12.7-2_jammy
+  ament_lint-release27:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-pycodestyle_0.12.7-2_jammy
+  ament_lint-release28:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-pyflakes_0.12.7-2_jammy
+  ament_lint-release29:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-uncrustify_0.12.7-2_jammy
+  ament_lint-release30:
+    type: git
+    url: https://github.com/ros2-gbp/ament_lint-release.git
+    version: debian/ros-humble-ament-xmllint_0.12.7-2_jammy
+  ament_nodl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_nodl-release.git
+    version: debian/ros-humble-ament-nodl_0.1.0-4_jammy
+  ament_package-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_package-release.git
+    version: debian/ros-humble-ament-package_0.14.0-4_jammy
+  ament_vitis-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ament_vitis-release.git
+    version: debian/ros-humble-ament-vitis_0.10.1-2_jammy
+  angles-release0:
+    type: git
+    url: https://github.com/ros2-gbp/angles-release.git
+    version: debian/ros-humble-angles_1.15.0-1_jammy
+  apex_containers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/apex_containers-release.git
+    version: debian/ros-humble-apex-containers_0.0.4-3_jammy
+  apex_test_tools-release0:
+    type: git
+    url: https://github.com/ros2-gbp/apex_test_tools-release.git
+    version: debian/ros-humble-apex-test-tools_0.0.2-6_jammy
+  apex_test_tools-release1:
+    type: git
+    url: https://github.com/ros2-gbp/apex_test_tools-release.git
+    version: debian/ros-humble-test-apex-test-tools_0.0.2-6_jammy
+  apriltag_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/apriltag_msgs-release.git
+    version: debian/ros-humble-apriltag-msgs_2.0.1-2_jammy
+  apriltag-release0:
+    type: git
+    url: https://github.com/ros2-gbp/apriltag-release.git
+    version: debian/ros-humble-apriltag_3.2.0-2_jammy
+  apriltag_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/apriltag_ros-release.git
+    version: debian/ros-humble-apriltag-ros_3.1.2-1_jammy
+  aruco_opencv-release0:
+    type: git
+    url: https://github.com/ros2-gbp/aruco_opencv-release.git
+    version: debian/ros-humble-aruco-opencv-msgs_2.1.1-1_jammy
+  aruco_opencv-release1:
+    type: git
+    url: https://github.com/ros2-gbp/aruco_opencv-release.git
+    version: debian/ros-humble-aruco-opencv_2.1.1-1_jammy
+  astuff_sensor_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-delphi-esr-msgs_3.3.0-1_jammy
+  astuff_sensor_msgs-release1:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-delphi-mrr-msgs_3.3.0-1_jammy
+  astuff_sensor_msgs-release2:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-delphi-srr-msgs_3.3.0-1_jammy
+  astuff_sensor_msgs-release3:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-derived-object-msgs_3.3.0-1_jammy
+  astuff_sensor_msgs-release4:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-ibeo-msgs_3.3.0-1_jammy
+  astuff_sensor_msgs-release5:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-kartech-linear-actuator-msgs_3.3.0-1_jammy
+  astuff_sensor_msgs-release6:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-mobileye-560-660-msgs_3.3.0-1_jammy
+  astuff_sensor_msgs-release7:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-neobotix-usboard-msgs_3.3.0-1_jammy
+  astuff_sensor_msgs-release8:
+    type: git
+    url: https://github.com/ros2-gbp/astuff_sensor_msgs-release.git
+    version: debian/ros-humble-pacmod-msgs_3.3.0-1_jammy
+  async_web_server_cpp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/async_web_server_cpp-release.git
+    version: debian/ros-humble-async-web-server-cpp_2.0.0-3_jammy
+  automotive_autonomy_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/automotive_autonomy_msgs-release.git
+    version: debian/ros-humble-automotive-autonomy-msgs_3.0.4-3_jammy
+  automotive_autonomy_msgs-release1:
+    type: git
+    url: https://github.com/ros2-gbp/automotive_autonomy_msgs-release.git
+    version: debian/ros-humble-automotive-navigation-msgs_3.0.4-3_jammy
+  automotive_autonomy_msgs-release2:
+    type: git
+    url: https://github.com/ros2-gbp/automotive_autonomy_msgs-release.git
+    version: debian/ros-humble-automotive-platform-msgs_3.0.4-3_jammy
+  autoware_auto_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/autoware_auto_msgs-release.git
+    version: debian/ros-humble-autoware-auto-msgs_1.0.0-4_jammy
+  avt_vimba_camera-release0:
+    type: git
+    url: https://github.com/ros2-gbp/avt_vimba_camera-release.git
+    version: debian/ros-humble-avt-vimba-camera_2001.1.0-3_jammy
+  aws_robomaker_small_warehouse_world-release0:
+    type: git
+    url: https://github.com/ros2-gbp/aws_robomaker_small_warehouse_world-release.git
+    version: debian/ros-humble-aws-robomaker-small-warehouse-world_1.0.5-1_jammy
+  aws_sdk_cpp_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/aws_sdk_cpp_vendor-release.git
+    version: debian/ros-humble-aws-sdk-cpp-vendor_0.1.1-1_jammy
+  backward_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/backward_ros-release.git
+    version: debian/ros-humble-backward-ros_1.0.2-3_jammy
+  bag2_to_image-release0:
+    type: git
+    url: https://github.com/ros2-gbp/bag2_to_image-release.git
+    version: debian/ros-humble-bag2-to-image_0.1.0-1_jammy
+  behaviortree_cpp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/behaviortree_cpp-release.git
+    version: debian/ros-humble-behaviortree-cpp-v3_3.8.0-1_jammy
+  behaviortree_cpp_v4-release0:
+    type: git
+    url: https://github.com/ros2-gbp/behaviortree_cpp_v4-release.git
+    version: debian/ros-humble-behaviortree-cpp_4.3.5-1_jammy
+  bno055-release0:
+    type: git
+    url: https://github.com/ros2-gbp/bno055-release.git
+    version: debian/ros-humble-bno055_0.4.1-1_jammy
+  bond_core-release0:
+    type: git
+    url: https://github.com/ros2-gbp/bond_core-release.git
+    version: debian/ros-humble-bond-core_3.0.2-2_jammy
+  bond_core-release1:
+    type: git
+    url: https://github.com/ros2-gbp/bond_core-release.git
+    version: debian/ros-humble-bond_3.0.2-2_jammy
+  bond_core-release2:
+    type: git
+    url: https://github.com/ros2-gbp/bond_core-release.git
+    version: debian/ros-humble-bondcpp_3.0.2-2_jammy
+  bond_core-release3:
+    type: git
+    url: https://github.com/ros2-gbp/bond_core-release.git
+    version: debian/ros-humble-smclib_3.0.2-2_jammy
+  bond_core-release4:
+    type: git
+    url: https://github.com/ros2-gbp/bond_core-release.git
+    version: debian/ros-humble-test-bond_3.0.2-2_jammy
+  boost_geometry_util-release0:
+    type: git
+    url: https://github.com/ros2-gbp/boost_geometry_util-release.git
+    version: debian/ros-humble-boost-geometry-util_0.0.1-1_jammy
+  camera_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/camera_ros-release.git
+    version: debian/ros-humble-camera-ros_0.1.0-2_jammy
+  cartographer-release0:
+    type: git
+    url: https://github.com/ros2-gbp/cartographer-release.git
+    version: debian/ros-humble-cartographer_2.0.9002-2_jammy
+  cartographer_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/cartographer_ros-release.git
+    version: debian/ros-humble-cartographer-ros-msgs_2.0.9000-2_jammy
+  cartographer_ros-release1:
+    type: git
+    url: https://github.com/ros2-gbp/cartographer_ros-release.git
+    version: debian/ros-humble-cartographer-ros_2.0.9000-2_jammy
+  cartographer_ros-release2:
+    type: git
+    url: https://github.com/ros2-gbp/cartographer_ros-release.git
+    version: debian/ros-humble-cartographer-rviz_2.0.9000-2_jammy
+  cascade_lifecycle-release0:
+    type: git
+    url: https://github.com/ros2-gbp/cascade_lifecycle-release.git
+    version: debian/ros-humble-cascade-lifecycle-msgs_1.0.2-2_jammy
+  cascade_lifecycle-release1:
+    type: git
+    url: https://github.com/ros2-gbp/cascade_lifecycle-release.git
+    version: debian/ros-humble-rclcpp-cascade-lifecycle_1.0.2-2_jammy
+  catch_ros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/catch_ros2-release.git
+    version: debian/ros-humble-catch-ros2_0.1.0-1_jammy
+  class_loader-release0:
+    type: git
+    url: https://github.com/ros2-gbp/class_loader-release.git
+    version: debian/ros-humble-class-loader_2.2.0-3_jammy
+  color_names-release0:
+    type: git
+    url: https://github.com/ros2-gbp/color_names-release.git
+    version: debian/ros-humble-color-names_0.0.3-3_jammy
+  color_util-release0:
+    type: git
+    url: https://github.com/ros2-gbp/color_util-release.git
+    version: debian/ros-humble-color-util_1.0.0-1_jammy
+  common_interfaces-release0:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-actionlib-msgs_4.2.3-1_jammy
+  common_interfaces-release1:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-common-interfaces_4.2.3-1_jammy
+  common_interfaces-release2:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-diagnostic-msgs_4.2.3-1_jammy
+  common_interfaces-release3:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-geometry-msgs_4.2.3-1_jammy
+  common_interfaces-release4:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-nav-msgs_4.2.3-1_jammy
+  common_interfaces-release5:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-sensor-msgs-py_4.2.3-1_jammy
+  common_interfaces-release6:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-sensor-msgs_4.2.3-1_jammy
+  common_interfaces-release7:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-shape-msgs_4.2.3-1_jammy
+  common_interfaces-release8:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-std-msgs_4.2.3-1_jammy
+  common_interfaces-release9:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-std-srvs_4.2.3-1_jammy
+  common_interfaces-release10:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-stereo-msgs_4.2.3-1_jammy
+  common_interfaces-release11:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-trajectory-msgs_4.2.3-1_jammy
+  common_interfaces-release12:
+    type: git
+    url: https://github.com/ros2-gbp/common_interfaces-release.git
+    version: debian/ros-humble-visualization-msgs_4.2.3-1_jammy
+  console_bridge_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/console_bridge_vendor-release.git
+    version: debian/ros-humble-console-bridge-vendor_1.4.1-1_jammy
+  control_box_rst-release0:
+    type: git
+    url: https://github.com/ros2-gbp/control_box_rst-release.git
+    version: debian/ros-humble-control-box-rst_0.0.7-1_jammy
+  control_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/control_msgs-release.git
+    version: debian/ros-humble-control-msgs_4.4.0-1_jammy
+  control_toolbox-release0:
+    type: git
+    url: https://github.com/ros2-gbp/control_toolbox-release.git
+    version: debian/ros-humble-control-toolbox_3.1.0-1_jammy
+  cpp_polyfills-release0:
+    type: git
+    url: https://github.com/ros2-gbp/cpp_polyfills-release.git
+    version: debian/ros-humble-tcb-span_1.0.2-2_jammy
+  cpp_polyfills-release1:
+    type: git
+    url: https://github.com/ros2-gbp/cpp_polyfills-release.git
+    version: debian/ros-humble-tl-expected_1.0.2-2_jammy
+  crane_plus-release0:
+    type: git
+    url: https://github.com/ros2-gbp/crane_plus-release.git
+    version: debian/ros-humble-crane-plus-control_2.0.0-1_jammy
+  crane_plus-release1:
+    type: git
+    url: https://github.com/ros2-gbp/crane_plus-release.git
+    version: debian/ros-humble-crane-plus-description_2.0.0-1_jammy
+  crane_plus-release2:
+    type: git
+    url: https://github.com/ros2-gbp/crane_plus-release.git
+    version: debian/ros-humble-crane-plus-examples_2.0.0-1_jammy
+  crane_plus-release3:
+    type: git
+    url: https://github.com/ros2-gbp/crane_plus-release.git
+    version: debian/ros-humble-crane-plus-gazebo_2.0.0-1_jammy
+  crane_plus-release4:
+    type: git
+    url: https://github.com/ros2-gbp/crane_plus-release.git
+    version: debian/ros-humble-crane-plus-moveit-config_2.0.0-1_jammy
+  crane_plus-release5:
+    type: git
+    url: https://github.com/ros2-gbp/crane_plus-release.git
+    version: debian/ros-humble-crane-plus_2.0.0-1_jammy
+  create3_sim-release0:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-common-bringup_2.1.0-1_jammy
+  create3_sim-release1:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-control_2.1.0-1_jammy
+  create3_sim-release2:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-description_2.1.0-1_jammy
+  create3_sim-release3:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-gazebo-bringup_2.1.0-1_jammy
+  create3_sim-release4:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-gazebo-plugins_2.1.0-1_jammy
+  create3_sim-release5:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-gazebo-sim_2.1.0-1_jammy
+  create3_sim-release6:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-ignition-bringup_2.1.0-1_jammy
+  create3_sim-release7:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-ignition-plugins_2.1.0-1_jammy
+  create3_sim-release8:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-ignition-sim_2.1.0-1_jammy
+  create3_sim-release9:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-ignition-toolbox_2.1.0-1_jammy
+  create3_sim-release10:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-nodes_2.1.0-1_jammy
+  create3_sim-release11:
+    type: git
+    url: https://github.com/ros2-gbp/create3_sim-release.git
+    version: debian/ros-humble-irobot-create-toolbox_2.1.0-1_jammy
+  cudnn_cmake_module-release0:
+    type: git
+    url: https://github.com/ros2-gbp/cudnn_cmake_module-release.git
+    version: debian/ros-humble-cudnn-cmake-module_0.0.1-3_jammy
+  cyclonedds-release0:
+    type: git
+    url: https://github.com/ros2-gbp/cyclonedds-release.git
+    version: debian/ros-humble-cyclonedds_0.9.1-1_jammy
+  demos-release0:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-action-tutorials-cpp_0.20.3-1_jammy
+  demos-release1:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-action-tutorials-interfaces_0.20.3-1_jammy
+  demos-release2:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-action-tutorials-py_0.20.3-1_jammy
+  demos-release3:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-composition_0.20.3-1_jammy
+  demos-release4:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-demo-nodes-cpp-native_0.20.3-1_jammy
+  demos-release5:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-demo-nodes-cpp_0.20.3-1_jammy
+  demos-release6:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-demo-nodes-py_0.20.3-1_jammy
+  demos-release7:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-dummy-map-server_0.20.3-1_jammy
+  demos-release8:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-dummy-robot-bringup_0.20.3-1_jammy
+  demos-release9:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-dummy-sensors_0.20.3-1_jammy
+  demos-release10:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-image-tools_0.20.3-1_jammy
+  demos-release11:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-intra-process-demo_0.20.3-1_jammy
+  demos-release12:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-lifecycle-py_0.20.3-1_jammy
+  demos-release13:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-lifecycle_0.20.3-1_jammy
+  demos-release14:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-logging-demo_0.20.3-1_jammy
+  demos-release15:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-pendulum-control_0.20.3-1_jammy
+  demos-release16:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-pendulum-msgs_0.20.3-1_jammy
+  demos-release17:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-quality-of-service-demo-cpp_0.20.3-1_jammy
+  demos-release18:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-quality-of-service-demo-py_0.20.3-1_jammy
+  demos-release19:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-topic-monitor_0.20.3-1_jammy
+  demos-release20:
+    type: git
+    url: https://github.com/ros2-gbp/demos-release.git
+    version: debian/ros-humble-topic-statistics-demo_0.20.3-1_jammy
+  depthimage_to_laserscan-release0:
+    type: git
+    url: https://github.com/ros2-gbp/depthimage_to_laserscan-release.git
+    version: debian/ros-humble-depthimage-to-laserscan_2.5.1-1_jammy
+  diagnostics-release0:
+    type: git
+    url: https://github.com/ros2-gbp/diagnostics-release.git
+    version: debian/ros-humble-diagnostic-aggregator_3.1.2-1_jammy
+  diagnostics-release1:
+    type: git
+    url: https://github.com/ros2-gbp/diagnostics-release.git
+    version: debian/ros-humble-diagnostic-common-diagnostics_3.1.2-1_jammy
+  diagnostics-release2:
+    type: git
+    url: https://github.com/ros2-gbp/diagnostics-release.git
+    version: debian/ros-humble-diagnostic-updater_3.1.2-1_jammy
+  diagnostics-release3:
+    type: git
+    url: https://github.com/ros2-gbp/diagnostics-release.git
+    version: debian/ros-humble-diagnostics_3.1.2-1_jammy
+  diagnostics-release4:
+    type: git
+    url: https://github.com/ros2-gbp/diagnostics-release.git
+    version: debian/ros-humble-self-test_3.1.2-1_jammy
+  dolly-release0:
+    type: git
+    url: https://github.com/ros2-gbp/dolly-release.git
+    version: debian/ros-humble-dolly-follow_0.4.0-3_jammy
+  dolly-release1:
+    type: git
+    url: https://github.com/ros2-gbp/dolly-release.git
+    version: debian/ros-humble-dolly-gazebo_0.4.0-3_jammy
+  dolly-release2:
+    type: git
+    url: https://github.com/ros2-gbp/dolly-release.git
+    version: debian/ros-humble-dolly-ignition_0.4.0-3_jammy
+  dolly-release3:
+    type: git
+    url: https://github.com/ros2-gbp/dolly-release.git
+    version: debian/ros-humble-dolly_0.4.0-3_jammy
+  domain_bridge-release0:
+    type: git
+    url: https://github.com/ros2-gbp/domain_bridge-release.git
+    version: debian/ros-humble-domain-bridge_0.5.0-1_jammy
+  dynamixel_sdk-release0:
+    type: git
+    url: https://github.com/ros2-gbp/dynamixel_sdk-release.git
+    version: debian/ros-humble-dynamixel-sdk-custom-interfaces_3.7.60-1_jammy
+  dynamixel_sdk-release1:
+    type: git
+    url: https://github.com/ros2-gbp/dynamixel_sdk-release.git
+    version: debian/ros-humble-dynamixel-sdk-examples_3.7.60-1_jammy
+  dynamixel_sdk-release2:
+    type: git
+    url: https://github.com/ros2-gbp/dynamixel_sdk-release.git
+    version: debian/ros-humble-dynamixel-sdk_3.7.60-1_jammy
+  dynamixel_workbench_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/dynamixel_workbench_msgs-release.git
+    version: debian/ros-humble-dynamixel-workbench-msgs_2.0.3-1_jammy
+  dynamixel_workbench-release0:
+    type: git
+    url: https://github.com/ros2-gbp/dynamixel_workbench-release.git
+    version: debian/ros-humble-dynamixel-workbench-toolbox_2.2.3-1_jammy
+  dynamixel_workbench-release1:
+    type: git
+    url: https://github.com/ros2-gbp/dynamixel_workbench-release.git
+    version: debian/ros-humble-dynamixel-workbench_2.2.3-1_jammy
+  ecl_tools-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ecl_tools-release.git
+    version: debian/ros-humble-ecl-build_1.0.3-2_jammy
+  ecl_tools-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ecl_tools-release.git
+    version: debian/ros-humble-ecl-license_1.0.3-2_jammy
+  ecl_tools-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ecl_tools-release.git
+    version: debian/ros-humble-ecl-tools_1.0.3-2_jammy
+  eigen3_cmake_module-release0:
+    type: git
+    url: https://github.com/ros2-gbp/eigen3_cmake_module-release.git
+    version: debian/ros-humble-eigen3-cmake-module_0.1.1-4_jammy
+  eigenpy-release0:
+    type: git
+    url: https://github.com/ros2-gbp/eigenpy-release.git
+    version: debian/ros-humble-eigenpy_2.9.2-1_jammy
+  eigen_stl_containers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/eigen_stl_containers-release.git
+    version: debian/ros-humble-eigen-stl-containers_1.0.0-4_jammy
+  event_camera_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/event_camera_msgs-release.git
+    version: debian/ros-humble-event-camera-msgs_1.1.4-1_jammy
+  example_interfaces-release0:
+    type: git
+    url: https://github.com/ros2-gbp/example_interfaces-release.git
+    version: debian/ros-humble-example-interfaces_0.9.3-2_jammy
+  executive_smach-release0:
+    type: git
+    url: https://github.com/ros2-gbp/executive_smach-release.git
+    version: debian/ros-humble-executive-smach_3.0.3-1_jammy
+  executive_smach-release1:
+    type: git
+    url: https://github.com/ros2-gbp/executive_smach-release.git
+    version: debian/ros-humble-smach-msgs_3.0.3-1_jammy
+  executive_smach-release2:
+    type: git
+    url: https://github.com/ros2-gbp/executive_smach-release.git
+    version: debian/ros-humble-smach-ros_3.0.3-1_jammy
+  executive_smach-release3:
+    type: git
+    url: https://github.com/ros2-gbp/executive_smach-release.git
+    version: debian/ros-humble-smach_3.0.3-1_jammy
+  fastcdr-release0:
+    type: git
+    url: https://github.com/ros2-gbp/fastcdr-release.git
+    version: debian/ros-humble-fastcdr_1.0.24-2_jammy
+  fastrtps-release0:
+    type: git
+    url: https://github.com/ros2-gbp/fastrtps-release.git
+    version: debian/ros-humble-fastrtps_2.6.6-1_jammy
+  filters-release0:
+    type: git
+    url: https://github.com/ros2-gbp/filters-release.git
+    version: debian/ros-humble-filters_2.1.0-3_jammy
+  find_object_2d-release0:
+    type: git
+    url: https://github.com/ros2-gbp/find_object_2d-release.git
+    version: debian/ros-humble-find-object-2d_0.7.0-1_jammy
+  flexbe_behavior_engine-release0:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-behavior-engine_2.3.3-1_jammy
+  flexbe_behavior_engine-release1:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-core_2.3.3-1_jammy
+  flexbe_behavior_engine-release2:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-input_2.3.3-1_jammy
+  flexbe_behavior_engine-release3:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-mirror_2.3.3-1_jammy
+  flexbe_behavior_engine-release4:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-msgs_2.3.3-1_jammy
+  flexbe_behavior_engine-release5:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-onboard_2.3.3-1_jammy
+  flexbe_behavior_engine-release6:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-states_2.3.3-1_jammy
+  flexbe_behavior_engine-release7:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-testing_2.3.3-1_jammy
+  flexbe_behavior_engine-release8:
+    type: git
+    url: https://github.com/ros2-gbp/flexbe_behavior_engine-release.git
+    version: debian/ros-humble-flexbe-widget_2.3.3-1_jammy
+  fluent_rviz-release0:
+    type: git
+    url: https://github.com/ros2-gbp/fluent_rviz-release.git
+    version: debian/ros-humble-fluent-rviz_0.0.3-2_jammy
+  fmi_adapter-release0:
+    type: git
+    url: https://github.com/ros2-gbp/fmi_adapter-release.git
+    version: debian/ros-humble-fmi-adapter-examples_2.1.1-1_jammy
+  fmi_adapter-release1:
+    type: git
+    url: https://github.com/ros2-gbp/fmi_adapter-release.git
+    version: debian/ros-humble-fmi-adapter_2.1.1-1_jammy
+  fmilibrary_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/fmilibrary_vendor-release.git
+    version: debian/ros-humble-fmilibrary-vendor_1.0.1-1_jammy
+  fogros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/fogros2-release.git
+    version: debian/ros-humble-fogros2-examples_0.1.7-1_jammy
+  fogros2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/fogros2-release.git
+    version: debian/ros-humble-fogros2_0.1.7-1_jammy
+  foonathan_memory_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/foonathan_memory_vendor-release.git
+    version: debian/ros-humble-foonathan-memory-vendor_1.2.2-1_jammy
+  foros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/foros-release.git
+    version: debian/ros-humble-foros-examples_0.4.1-2_jammy
+  foros-release1:
+    type: git
+    url: https://github.com/ros2-gbp/foros-release.git
+    version: debian/ros-humble-foros-inspector_0.4.1-2_jammy
+  foros-release2:
+    type: git
+    url: https://github.com/ros2-gbp/foros-release.git
+    version: debian/ros-humble-foros-msgs_0.4.1-2_jammy
+  foros-release3:
+    type: git
+    url: https://github.com/ros2-gbp/foros-release.git
+    version: debian/ros-humble-foros_0.4.1-2_jammy
+  four_wheel_steering_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/four_wheel_steering_msgs-release.git
+    version: debian/ros-humble-four-wheel-steering-msgs_2.0.1-3_jammy
+  foxglove_bridge-release0:
+    type: git
+    url: https://github.com/ros2-gbp/foxglove_bridge-release.git
+    version: debian/ros-humble-foxglove-bridge_0.7.1-1_jammy
+  gazebo_ros2_control-release0:
+    type: git
+    url: https://github.com/ros2-gbp/gazebo_ros2_control-release.git
+    version: debian/ros-humble-gazebo-ros2-control-demos_0.5.0-1_jammy
+  gazebo_ros2_control-release1:
+    type: git
+    url: https://github.com/ros2-gbp/gazebo_ros2_control-release.git
+    version: debian/ros-humble-gazebo-ros2-control_0.5.0-1_jammy
+  gazebo_ros_pkgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/gazebo_ros_pkgs-release.git
+    version: debian/ros-humble-gazebo-dev_3.7.0-1_jammy
+  gazebo_ros_pkgs-release1:
+    type: git
+    url: https://github.com/ros2-gbp/gazebo_ros_pkgs-release.git
+    version: debian/ros-humble-gazebo-msgs_3.7.0-1_jammy
+  gazebo_ros_pkgs-release2:
+    type: git
+    url: https://github.com/ros2-gbp/gazebo_ros_pkgs-release.git
+    version: debian/ros-humble-gazebo-plugins_3.7.0-1_jammy
+  gazebo_ros_pkgs-release3:
+    type: git
+    url: https://github.com/ros2-gbp/gazebo_ros_pkgs-release.git
+    version: debian/ros-humble-gazebo-ros-pkgs_3.7.0-1_jammy
+  gazebo_ros_pkgs-release4:
+    type: git
+    url: https://github.com/ros2-gbp/gazebo_ros_pkgs-release.git
+    version: debian/ros-humble-gazebo-ros_3.7.0-1_jammy
+  gc_spl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/gc_spl-release.git
+    version: debian/ros-humble-gc-spl-2022_2.0.0-1_jammy
+  gc_spl-release1:
+    type: git
+    url: https://github.com/ros2-gbp/gc_spl-release.git
+    version: debian/ros-humble-rcgcd-spl-14-conversion_2.0.0-1_jammy
+  gc_spl-release2:
+    type: git
+    url: https://github.com/ros2-gbp/gc_spl-release.git
+    version: debian/ros-humble-rcgcd-spl-14_2.0.0-1_jammy
+  gc_spl-release3:
+    type: git
+    url: https://github.com/ros2-gbp/gc_spl-release.git
+    version: debian/ros-humble-rcgcrd-spl-4-conversion_2.0.0-1_jammy
+  gc_spl-release4:
+    type: git
+    url: https://github.com/ros2-gbp/gc_spl-release.git
+    version: debian/ros-humble-rcgcrd-spl-4_2.0.0-1_jammy
+  generate_parameter_library-release0:
+    type: git
+    url: https://github.com/ros2-gbp/generate_parameter_library-release.git
+    version: debian/ros-humble-generate-parameter-library-example_0.2.4-1_jammy
+  generate_parameter_library-release1:
+    type: git
+    url: https://github.com/ros2-gbp/generate_parameter_library-release.git
+    version: debian/ros-humble-generate-parameter-library-py_0.2.4-1_jammy
+  generate_parameter_library-release2:
+    type: git
+    url: https://github.com/ros2-gbp/generate_parameter_library-release.git
+    version: debian/ros-humble-generate-parameter-library_0.2.4-1_jammy
+  generate_parameter_library-release3:
+    type: git
+    url: https://github.com/ros2-gbp/generate_parameter_library-release.git
+    version: debian/ros-humble-parameter-traits_0.2.4-1_jammy
+  generate_parameter_library-release4:
+    type: git
+    url: https://github.com/ros2-gbp/generate_parameter_library-release.git
+    version: debian/ros-humble-tcb-span_0.2.4-1_jammy
+  geographic_info-release0:
+    type: git
+    url: https://github.com/ros2-gbp/geographic_info-release.git
+    version: debian/ros-humble-geodesy_1.0.5-1_jammy
+  geographic_info-release1:
+    type: git
+    url: https://github.com/ros2-gbp/geographic_info-release.git
+    version: debian/ros-humble-geographic-info_1.0.5-1_jammy
+  geographic_info-release2:
+    type: git
+    url: https://github.com/ros2-gbp/geographic_info-release.git
+    version: debian/ros-humble-geographic-msgs_1.0.5-1_jammy
+  geometric_shapes-release0:
+    type: git
+    url: https://github.com/ros2-gbp/geometric_shapes-release.git
+    version: debian/ros-humble-geometric-shapes_2.1.3-2_jammy
+  geometry2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-examples-tf2-py_0.25.3-1_jammy
+  geometry2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-geometry2_0.25.3-1_jammy
+  geometry2-release2:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-bullet_0.25.3-1_jammy
+  geometry2-release3:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-eigen-kdl_0.25.3-1_jammy
+  geometry2-release4:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-eigen_0.25.3-1_jammy
+  geometry2-release5:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-geometry-msgs_0.25.3-1_jammy
+  geometry2-release6:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-kdl_0.25.3-1_jammy
+  geometry2-release7:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-msgs_0.25.3-1_jammy
+  geometry2-release8:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-py_0.25.3-1_jammy
+  geometry2-release9:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-ros-py_0.25.3-1_jammy
+  geometry2-release10:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-ros_0.25.3-1_jammy
+  geometry2-release11:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-sensor-msgs_0.25.3-1_jammy
+  geometry2-release12:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2-tools_0.25.3-1_jammy
+  geometry2-release13:
+    type: git
+    url: https://github.com/ros2-gbp/geometry2-release.git
+    version: debian/ros-humble-tf2_0.25.3-1_jammy
+  geometry_tutorials-release0:
+    type: git
+    url: https://github.com/ros2-gbp/geometry_tutorials-release.git
+    version: debian/ros-humble-geometry-tutorials_0.3.6-1_jammy
+  geometry_tutorials-release1:
+    type: git
+    url: https://github.com/ros2-gbp/geometry_tutorials-release.git
+    version: debian/ros-humble-turtle-tf2-cpp_0.3.6-1_jammy
+  geometry_tutorials-release2:
+    type: git
+    url: https://github.com/ros2-gbp/geometry_tutorials-release.git
+    version: debian/ros-humble-turtle-tf2-py_0.3.6-1_jammy
+  google_benchmark_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/google_benchmark_vendor-release.git
+    version: debian/ros-humble-google-benchmark-vendor_0.1.2-1_jammy
+  googletest-release0:
+    type: git
+    url: https://github.com/ros2-gbp/googletest-release.git
+    version: debian/ros-humble-gmock-vendor_1.10.9004-4_jammy
+  googletest-release1:
+    type: git
+    url: https://github.com/ros2-gbp/googletest-release.git
+    version: debian/ros-humble-gtest-vendor_1.10.9004-4_jammy
+  gps_umd-release0:
+    type: git
+    url: https://github.com/ros2-gbp/gps_umd-release.git
+    version: debian/ros-humble-gps-msgs_2.0.2-1_jammy
+  gps_umd-release1:
+    type: git
+    url: https://github.com/ros2-gbp/gps_umd-release.git
+    version: debian/ros-humble-gps-tools_2.0.2-1_jammy
+  gps_umd-release2:
+    type: git
+    url: https://github.com/ros2-gbp/gps_umd-release.git
+    version: debian/ros-humble-gps-umd_2.0.2-1_jammy
+  gps_umd-release3:
+    type: git
+    url: https://github.com/ros2-gbp/gps_umd-release.git
+    version: debian/ros-humble-gpsd-client_2.0.2-1_jammy
+  graph_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/graph_msgs-release.git
+    version: debian/ros-humble-graph-msgs_0.2.0-3_jammy
+  grbl_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/grbl_msgs-release.git
+    version: debian/ros-humble-grbl-msgs_0.0.2-6_jammy
+  grbl_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/grbl_ros-release.git
+    version: debian/ros-humble-grbl-ros_0.0.16-4_jammy
+  grid_map-release0:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-cmake-helpers_2.0.0-1_jammy
+  grid_map-release1:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-core_2.0.0-1_jammy
+  grid_map-release2:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-costmap-2d_2.0.0-1_jammy
+  grid_map-release3:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-cv_2.0.0-1_jammy
+  grid_map-release4:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-demos_2.0.0-1_jammy
+  grid_map-release5:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-filters_2.0.0-1_jammy
+  grid_map-release6:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-loader_2.0.0-1_jammy
+  grid_map-release7:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-msgs_2.0.0-1_jammy
+  grid_map-release8:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-octomap_2.0.0-1_jammy
+  grid_map-release9:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-pcl_2.0.0-1_jammy
+  grid_map-release10:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-ros_2.0.0-1_jammy
+  grid_map-release11:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-rviz-plugin_2.0.0-1_jammy
+  grid_map-release12:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-sdf_2.0.0-1_jammy
+  grid_map-release13:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map-visualization_2.0.0-1_jammy
+  grid_map-release14:
+    type: git
+    url: https://github.com/ros2-gbp/grid_map-release.git
+    version: debian/ros-humble-grid-map_2.0.0-1_jammy
+  gscam-release0:
+    type: git
+    url: https://github.com/ros2-gbp/gscam-release.git
+    version: debian/ros-humble-gscam_2.0.2-1_jammy
+  gtsam-release0:
+    type: git
+    url: https://github.com/ros2-gbp/gtsam-release.git
+    version: debian/ros-humble-gtsam_4.2.0-2_jammy
+  gz_cmake2_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/gz_cmake2_vendor-release.git
+    version: debian/ros-humble-ignition-cmake2-vendor_0.0.2-2_jammy
+  gz_math6_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/gz_math6_vendor-release.git
+    version: debian/ros-humble-ignition-math6-vendor_0.0.2-2_jammy
+  hash_library_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/hash_library_vendor-release.git
+    version: debian/ros-humble-hash-library-vendor_0.1.1-3_jammy
+  heaphook-release0:
+    type: git
+    url: https://github.com/ros2-gbp/heaphook-release.git
+    version: debian/ros-humble-heaphook_0.1.1-1_jammy
+  hls_lfcd_lds_driver-release0:
+    type: git
+    url: https://github.com/ros2-gbp/hls_lfcd_lds_driver-release.git
+    version: debian/ros-humble-hls-lfcd-lds-driver_2.0.4-3_jammy
+  hpp_fcl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/hpp_fcl-release.git
+    version: debian/ros-humble-hpp-fcl_2.3.0-1_jammy
+  iceoryx-release0:
+    type: git
+    url: https://github.com/ros2-gbp/iceoryx-release.git
+    version: debian/ros-humble-iceoryx-binding-c_2.0.3-1_jammy
+  iceoryx-release1:
+    type: git
+    url: https://github.com/ros2-gbp/iceoryx-release.git
+    version: debian/ros-humble-iceoryx-hoofs_2.0.3-1_jammy
+  iceoryx-release2:
+    type: git
+    url: https://github.com/ros2-gbp/iceoryx-release.git
+    version: debian/ros-humble-iceoryx-posh_2.0.3-1_jammy
+  ifm3d-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ifm3d-release.git
+    version: debian/ros-humble-ifm3d-core_0.18.0-7_jammy
+  ign_ros2_control-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ign_ros2_control-release.git
+    version: debian/ros-humble-gz-ros2-control-tests_0.7.1-1_jammy
+  ign_ros2_control-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ign_ros2_control-release.git
+    version: debian/ros-humble-ign-ros2-control-demos_0.7.1-1_jammy
+  ign_ros2_control-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ign_ros2_control-release.git
+    version: debian/ros-humble-ign-ros2-control_0.7.1-1_jammy
+  image_common-release0:
+    type: git
+    url: https://github.com/ros2-gbp/image_common-release.git
+    version: debian/ros-humble-camera-calibration-parsers_3.1.7-1_jammy
+  image_common-release1:
+    type: git
+    url: https://github.com/ros2-gbp/image_common-release.git
+    version: debian/ros-humble-camera-info-manager_3.1.7-1_jammy
+  image_common-release2:
+    type: git
+    url: https://github.com/ros2-gbp/image_common-release.git
+    version: debian/ros-humble-image-common_3.1.7-1_jammy
+  image_common-release3:
+    type: git
+    url: https://github.com/ros2-gbp/image_common-release.git
+    version: debian/ros-humble-image-transport_3.1.7-1_jammy
+  image_pipeline-release0:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-camera-calibration_3.0.0-1_jammy
+  image_pipeline-release1:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-depth-image-proc_3.0.0-1_jammy
+  image_pipeline-release2:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-pipeline_3.0.0-1_jammy
+  image_pipeline-release3:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-proc_3.0.0-1_jammy
+  image_pipeline-release4:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-publisher_3.0.0-1_jammy
+  image_pipeline-release5:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-rotate_3.0.0-1_jammy
+  image_pipeline-release6:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-view_3.0.0-1_jammy
+  image_pipeline-release7:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-stereo-image-proc_3.0.0-1_jammy
+  image_pipeline-release8:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-tracetools-image-pipeline_3.0.0-1_jammy
+  image_transport_plugins-release0:
+    type: git
+    url: https://github.com/ros2-gbp/image_transport_plugins-release.git
+    version: debian/ros-humble-compressed-depth-image-transport_2.5.0-2_jammy
+  image_transport_plugins-release1:
+    type: git
+    url: https://github.com/ros2-gbp/image_transport_plugins-release.git
+    version: debian/ros-humble-compressed-image-transport_2.5.0-2_jammy
+  image_transport_plugins-release2:
+    type: git
+    url: https://github.com/ros2-gbp/image_transport_plugins-release.git
+    version: debian/ros-humble-image-transport-plugins_2.5.0-2_jammy
+  image_transport_plugins-release3:
+    type: git
+    url: https://github.com/ros2-gbp/image_transport_plugins-release.git
+    version: debian/ros-humble-theora-image-transport_2.5.0-2_jammy
+  imu_tools-release0:
+    type: git
+    url: https://github.com/ros2-gbp/imu_tools-release.git
+    version: debian/ros-humble-imu-complementary-filter_2.1.3-1_jammy
+  imu_tools-release1:
+    type: git
+    url: https://github.com/ros2-gbp/imu_tools-release.git
+    version: debian/ros-humble-imu-filter-madgwick_2.1.3-1_jammy
+  imu_tools-release2:
+    type: git
+    url: https://github.com/ros2-gbp/imu_tools-release.git
+    version: debian/ros-humble-imu-tools_2.1.3-1_jammy
+  imu_tools-release3:
+    type: git
+    url: https://github.com/ros2-gbp/imu_tools-release.git
+    version: debian/ros-humble-rviz-imu-plugin_2.1.3-1_jammy
+  interactive_markers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/interactive_markers-release.git
+    version: debian/ros-humble-interactive-markers_2.3.2-2_jammy
+  irobot_create_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/irobot_create_msgs-release.git
+    version: debian/ros-humble-irobot-create-msgs_2.1.0-1_jammy
+  joint_state_publisher-release0:
+    type: git
+    url: https://github.com/ros2-gbp/joint_state_publisher-release.git
+    version: debian/ros-humble-joint-state-publisher-gui_2.4.0-1_jammy
+  joint_state_publisher-release1:
+    type: git
+    url: https://github.com/ros2-gbp/joint_state_publisher-release.git
+    version: debian/ros-humble-joint-state-publisher_2.4.0-1_jammy
+  joystick_drivers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/joystick_drivers-release.git
+    version: debian/ros-humble-joy-linux_3.1.0-3_jammy
+  joystick_drivers-release1:
+    type: git
+    url: https://github.com/ros2-gbp/joystick_drivers-release.git
+    version: debian/ros-humble-joy_3.1.0-3_jammy
+  joystick_drivers-release2:
+    type: git
+    url: https://github.com/ros2-gbp/joystick_drivers-release.git
+    version: debian/ros-humble-sdl2-vendor_3.1.0-3_jammy
+  joystick_drivers-release3:
+    type: git
+    url: https://github.com/ros2-gbp/joystick_drivers-release.git
+    version: debian/ros-humble-spacenav_3.1.0-3_jammy
+  joystick_drivers-release4:
+    type: git
+    url: https://github.com/ros2-gbp/joystick_drivers-release.git
+    version: debian/ros-humble-wiimote-msgs_3.1.0-3_jammy
+  joystick_drivers-release5:
+    type: git
+    url: https://github.com/ros2-gbp/joystick_drivers-release.git
+    version: debian/ros-humble-wiimote_3.1.0-3_jammy
+  joy_tester-release0:
+    type: git
+    url: https://github.com/ros2-gbp/joy_tester-release.git
+    version: debian/ros-humble-joy-tester_0.0.2-1_jammy
+  kdl_parser-release0:
+    type: git
+    url: https://github.com/ros2-gbp/kdl_parser-release.git
+    version: debian/ros-humble-kdl-parser_2.6.4-1_jammy
+  keyboard_handler-release0:
+    type: git
+    url: https://github.com/ros2-gbp/keyboard_handler-release.git
+    version: debian/ros-humble-keyboard-handler_0.0.5-1_jammy
+  kinematics_interface-release0:
+    type: git
+    url: https://github.com/ros2-gbp/kinematics_interface-release.git
+    version: debian/ros-humble-kinematics-interface-kdl_0.1.0-1_jammy
+  kinematics_interface-release1:
+    type: git
+    url: https://github.com/ros2-gbp/kinematics_interface-release.git
+    version: debian/ros-humble-kinematics-interface_0.1.0-1_jammy
+  kobuki_ros_interfaces-release0:
+    type: git
+    url: https://github.com/ros2-gbp/kobuki_ros_interfaces-release.git
+    version: debian/ros-humble-kobuki-ros-interfaces_1.0.0-1_jammy
+  kobuki_velocity_smoother-release0:
+    type: git
+    url: https://github.com/ros2-gbp/kobuki_velocity_smoother-release.git
+    version: debian/ros-humble-kobuki-velocity-smoother_0.15.0-1_jammy
+  lanelet2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-core_1.2.1-1_jammy
+  lanelet2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-examples_1.2.1-1_jammy
+  lanelet2-release2:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-io_1.2.1-1_jammy
+  lanelet2-release3:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-maps_1.2.1-1_jammy
+  lanelet2-release4:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-matching_1.2.1-1_jammy
+  lanelet2-release5:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-projection_1.2.1-1_jammy
+  lanelet2-release6:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-python_1.2.1-1_jammy
+  lanelet2-release7:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-routing_1.2.1-1_jammy
+  lanelet2-release8:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-traffic-rules_1.2.1-1_jammy
+  lanelet2-release9:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2-validation_1.2.1-1_jammy
+  lanelet2-release10:
+    type: git
+    url: https://github.com/ros2-gbp/lanelet2-release.git
+    version: debian/ros-humble-lanelet2_1.2.1-1_jammy
+  laser_filters-release0:
+    type: git
+    url: https://github.com/ros2-gbp/laser_filters-release.git
+    version: debian/ros-humble-laser-filters_2.0.7-1_jammy
+  laser_geometry-release0:
+    type: git
+    url: https://github.com/ros2-gbp/laser_geometry-release.git
+    version: debian/ros-humble-laser-geometry_2.4.0-2_jammy
+  laser_proc-release0:
+    type: git
+    url: https://github.com/ros2-gbp/laser_proc-release.git
+    version: debian/ros-humble-laser-proc_1.0.2-5_jammy
+  launch_param_builder-release0:
+    type: git
+    url: https://github.com/ros2-gbp/launch_param_builder-release.git
+    version: debian/ros-humble-launch-param-builder_0.1.1-1_jammy
+  launch-release0:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-pytest_1.0.4-1_jammy
+  launch-release1:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-testing-ament-cmake_1.0.4-1_jammy
+  launch-release2:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-testing_1.0.4-1_jammy
+  launch-release3:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-xml_1.0.4-1_jammy
+  launch-release4:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-yaml_1.0.4-1_jammy
+  launch-release5:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch_1.0.4-1_jammy
+  launch_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/launch_ros-release.git
+    version: debian/ros-humble-launch-ros_0.19.5-2_jammy
+  launch_ros-release1:
+    type: git
+    url: https://github.com/ros2-gbp/launch_ros-release.git
+    version: debian/ros-humble-launch-testing-ros_0.19.5-2_jammy
+  launch_ros-release2:
+    type: git
+    url: https://github.com/ros2-gbp/launch_ros-release.git
+    version: debian/ros-humble-ros2launch_0.19.5-2_jammy
+  leo_common-release0:
+    type: git
+    url: https://github.com/ros2-gbp/leo_common-release.git
+    version: debian/ros-humble-leo-description_1.1.0-1_jammy
+  leo_common-release1:
+    type: git
+    url: https://github.com/ros2-gbp/leo_common-release.git
+    version: debian/ros-humble-leo-msgs_1.1.0-1_jammy
+  leo_common-release2:
+    type: git
+    url: https://github.com/ros2-gbp/leo_common-release.git
+    version: debian/ros-humble-leo-teleop_1.1.0-1_jammy
+  leo_common-release3:
+    type: git
+    url: https://github.com/ros2-gbp/leo_common-release.git
+    version: debian/ros-humble-leo_1.1.0-1_jammy
+  leo_desktop-release0:
+    type: git
+    url: https://github.com/ros2-gbp/leo_desktop-release.git
+    version: debian/ros-humble-leo-desktop_1.1.0-1_jammy
+  leo_desktop-release1:
+    type: git
+    url: https://github.com/ros2-gbp/leo_desktop-release.git
+    version: debian/ros-humble-leo-viz_1.1.0-1_jammy
+  leo_robot-release0:
+    type: git
+    url: https://github.com/ros2-gbp/leo_robot-release.git
+    version: debian/ros-humble-leo-bringup_1.3.0-1_jammy
+  leo_robot-release1:
+    type: git
+    url: https://github.com/ros2-gbp/leo_robot-release.git
+    version: debian/ros-humble-leo-fw_1.3.0-1_jammy
+  leo_robot-release2:
+    type: git
+    url: https://github.com/ros2-gbp/leo_robot-release.git
+    version: debian/ros-humble-leo-robot_1.3.0-1_jammy
+  lgsvl_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/lgsvl_msgs-release.git
+    version: debian/ros-humble-lgsvl-msgs_0.0.4-3_jammy
+  libcamera-release0:
+    type: git
+    url: https://github.com/ros2-gbp/libcamera-release.git
+    version: debian/ros-humble-libcamera_0.1.0-1_jammy
+  libg2o-release0:
+    type: git
+    url: https://github.com/ros2-gbp/libg2o-release.git
+    version: debian/ros-humble-libg2o_2020.5.29-4_jammy
+  libnabo-release0:
+    type: git
+    url: https://github.com/ros2-gbp/libnabo-release.git
+    version: debian/ros-humble-libnabo_1.0.7-3_jammy
+  libpointmatcher-release0:
+    type: git
+    url: https://github.com/ros2-gbp/libpointmatcher-release.git
+    version: debian/ros-humble-libpointmatcher_1.3.1-3_jammy
+  libstatistics_collector-release0:
+    type: git
+    url: https://github.com/ros2-gbp/libstatistics_collector-release.git
+    version: debian/ros-humble-libstatistics-collector_1.3.1-1_jammy
+  libyaml_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/libyaml_vendor-release.git
+    version: debian/ros-humble-libyaml-vendor_1.2.2-2_jammy
+  linear_sum_assignment-release0:
+    type: git
+    url: https://github.com/ros2-gbp/linear_sum_assignment-release.git
+    version: debian/ros-humble-linear-sum-assignment_1.9.2-1_jammy
+  locator_ros_bridge-release0:
+    type: git
+    url: https://github.com/ros2-gbp/locator_ros_bridge-release.git
+    version: debian/ros-humble-bosch-locator-bridge_2.1.5-1_jammy
+  mapviz-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mapviz-release.git
+    version: debian/ros-humble-mapviz-interfaces_2.2.1-1_jammy
+  mapviz-release1:
+    type: git
+    url: https://github.com/ros2-gbp/mapviz-release.git
+    version: debian/ros-humble-mapviz-plugins_2.2.1-1_jammy
+  mapviz-release2:
+    type: git
+    url: https://github.com/ros2-gbp/mapviz-release.git
+    version: debian/ros-humble-mapviz_2.2.1-1_jammy
+  mapviz-release3:
+    type: git
+    url: https://github.com/ros2-gbp/mapviz-release.git
+    version: debian/ros-humble-multires-image_2.2.1-1_jammy
+  mapviz-release4:
+    type: git
+    url: https://github.com/ros2-gbp/mapviz-release.git
+    version: debian/ros-humble-tile-map_2.2.1-1_jammy
+  marti_common-release0:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-cli-tools_3.5.4-1_jammy
+  marti_common-release1:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-console-util_3.5.4-1_jammy
+  marti_common-release2:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-dbw-interface_3.5.4-1_jammy
+  marti_common-release3:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-geometry-util_3.5.4-1_jammy
+  marti_common-release4:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-image-util_3.5.4-1_jammy
+  marti_common-release5:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-math-util_3.5.4-1_jammy
+  marti_common-release6:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-opencv-util_3.5.4-1_jammy
+  marti_common-release7:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-prefix-tools_3.5.4-1_jammy
+  marti_common-release8:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-roscpp_3.5.4-1_jammy
+  marti_common-release9:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-route-util_3.5.4-1_jammy
+  marti_common-release10:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-serial-util_3.5.4-1_jammy
+  marti_common-release11:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-system-util_3.5.4-1_jammy
+  marti_common-release12:
+    type: git
+    url: https://github.com/ros2-gbp/marti_common-release.git
+    version: debian/ros-humble-swri-transform-util_3.5.4-1_jammy
+  marti_messages-release0:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-can-msgs_1.4.1-2_jammy
+  marti_messages-release1:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-common-msgs_1.4.1-2_jammy
+  marti_messages-release2:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-dbw-msgs_1.4.1-2_jammy
+  marti_messages-release3:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-introspection-msgs_1.4.1-2_jammy
+  marti_messages-release4:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-nav-msgs_1.4.1-2_jammy
+  marti_messages-release5:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-perception-msgs_1.4.1-2_jammy
+  marti_messages-release6:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-sensor-msgs_1.4.1-2_jammy
+  marti_messages-release7:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-status-msgs_1.4.1-2_jammy
+  marti_messages-release8:
+    type: git
+    url: https://github.com/ros2-gbp/marti_messages-release.git
+    version: debian/ros-humble-marti-visualization-msgs_1.4.1-2_jammy
+  mavlink-gbp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mavlink-gbp-release.git
+    version: debian/ros-humble-mavlink_2023.6.6-1_jammy
+  mavros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mavros-release.git
+    version: debian/ros-humble-libmavconn_2.5.0-1_jammy
+  mavros-release1:
+    type: git
+    url: https://github.com/ros2-gbp/mavros-release.git
+    version: debian/ros-humble-mavros-extras_2.5.0-1_jammy
+  mavros-release2:
+    type: git
+    url: https://github.com/ros2-gbp/mavros-release.git
+    version: debian/ros-humble-mavros-msgs_2.5.0-1_jammy
+  mavros-release3:
+    type: git
+    url: https://github.com/ros2-gbp/mavros-release.git
+    version: debian/ros-humble-mavros_2.5.0-1_jammy
+  menge_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/menge_vendor-release.git
+    version: debian/ros-humble-menge-vendor_1.0.1-1_jammy
+  message_tf_frame_transformer-release0:
+    type: git
+    url: https://github.com/ros2-gbp/message_tf_frame_transformer-release.git
+    version: debian/ros-humble-message-tf-frame-transformer_1.0.0-3_jammy
+  metavision_driver-release0:
+    type: git
+    url: https://github.com/ros2-gbp/metavision_driver-release.git
+    version: debian/ros-humble-metavision-driver_1.1.7-1_jammy
+  micro_ros_diagnostics-release0:
+    type: git
+    url: https://github.com/ros2-gbp/micro_ros_diagnostics-release.git
+    version: debian/ros-humble-micro-ros-diagnostic-bridge_0.3.0-4_jammy
+  micro_ros_diagnostics-release1:
+    type: git
+    url: https://github.com/ros2-gbp/micro_ros_diagnostics-release.git
+    version: debian/ros-humble-micro-ros-diagnostic-msgs_0.3.0-4_jammy
+  micro_ros_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/micro_ros_msgs-release.git
+    version: debian/ros-humble-micro-ros-msgs_1.0.0-3_jammy
+  microstrain_inertial-release0:
+    type: git
+    url: https://github.com/ros2-gbp/microstrain_inertial-release.git
+    version: debian/ros-humble-microstrain-inertial-driver_3.1.0-1_jammy
+  microstrain_inertial-release1:
+    type: git
+    url: https://github.com/ros2-gbp/microstrain_inertial-release.git
+    version: debian/ros-humble-microstrain-inertial-examples_3.1.0-1_jammy
+  microstrain_inertial-release2:
+    type: git
+    url: https://github.com/ros2-gbp/microstrain_inertial-release.git
+    version: debian/ros-humble-microstrain-inertial-msgs_3.1.0-1_jammy
+  microstrain_inertial-release3:
+    type: git
+    url: https://github.com/ros2-gbp/microstrain_inertial-release.git
+    version: debian/ros-humble-microstrain-inertial-rqt_3.1.0-1_jammy
+  mimick_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mimick_vendor-release.git
+    version: debian/ros-humble-mimick-vendor_0.2.8-2_jammy
+  moveit2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-chomp-motion-planner_2.5.4-1_jammy
+  moveit2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-chomp-optimizer-adapter_2.5.4-1_jammy
+  moveit2-release2:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-common_2.5.4-1_jammy
+  moveit2-release3:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-configs-utils_2.5.4-1_jammy
+  moveit2-release4:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-core_2.5.4-1_jammy
+  moveit2-release5:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-hybrid-planning_2.5.4-1_jammy
+  moveit2-release6:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-kinematics_2.5.4-1_jammy
+  moveit2-release7:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-planners-chomp_2.5.4-1_jammy
+  moveit2-release8:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-planners-ompl_2.5.4-1_jammy
+  moveit2-release9:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-planners_2.5.4-1_jammy
+  moveit2-release10:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-plugins_2.5.4-1_jammy
+  moveit2-release11:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-resources-prbt-ikfast-manipulator-plugin_2.5.4-1_jammy
+  moveit2-release12:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-resources-prbt-moveit-config_2.5.4-1_jammy
+  moveit2-release13:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-resources-prbt-pg70-support_2.5.4-1_jammy
+  moveit2-release14:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-resources-prbt-support_2.5.4-1_jammy
+  moveit2-release15:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-benchmarks_2.5.4-1_jammy
+  moveit2-release16:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-control-interface_2.5.4-1_jammy
+  moveit2-release17:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-move-group_2.5.4-1_jammy
+  moveit2-release18:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-occupancy-map-monitor_2.5.4-1_jammy
+  moveit2-release19:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-perception_2.5.4-1_jammy
+  moveit2-release20:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-planning-interface_2.5.4-1_jammy
+  moveit2-release21:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-planning_2.5.4-1_jammy
+  moveit2-release22:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-robot-interaction_2.5.4-1_jammy
+  moveit2-release23:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-visualization_2.5.4-1_jammy
+  moveit2-release24:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros-warehouse_2.5.4-1_jammy
+  moveit2-release25:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-ros_2.5.4-1_jammy
+  moveit2-release26:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-runtime_2.5.4-1_jammy
+  moveit2-release27:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-servo_2.5.4-1_jammy
+  moveit2-release28:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-setup-app-plugins_2.5.4-1_jammy
+  moveit2-release29:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-setup-assistant_2.5.4-1_jammy
+  moveit2-release30:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-setup-controllers_2.5.4-1_jammy
+  moveit2-release31:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-setup-core-plugins_2.5.4-1_jammy
+  moveit2-release32:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-setup-framework_2.5.4-1_jammy
+  moveit2-release33:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-setup-srdf-plugins_2.5.4-1_jammy
+  moveit2-release34:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit-simple-controller-manager_2.5.4-1_jammy
+  moveit2-release35:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-moveit_2.5.4-1_jammy
+  moveit2-release36:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-pilz-industrial-motion-planner-testutils_2.5.4-1_jammy
+  moveit2-release37:
+    type: git
+    url: https://github.com/ros2-gbp/moveit2-release.git
+    version: debian/ros-humble-pilz-industrial-motion-planner_2.5.4-1_jammy
+  moveit_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/moveit_msgs-release.git
+    version: debian/ros-humble-moveit-msgs_2.2.2-1_jammy
+  moveit_resources-release0:
+    type: git
+    url: https://github.com/ros2-gbp/moveit_resources-release.git
+    version: debian/ros-humble-moveit-resources-fanuc-description_2.0.6-1_jammy
+  moveit_resources-release1:
+    type: git
+    url: https://github.com/ros2-gbp/moveit_resources-release.git
+    version: debian/ros-humble-moveit-resources-fanuc-moveit-config_2.0.6-1_jammy
+  moveit_resources-release2:
+    type: git
+    url: https://github.com/ros2-gbp/moveit_resources-release.git
+    version: debian/ros-humble-moveit-resources-panda-description_2.0.6-1_jammy
+  moveit_resources-release3:
+    type: git
+    url: https://github.com/ros2-gbp/moveit_resources-release.git
+    version: debian/ros-humble-moveit-resources-panda-moveit-config_2.0.6-1_jammy
+  moveit_resources-release4:
+    type: git
+    url: https://github.com/ros2-gbp/moveit_resources-release.git
+    version: debian/ros-humble-moveit-resources-pr2-description_2.0.6-1_jammy
+  moveit_resources-release5:
+    type: git
+    url: https://github.com/ros2-gbp/moveit_resources-release.git
+    version: debian/ros-humble-moveit-resources_2.0.6-1_jammy
+  moveit_visual_tools-release0:
+    type: git
+    url: https://github.com/ros2-gbp/moveit_visual_tools-release.git
+    version: debian/ros-humble-moveit-visual-tools_4.1.0-1_jammy
+  mp2p_icp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mp2p_icp-release.git
+    version: debian/ros-humble-mp2p-icp_0.1.0-1_jammy
+  mrpt2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mrpt2-release.git
+    version: debian/ros-humble-mrpt2_2.9.4-1_jammy
+  mrpt_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mrpt_msgs-release.git
+    version: debian/ros-humble-mrpt-msgs_0.4.7-1_jammy
+  mrpt_path_planning-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mrpt_path_planning-release.git
+    version: debian/ros-humble-mrpt-path-planning_0.1.0-1_jammy
+  mrt_cmake_modules-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mrt_cmake_modules-release.git
+    version: debian/ros-humble-mrt-cmake-modules_1.0.9-3_jammy
+  mvsim-release0:
+    type: git
+    url: https://github.com/ros2-gbp/mvsim-release.git
+    version: debian/ros-humble-mvsim_0.7.3-1_jammy
+  nao_button_sim-release0:
+    type: git
+    url: https://github.com/ros2-gbp/nao_button_sim-release.git
+    version: debian/ros-humble-nao-button-sim_0.1.1-4_jammy
+  nao_interfaces-release0:
+    type: git
+    url: https://github.com/ros2-gbp/nao_interfaces-release.git
+    version: debian/ros-humble-nao-command-msgs_0.0.4-3_jammy
+  nao_interfaces-release1:
+    type: git
+    url: https://github.com/ros2-gbp/nao_interfaces-release.git
+    version: debian/ros-humble-nao-sensor-msgs_0.0.4-3_jammy
+  nao_lola-release0:
+    type: git
+    url: https://github.com/ros2-gbp/nao_lola-release.git
+    version: debian/ros-humble-nao-lola_0.1.2-1_jammy
+  navigation2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-costmap-queue_1.1.9-1_jammy
+  navigation2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-dwb-core_1.1.9-1_jammy
+  navigation2-release2:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-dwb-critics_1.1.9-1_jammy
+  navigation2-release3:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-dwb-msgs_1.1.9-1_jammy
+  navigation2-release4:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-dwb-plugins_1.1.9-1_jammy
+  navigation2-release5:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav-2d-msgs_1.1.9-1_jammy
+  navigation2-release6:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav-2d-utils_1.1.9-1_jammy
+  navigation2-release7:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-amcl_1.1.9-1_jammy
+  navigation2-release8:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-behavior-tree_1.1.9-1_jammy
+  navigation2-release9:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-behaviors_1.1.9-1_jammy
+  navigation2-release10:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-bringup_1.1.9-1_jammy
+  navigation2-release11:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-bt-navigator_1.1.9-1_jammy
+  navigation2-release12:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-collision-monitor_1.1.9-1_jammy
+  navigation2-release13:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-common_1.1.9-1_jammy
+  navigation2-release14:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-constrained-smoother_1.1.9-1_jammy
+  navigation2-release15:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-controller_1.1.9-1_jammy
+  navigation2-release16:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-core_1.1.9-1_jammy
+  navigation2-release17:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-costmap-2d_1.1.9-1_jammy
+  navigation2-release18:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-dwb-controller_1.1.9-1_jammy
+  navigation2-release19:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-lifecycle-manager_1.1.9-1_jammy
+  navigation2-release20:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-map-server_1.1.9-1_jammy
+  navigation2-release21:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-mppi-controller_1.1.9-1_jammy
+  navigation2-release22:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-msgs_1.1.9-1_jammy
+  navigation2-release23:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-navfn-planner_1.1.9-1_jammy
+  navigation2-release24:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-planner_1.1.9-1_jammy
+  navigation2-release25:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-regulated-pure-pursuit-controller_1.1.9-1_jammy
+  navigation2-release26:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-rotation-shim-controller_1.1.9-1_jammy
+  navigation2-release27:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-rviz-plugins_1.1.9-1_jammy
+  navigation2-release28:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-simple-commander_1.1.9-1_jammy
+  navigation2-release29:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-smac-planner_1.1.9-1_jammy
+  navigation2-release30:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-smoother_1.1.9-1_jammy
+  navigation2-release31:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-system-tests_1.1.9-1_jammy
+  navigation2-release32:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-theta-star-planner_1.1.9-1_jammy
+  navigation2-release33:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-util_1.1.9-1_jammy
+  navigation2-release34:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-velocity-smoother_1.1.9-1_jammy
+  navigation2-release35:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-voxel-grid_1.1.9-1_jammy
+  navigation2-release36:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-nav2-waypoint-follower_1.1.9-1_jammy
+  navigation2-release37:
+    type: git
+    url: https://github.com/ros2-gbp/navigation2-release.git
+    version: debian/ros-humble-navigation2_1.1.9-1_jammy
+  navigation_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/navigation_msgs-release.git
+    version: debian/ros-humble-map-msgs_2.1.0-3_jammy
+  neo_simulation2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/neo_simulation2-release.git
+    version: debian/ros-humble-neo-simulation2_1.0.0-3_jammy
+  nlohmann_json_schema_validator_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/nlohmann_json_schema_validator_vendor-release.git
+    version: debian/ros-humble-nlohmann-json-schema-validator-vendor_0.2.5-1_jammy
+  nmea_hardware_interface-release0:
+    type: git
+    url: https://github.com/ros2-gbp/nmea_hardware_interface-release.git
+    version: debian/ros-humble-nmea-hardware-interface_0.0.1-3_jammy
+  nmea_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/nmea_msgs-release.git
+    version: debian/ros-humble-nmea-msgs_2.0.0-4_jammy
+  nodl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/nodl-release.git
+    version: debian/ros-humble-nodl-python_0.3.1-3_jammy
+  nodl-release1:
+    type: git
+    url: https://github.com/ros2-gbp/nodl-release.git
+    version: debian/ros-humble-ros2nodl_0.3.1-3_jammy
+  nodl_to_policy-release0:
+    type: git
+    url: https://github.com/ros2-gbp/nodl_to_policy-release.git
+    version: debian/ros-humble-nodl-to-policy_1.0.0-3_jammy
+  novatel_gps_driver-release0:
+    type: git
+    url: https://github.com/ros2-gbp/novatel_gps_driver-release.git
+    version: debian/ros-humble-novatel-gps-driver_4.1.1-2_jammy
+  novatel_gps_driver-release1:
+    type: git
+    url: https://github.com/ros2-gbp/novatel_gps_driver-release.git
+    version: debian/ros-humble-novatel-gps-msgs_4.1.1-2_jammy
+  ntpd_driver-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ntpd_driver-release.git
+    version: debian/ros-humble-ntpd-driver_2.2.0-1_jammy
+  ntrip_client-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ntrip_client-release.git
+    version: debian/ros-humble-ntrip-client_1.2.0-1_jammy
+  object_recognition_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/object_recognition_msgs-release.git
+    version: debian/ros-humble-object-recognition-msgs_2.0.0-3_jammy
+  octomap_mapping-release0:
+    type: git
+    url: https://github.com/ros2-gbp/octomap_mapping-release.git
+    version: debian/ros-humble-octomap-mapping_2.0.0-3_jammy
+  octomap_mapping-release1:
+    type: git
+    url: https://github.com/ros2-gbp/octomap_mapping-release.git
+    version: debian/ros-humble-octomap-server_2.0.0-3_jammy
+  octomap_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/octomap_msgs-release.git
+    version: debian/ros-humble-octomap-msgs_2.0.0-3_jammy
+  octomap-release0:
+    type: git
+    url: https://github.com/ros2-gbp/octomap-release.git
+    version: debian/ros-humble-dynamic-edt-3d_1.9.8-1_jammy
+  octomap-release1:
+    type: git
+    url: https://github.com/ros2-gbp/octomap-release.git
+    version: debian/ros-humble-octomap_1.9.8-1_jammy
+  octomap-release2:
+    type: git
+    url: https://github.com/ros2-gbp/octomap-release.git
+    version: debian/ros-humble-octovis_1.9.8-1_jammy
+  octomap_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/octomap_ros-release.git
+    version: debian/ros-humble-octomap-ros_0.4.3-1_jammy
+  octomap_rviz_plugins-release0:
+    type: git
+    url: https://github.com/ros2-gbp/octomap_rviz_plugins-release.git
+    version: debian/ros-humble-octomap-rviz-plugins_2.0.0-3_jammy
+  odom_to_tf_ros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/odom_to_tf_ros2-release.git
+    version: debian/ros-humble-odom-to-tf-ros2_1.0.2-1_jammy
+  ompl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ompl-release.git
+    version: debian/ros-humble-ompl_1.6.0-1_jammy
+  openni2_camera-release0:
+    type: git
+    url: https://github.com/ros2-gbp/openni2_camera-release.git
+    version: debian/ros-humble-openni2-camera_2.0.2-1_jammy
+  orocos_kdl_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/orocos_kdl_vendor-release.git
+    version: debian/ros-humble-orocos-kdl-vendor_0.2.5-1_jammy
+  orocos_kdl_vendor-release1:
+    type: git
+    url: https://github.com/ros2-gbp/orocos_kdl_vendor-release.git
+    version: debian/ros-humble-python-orocos-kdl-vendor_0.2.5-1_jammy
+  orocos_kinematics_dynamics-release0:
+    type: git
+    url: https://github.com/ros2-gbp/orocos_kinematics_dynamics-release.git
+    version: debian/ros-humble-orocos-kdl_3.3.3-3_jammy
+  osqp_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/osqp_vendor-release.git
+    version: debian/ros-humble-osqp-vendor_0.2.0-1_jammy
+  osrf_pycommon-release0:
+    type: git
+    url: https://github.com/ros2-gbp/osrf_pycommon-release.git
+    version: debian/ros-humble-osrf-pycommon_2.1.1-1_jammy
+  osrf_testing_tools_cpp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/osrf_testing_tools_cpp-release.git
+    version: debian/ros-humble-osrf-testing-tools-cpp_1.5.2-1_jammy
+  ouxt_common-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ouxt_common-release.git
+    version: debian/ros-humble-ouxt-common_0.0.8-3_jammy
+  ouxt_common-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ouxt_common-release.git
+    version: debian/ros-humble-ouxt-lint-common_0.0.8-3_jammy
+  pcl_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/pcl_msgs-release.git
+    version: debian/ros-humble-pcl-msgs_1.0.0-7_jammy
+  perception_open3d-release0:
+    type: git
+    url: https://github.com/ros2-gbp/perception_open3d-release.git
+    version: debian/ros-humble-open3d-conversions_0.2.1-1_jammy
+  perception_pcl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/perception_pcl-release.git
+    version: debian/ros-humble-pcl-conversions_2.4.0-4_jammy
+  perception_pcl-release1:
+    type: git
+    url: https://github.com/ros2-gbp/perception_pcl-release.git
+    version: debian/ros-humble-pcl-ros_2.4.0-4_jammy
+  perception_pcl-release2:
+    type: git
+    url: https://github.com/ros2-gbp/perception_pcl-release.git
+    version: debian/ros-humble-perception-pcl_2.4.0-4_jammy
+  performance_test_fixture-release0:
+    type: git
+    url: https://github.com/ros2-gbp/performance_test_fixture-release.git
+    version: debian/ros-humble-performance-test-fixture_0.0.9-1_jammy
+  performance_test-release0:
+    type: git
+    url: https://github.com/ros2-gbp/performance_test-release.git
+    version: debian/ros-humble-performance-test_1.2.1-1_jammy
+  phidgets_drivers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-libphidget22_2.3.1-1_jammy
+  phidgets_drivers-release1:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-accelerometer_2.3.1-1_jammy
+  phidgets_drivers-release2:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-analog-inputs_2.3.1-1_jammy
+  phidgets_drivers-release3:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-analog-outputs_2.3.1-1_jammy
+  phidgets_drivers-release4:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-api_2.3.1-1_jammy
+  phidgets_drivers-release5:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-digital-inputs_2.3.1-1_jammy
+  phidgets_drivers-release6:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-digital-outputs_2.3.1-1_jammy
+  phidgets_drivers-release7:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-drivers_2.3.1-1_jammy
+  phidgets_drivers-release8:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-gyroscope_2.3.1-1_jammy
+  phidgets_drivers-release9:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-high-speed-encoder_2.3.1-1_jammy
+  phidgets_drivers-release10:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-ik_2.3.1-1_jammy
+  phidgets_drivers-release11:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-magnetometer_2.3.1-1_jammy
+  phidgets_drivers-release12:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-motors_2.3.1-1_jammy
+  phidgets_drivers-release13:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-msgs_2.3.1-1_jammy
+  phidgets_drivers-release14:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-spatial_2.3.1-1_jammy
+  phidgets_drivers-release15:
+    type: git
+    url: https://github.com/ros2-gbp/phidgets_drivers-release.git
+    version: debian/ros-humble-phidgets-temperature_2.3.1-1_jammy
+  pick_ik-release0:
+    type: git
+    url: https://github.com/ros2-gbp/pick_ik-release.git
+    version: debian/ros-humble-pick-ik_1.0.1-1_jammy
+  picknik_ament_copyright-release0:
+    type: git
+    url: https://github.com/ros2-gbp/picknik_ament_copyright-release.git
+    version: debian/ros-humble-picknik-ament-copyright_0.0.2-3_jammy
+  picknik_controllers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/picknik_controllers-release.git
+    version: debian/ros-humble-picknik-reset-fault-controller_0.0.3-1_jammy
+  picknik_controllers-release1:
+    type: git
+    url: https://github.com/ros2-gbp/picknik_controllers-release.git
+    version: debian/ros-humble-picknik-twist-controller_0.0.3-1_jammy
+  pinocchio-release0:
+    type: git
+    url: https://github.com/ros2-gbp/pinocchio-release.git
+    version: debian/ros-humble-pinocchio_2.6.9-1_jammy
+  plotjuggler_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/plotjuggler_msgs-release.git
+    version: debian/ros-humble-plotjuggler-msgs_0.2.3-3_jammy
+  plotjuggler-release0:
+    type: git
+    url: https://github.com/ros2-gbp/plotjuggler-release.git
+    version: debian/ros-humble-plotjuggler_3.7.1-1_jammy
+  plotjuggler-ros-plugins-release0:
+    type: git
+    url: https://github.com/ros2-gbp/plotjuggler-ros-plugins-release.git
+    version: debian/ros-humble-plotjuggler-ros_1.7.3-1_jammy
+  pluginlib-release0:
+    type: git
+    url: https://github.com/ros2-gbp/pluginlib-release.git
+    version: debian/ros-humble-pluginlib_5.1.0-3_jammy
+  point_cloud_msg_wrapper-release0:
+    type: git
+    url: https://github.com/ros2-gbp/point_cloud_msg_wrapper-release.git
+    version: debian/ros-humble-point-cloud-msg-wrapper_1.0.7-3_jammy
+  pointcloud_to_laserscan-release0:
+    type: git
+    url: https://github.com/ros2-gbp/pointcloud_to_laserscan-release.git
+    version: debian/ros-humble-pointcloud-to-laserscan_2.0.1-3_jammy
+  polygon_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/polygon_ros-release.git
+    version: debian/ros-humble-polygon-demos_1.0.2-1_jammy
+  polygon_ros-release1:
+    type: git
+    url: https://github.com/ros2-gbp/polygon_ros-release.git
+    version: debian/ros-humble-polygon-msgs_1.0.2-1_jammy
+  polygon_ros-release2:
+    type: git
+    url: https://github.com/ros2-gbp/polygon_ros-release.git
+    version: debian/ros-humble-polygon-rviz-plugins_1.0.2-1_jammy
+  polygon_ros-release3:
+    type: git
+    url: https://github.com/ros2-gbp/polygon_ros-release.git
+    version: debian/ros-humble-polygon-utils_1.0.2-1_jammy
+  pose_cov_ops-release0:
+    type: git
+    url: https://github.com/ros2-gbp/pose_cov_ops-release.git
+    version: debian/ros-humble-pose-cov-ops_0.3.9-1_jammy
+  proxsuite-release0:
+    type: git
+    url: https://github.com/ros2-gbp/proxsuite-release.git
+    version: debian/ros-humble-proxsuite_0.3.6-2_jammy
+  pybind11_json_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/pybind11_json_vendor-release.git
+    version: debian/ros-humble-pybind11-json-vendor_0.2.3-1_jammy
+  pybind11_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/pybind11_vendor-release.git
+    version: debian/ros-humble-pybind11-vendor_2.4.2-1_jammy
+  python_cmake_module-release0:
+    type: git
+    url: https://github.com/ros2-gbp/python_cmake_module-release.git
+    version: debian/ros-humble-python-cmake-module_0.10.0-2_jammy
+  python_qt_binding-release0:
+    type: git
+    url: https://github.com/ros2-gbp/python_qt_binding-release.git
+    version: debian/ros-humble-python-qt-binding_1.1.1-3_jammy
+  py_trees_js-release0:
+    type: git
+    url: https://github.com/ros2-gbp/py_trees_js-release.git
+    version: debian/ros-humble-py-trees-js_0.6.4-1_jammy
+  py_trees-release0:
+    type: git
+    url: https://github.com/ros2-gbp/py_trees-release.git
+    version: debian/ros-humble-py-trees_2.2.3-1_jammy
+  py_trees_ros_interfaces-release0:
+    type: git
+    url: https://github.com/ros2-gbp/py_trees_ros_interfaces-release.git
+    version: debian/ros-humble-py-trees-ros-interfaces_2.1.0-1_jammy
+  py_trees_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/py_trees_ros-release.git
+    version: debian/ros-humble-py-trees-ros_2.2.2-3_jammy
+  qpoases_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/qpoases_vendor-release.git
+    version: debian/ros-humble-qpoases-vendor_3.2.3-3_jammy
+  qt_gui_core-release0:
+    type: git
+    url: https://github.com/ros2-gbp/qt_gui_core-release.git
+    version: debian/ros-humble-qt-dotgraph_2.2.2-1_jammy
+  qt_gui_core-release1:
+    type: git
+    url: https://github.com/ros2-gbp/qt_gui_core-release.git
+    version: debian/ros-humble-qt-gui-app_2.2.2-1_jammy
+  qt_gui_core-release2:
+    type: git
+    url: https://github.com/ros2-gbp/qt_gui_core-release.git
+    version: debian/ros-humble-qt-gui-core_2.2.2-1_jammy
+  qt_gui_core-release3:
+    type: git
+    url: https://github.com/ros2-gbp/qt_gui_core-release.git
+    version: debian/ros-humble-qt-gui-cpp_2.2.2-1_jammy
+  qt_gui_core-release4:
+    type: git
+    url: https://github.com/ros2-gbp/qt_gui_core-release.git
+    version: debian/ros-humble-qt-gui-py-common_2.2.2-1_jammy
+  qt_gui_core-release5:
+    type: git
+    url: https://github.com/ros2-gbp/qt_gui_core-release.git
+    version: debian/ros-humble-qt-gui_2.2.2-1_jammy
+  quaternion_operation-release0:
+    type: git
+    url: https://github.com/ros2-gbp/quaternion_operation-release.git
+    version: debian/ros-humble-quaternion-operation_0.0.7-3_jammy
+  r2r_spl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/r2r_spl-release.git
+    version: debian/ros-humble-r2r-spl-7_2.0.1-1_jammy
+  r2r_spl-release1:
+    type: git
+    url: https://github.com/ros2-gbp/r2r_spl-release.git
+    version: debian/ros-humble-splsm-7-conversion_2.0.1-1_jammy
+  r2r_spl-release2:
+    type: git
+    url: https://github.com/ros2-gbp/r2r_spl-release.git
+    version: debian/ros-humble-splsm-7_2.0.1-1_jammy
+  radar_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/radar_msgs-release.git
+    version: debian/ros-humble-radar-msgs_0.2.1-3_jammy
+  random_numbers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/random_numbers-release.git
+    version: debian/ros-humble-random-numbers_2.0.1-3_jammy
+  raspimouse2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/raspimouse2-release.git
+    version: debian/ros-humble-raspimouse-msgs_1.1.2-1_jammy
+  raspimouse2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/raspimouse2-release.git
+    version: debian/ros-humble-raspimouse_1.1.2-1_jammy
+  raspimouse_description-release0:
+    type: git
+    url: https://github.com/ros2-gbp/raspimouse_description-release.git
+    version: debian/ros-humble-raspimouse-description_1.0.1-1_jammy
+  raspimouse_ros2_examples-release0:
+    type: git
+    url: https://github.com/ros2-gbp/raspimouse_ros2_examples-release.git
+    version: debian/ros-humble-raspimouse-ros2-examples_2.0.0-1_jammy
+  raspimouse_slam_navigation_ros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/raspimouse_slam_navigation_ros2-release.git
+    version: debian/ros-humble-raspimouse-navigation_2.0.0-1_jammy
+  raspimouse_slam_navigation_ros2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/raspimouse_slam_navigation_ros2-release.git
+    version: debian/ros-humble-raspimouse-slam-navigation_2.0.0-1_jammy
+  raspimouse_slam_navigation_ros2-release2:
+    type: git
+    url: https://github.com/ros2-gbp/raspimouse_slam_navigation_ros2-release.git
+    version: debian/ros-humble-raspimouse-slam_2.0.0-1_jammy
+  rc_common_msgs_ros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rc_common_msgs_ros2-release.git
+    version: debian/ros-humble-rc-common-msgs_0.5.3-4_jammy
+  rcdiscover-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rcdiscover-release.git
+    version: debian/ros-humble-rcdiscover_1.1.6-1_jammy
+  rc_dynamics_api-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rc_dynamics_api-release.git
+    version: debian/ros-humble-rc-dynamics-api_0.10.3-3_jammy
+  rc_genicam_api-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rc_genicam_api-release.git
+    version: debian/ros-humble-rc-genicam-api_2.6.1-1_jammy
+  rc_genicam_driver_ros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rc_genicam_driver_ros2-release.git
+    version: debian/ros-humble-rc-genicam-driver_0.3.0-1_jammy
+  rclcpp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-action_16.0.5-2_jammy
+  rclcpp-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-components_16.0.5-2_jammy
+  rclcpp-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-lifecycle_16.0.5-2_jammy
+  rclcpp-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp_16.0.5-2_jammy
+  rclc-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rclc-release.git
+    version: debian/ros-humble-rclc-examples_4.0.2-3_jammy
+  rclc-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rclc-release.git
+    version: debian/ros-humble-rclc-lifecycle_4.0.2-3_jammy
+  rclc-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rclc-release.git
+    version: debian/ros-humble-rclc-parameter_4.0.2-3_jammy
+  rclc-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rclc-release.git
+    version: debian/ros-humble-rclc_4.0.2-3_jammy
+  rcl_interfaces-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-action-msgs_1.2.1-1_jammy
+  rcl_interfaces-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-builtin-interfaces_1.2.1-1_jammy
+  rcl_interfaces-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-composition-interfaces_1.2.1-1_jammy
+  rcl_interfaces-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-lifecycle-msgs_1.2.1-1_jammy
+  rcl_interfaces-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-rcl-interfaces_1.2.1-1_jammy
+  rcl_interfaces-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-rosgraph-msgs_1.2.1-1_jammy
+  rcl_interfaces-release6:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-statistics-msgs_1.2.1-1_jammy
+  rcl_interfaces-release7:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-test-msgs_1.2.1-1_jammy
+  rcl_logging-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_logging-release.git
+    version: debian/ros-humble-rcl-logging-interface_2.3.1-1_jammy
+  rcl_logging-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_logging-release.git
+    version: debian/ros-humble-rcl-logging-noop_2.3.1-1_jammy
+  rcl_logging-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_logging-release.git
+    version: debian/ros-humble-rcl-logging-spdlog_2.3.1-1_jammy
+  rclpy-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rclpy-release.git
+    version: debian/ros-humble-rclpy_3.3.9-1_jammy
+  rcl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rcl-release.git
+    version: debian/ros-humble-rcl-action_5.3.4-3_jammy
+  rcl-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rcl-release.git
+    version: debian/ros-humble-rcl-lifecycle_5.3.4-3_jammy
+  rcl-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rcl-release.git
+    version: debian/ros-humble-rcl-yaml-param-parser_5.3.4-3_jammy
+  rcl-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rcl-release.git
+    version: debian/ros-humble-rcl_5.3.4-3_jammy
+  rcpputils-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rcpputils-release.git
+    version: debian/ros-humble-rcpputils_2.4.1-1_jammy
+  rc_reason_clients-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rc_reason_clients-release.git
+    version: debian/ros-humble-rc-reason-clients_0.3.1-1_jammy
+  rc_reason_clients-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rc_reason_clients-release.git
+    version: debian/ros-humble-rc-reason-msgs_0.3.1-1_jammy
+  rcss3d_agent-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rcss3d_agent-release.git
+    version: debian/ros-humble-rcss3d-agent-basic_0.2.1-1_jammy
+  rcss3d_agent-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rcss3d_agent-release.git
+    version: debian/ros-humble-rcss3d-agent-msgs_0.2.1-1_jammy
+  rcss3d_agent-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rcss3d_agent-release.git
+    version: debian/ros-humble-rcss3d-agent_0.2.1-1_jammy
+  rcutils-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rcutils-release.git
+    version: debian/ros-humble-rcutils_6.0.1-1_jammy
+  realtime_support-release0:
+    type: git
+    url: https://github.com/ros2-gbp/realtime_support-release.git
+    version: debian/ros-humble-rttest_0.13.0-2_jammy
+  realtime_support-release1:
+    type: git
+    url: https://github.com/ros2-gbp/realtime_support-release.git
+    version: debian/ros-humble-tlsf-cpp_0.13.0-2_jammy
+  realtime_tools-release0:
+    type: git
+    url: https://github.com/ros2-gbp/realtime_tools-release.git
+    version: debian/ros-humble-realtime-tools_2.5.0-1_jammy
+  resource_retriever-release0:
+    type: git
+    url: https://github.com/ros2-gbp/resource_retriever-release.git
+    version: debian/ros-humble-libcurl-vendor_3.1.1-1_jammy
+  resource_retriever-release1:
+    type: git
+    url: https://github.com/ros2-gbp/resource_retriever-release.git
+    version: debian/ros-humble-resource-retriever_3.1.1-1_jammy
+  rig_reconfigure-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rig_reconfigure-release.git
+    version: debian/ros-humble-rig-reconfigure_1.2.0-1_jammy
+  rmf_api_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_api_msgs-release.git
+    version: debian/ros-humble-rmf-api-msgs_0.0.3-1_jammy
+  rmf_battery-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_battery-release.git
+    version: debian/ros-humble-rmf-battery_0.1.5-1_jammy
+  rmf_building_map_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_building_map_msgs-release.git
+    version: debian/ros-humble-rmf-building-map-msgs_1.2.1-1_jammy
+  rmf_cmake_uncrustify-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_cmake_uncrustify-release.git
+    version: debian/ros-humble-rmf-cmake-uncrustify_1.2.0-4_jammy
+  rmf_demos-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-assets_2.0.2-1_jammy
+  rmf_demos-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-bridges_2.0.2-1_jammy
+  rmf_demos-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-dashboard-resources_2.0.2-1_jammy
+  rmf_demos-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-fleet-adapter_2.0.2-1_jammy
+  rmf_demos-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-gz-classic_2.0.2-1_jammy
+  rmf_demos-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-gz_2.0.2-1_jammy
+  rmf_demos-release6:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-maps_2.0.2-1_jammy
+  rmf_demos-release7:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-panel_2.0.2-1_jammy
+  rmf_demos-release8:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos-tasks_2.0.2-1_jammy
+  rmf_demos-release9:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_demos-release.git
+    version: debian/ros-humble-rmf-demos_2.0.2-1_jammy
+  rmf_internal_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-charger-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-dispenser-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-door-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-fleet-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-ingestor-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-lift-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release6:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-obstacle-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release7:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-scheduler-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release8:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-site-map-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release9:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-task-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release10:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-traffic-msgs_3.0.3-1_jammy
+  rmf_internal_msgs-release11:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_internal_msgs-release.git
+    version: debian/ros-humble-rmf-workcell-msgs_3.0.3-1_jammy
+  rmf_ros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_ros2-release.git
+    version: debian/ros-humble-rmf-fleet-adapter-python_2.1.7-1_jammy
+  rmf_ros2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_ros2-release.git
+    version: debian/ros-humble-rmf-fleet-adapter_2.1.7-1_jammy
+  rmf_ros2-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_ros2-release.git
+    version: debian/ros-humble-rmf-task-ros2_2.1.7-1_jammy
+  rmf_ros2-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_ros2-release.git
+    version: debian/ros-humble-rmf-traffic-ros2_2.1.7-1_jammy
+  rmf_ros2-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_ros2-release.git
+    version: debian/ros-humble-rmf-websocket_2.1.7-1_jammy
+  rmf_simulation-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_simulation-release.git
+    version: debian/ros-humble-rmf-building-sim-common_1.2.0-4_jammy
+  rmf_simulation-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_simulation-release.git
+    version: debian/ros-humble-rmf-building-sim-gazebo-plugins_1.2.0-4_jammy
+  rmf_simulation-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_simulation-release.git
+    version: debian/ros-humble-rmf-building-sim-ignition-plugins_1.2.0-4_jammy
+  rmf_simulation-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_simulation-release.git
+    version: debian/ros-humble-rmf-robot-sim-common_1.2.0-4_jammy
+  rmf_simulation-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_simulation-release.git
+    version: debian/ros-humble-rmf-robot-sim-gazebo-plugins_1.2.0-4_jammy
+  rmf_simulation-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_simulation-release.git
+    version: debian/ros-humble-rmf-robot-sim-ignition-plugins_1.2.0-4_jammy
+  rmf_task-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_task-release.git
+    version: debian/ros-humble-rmf-task-sequence_2.1.6-1_jammy
+  rmf_task-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_task-release.git
+    version: debian/ros-humble-rmf-task_2.1.6-1_jammy
+  rmf_traffic_editor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_traffic_editor-release.git
+    version: debian/ros-humble-rmf-building-map-tools_1.6.2-1_jammy
+  rmf_traffic_editor-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_traffic_editor-release.git
+    version: debian/ros-humble-rmf-traffic-editor-assets_1.6.2-1_jammy
+  rmf_traffic_editor-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_traffic_editor-release.git
+    version: debian/ros-humble-rmf-traffic-editor-test-maps_1.6.2-1_jammy
+  rmf_traffic_editor-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_traffic_editor-release.git
+    version: debian/ros-humble-rmf-traffic-editor_1.6.2-1_jammy
+  rmf_traffic-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_traffic-release.git
+    version: debian/ros-humble-rmf-traffic-examples_3.0.1-1_jammy
+  rmf_traffic-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_traffic-release.git
+    version: debian/ros-humble-rmf-traffic_3.0.1-1_jammy
+  rmf_utils-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_utils-release.git
+    version: debian/ros-humble-rmf-utils_1.4.1-1_jammy
+  rmf_variants-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_variants-release.git
+    version: debian/ros-humble-rmf-dev_0.0.1-1_jammy
+  rmf_visualization_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization_msgs-release.git
+    version: debian/ros-humble-rmf-visualization-msgs_1.2.1-1_jammy
+  rmf_visualization-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization-release.git
+    version: debian/ros-humble-rmf-visualization-building-systems_2.0.2-1_jammy
+  rmf_visualization-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization-release.git
+    version: debian/ros-humble-rmf-visualization-fleet-states_2.0.2-1_jammy
+  rmf_visualization-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization-release.git
+    version: debian/ros-humble-rmf-visualization-floorplans_2.0.2-1_jammy
+  rmf_visualization-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization-release.git
+    version: debian/ros-humble-rmf-visualization-navgraphs_2.0.2-1_jammy
+  rmf_visualization-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization-release.git
+    version: debian/ros-humble-rmf-visualization-obstacles_2.0.2-1_jammy
+  rmf_visualization-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization-release.git
+    version: debian/ros-humble-rmf-visualization-rviz2-plugins_2.0.2-1_jammy
+  rmf_visualization-release6:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization-release.git
+    version: debian/ros-humble-rmf-visualization-schedule_2.0.2-1_jammy
+  rmf_visualization-release7:
+    type: git
+    url: https://github.com/ros2-gbp/rmf_visualization-release.git
+    version: debian/ros-humble-rmf-visualization_2.0.2-1_jammy
+  rmw_connextdds-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_connextdds-release.git
+    version: debian/ros-humble-rmw-connextdds-common_0.11.2-1_jammy
+  rmw_connextdds-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_connextdds-release.git
+    version: debian/ros-humble-rmw-connextdds_0.11.2-1_jammy
+  rmw_connextdds-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_connextdds-release.git
+    version: debian/ros-humble-rti-connext-dds-cmake-module_0.11.2-1_jammy
+  rmw_cyclonedds-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_cyclonedds-release.git
+    version: debian/ros-humble-rmw-cyclonedds-cpp_1.3.4-1_jammy
+  rmw_dds_common-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_dds_common-release.git
+    version: debian/ros-humble-rmw-dds-common_1.6.0-2_jammy
+  rmw_fastrtps-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_fastrtps-release.git
+    version: debian/ros-humble-rmw-fastrtps-cpp_6.2.3-1_jammy
+  rmw_fastrtps-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_fastrtps-release.git
+    version: debian/ros-humble-rmw-fastrtps-dynamic-cpp_6.2.3-1_jammy
+  rmw_fastrtps-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_fastrtps-release.git
+    version: debian/ros-humble-rmw-fastrtps-shared-cpp_6.2.3-1_jammy
+  rmw_gurumdds-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_gurumdds-release.git
+    version: debian/ros-humble-rmw-gurumdds-cpp_3.2.0-1_jammy
+  rmw_gurumdds-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_gurumdds-release.git
+    version: debian/ros-humble-rmw-gurumdds-shared-cpp_3.2.0-1_jammy
+  rmw_implementation-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmw_implementation-release.git
+    version: debian/ros-humble-rmw-implementation_2.8.2-1_jammy
+  rmw-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rmw-release.git
+    version: debian/ros-humble-rmw-implementation-cmake_6.1.1-1_jammy
+  rmw-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rmw-release.git
+    version: debian/ros-humble-rmw_6.1.1-1_jammy
+  robot_calibration-release0:
+    type: git
+    url: https://github.com/ros2-gbp/robot_calibration-release.git
+    version: debian/ros-humble-robot-calibration-msgs_0.8.0-1_jammy
+  robot_calibration-release1:
+    type: git
+    url: https://github.com/ros2-gbp/robot_calibration-release.git
+    version: debian/ros-humble-robot-calibration_0.8.0-1_jammy
+  robot_localization-release0:
+    type: git
+    url: https://github.com/ros2-gbp/robot_localization-release.git
+    version: debian/ros-humble-robot-localization_3.5.1-2_jammy
+  robot_state_publisher-release0:
+    type: git
+    url: https://github.com/ros2-gbp/robot_state_publisher-release.git
+    version: debian/ros-humble-robot-state-publisher_3.0.2-2_jammy
+  ros2acceleration-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2acceleration-release.git
+    version: debian/ros-humble-ros2acceleration_0.5.1-2_jammy
+  ros2cli_common_extensions-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli_common_extensions-release.git
+    version: debian/ros-humble-ros2cli-common-extensions_0.1.1-4_jammy
+  ros2cli-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2action_0.21.0-1_jammy
+  ros2cli-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2cli-test-interfaces_0.21.0-1_jammy
+  ros2cli-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2cli_0.21.0-1_jammy
+  ros2cli-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2component_0.21.0-1_jammy
+  ros2cli-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2doctor_0.21.0-1_jammy
+  ros2cli-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2interface_0.21.0-1_jammy
+  ros2cli-release6:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2lifecycle-test-fixtures_0.21.0-1_jammy
+  ros2cli-release7:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2lifecycle_0.21.0-1_jammy
+  ros2cli-release8:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2multicast_0.21.0-1_jammy
+  ros2cli-release9:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2node_0.21.0-1_jammy
+  ros2cli-release10:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2param_0.21.0-1_jammy
+  ros2cli-release11:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2pkg_0.21.0-1_jammy
+  ros2cli-release12:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2run_0.21.0-1_jammy
+  ros2cli-release13:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2service_0.21.0-1_jammy
+  ros2cli-release14:
+    type: git
+    url: https://github.com/ros2-gbp/ros2cli-release.git
+    version: debian/ros-humble-ros2topic_0.21.0-1_jammy
+  ros2_controllers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-admittance-controller_3.0.0-1_jammy
+  ros2_controllers-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-diff-drive-controller_3.0.0-1_jammy
+  ros2_controllers-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-effort-controllers_3.0.0-1_jammy
+  ros2_controllers-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-force-torque-sensor-broadcaster_3.0.0-1_jammy
+  ros2_controllers-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-forward-command-controller_3.0.0-1_jammy
+  ros2_controllers-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-gripper-controllers_3.0.0-1_jammy
+  ros2_controllers-release6:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-imu-sensor-broadcaster_3.0.0-1_jammy
+  ros2_controllers-release7:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-joint-state-broadcaster_3.0.0-1_jammy
+  ros2_controllers-release8:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-joint-trajectory-controller_3.0.0-1_jammy
+  ros2_controllers-release9:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-position-controllers_3.0.0-1_jammy
+  ros2_controllers-release10:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-ros2-controllers-test-nodes_3.0.0-1_jammy
+  ros2_controllers-release11:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-ros2-controllers_3.0.0-1_jammy
+  ros2_controllers-release12:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-rqt-joint-trajectory-controller_3.0.0-1_jammy
+  ros2_controllers-release13:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-tricycle-controller_3.0.0-1_jammy
+  ros2_controllers-release14:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_controllers-release.git
+    version: debian/ros-humble-velocity-controllers_3.0.0-1_jammy
+  ros2_control-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_control-release.git
+    version: debian/ros-humble-controller-interface_2.9.0-1_jammy
+  ros2_control-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_control-release.git
+    version: debian/ros-humble-controller-manager-msgs_2.9.0-1_jammy
+  ros2_control-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_control-release.git
+    version: debian/ros-humble-controller-manager_2.9.0-1_jammy
+  ros2_control-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_control-release.git
+    version: debian/ros-humble-hardware-interface_2.9.0-1_jammy
+  ros2_control-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_control-release.git
+    version: debian/ros-humble-ros2-control-test-assets_2.9.0-1_jammy
+  ros2_control-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_control-release.git
+    version: debian/ros-humble-ros2-control_2.9.0-1_jammy
+  ros2_control-release6:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_control-release.git
+    version: debian/ros-humble-ros2controlcli_2.9.0-1_jammy
+  ros2_control-release7:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_control-release.git
+    version: debian/ros-humble-transmission-interface_2.9.0-1_jammy
+  ros2_kortex-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_kortex-release.git
+    version: debian/ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config_0.2.2-1_jammy
+  ros2_kortex-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_kortex-release.git
+    version: debian/ros-humble-kinova-gen3-7dof-robotiq-2f-85-moveit-config_0.2.2-1_jammy
+  ros2_kortex-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_kortex-release.git
+    version: debian/ros-humble-kortex-api_0.2.2-1_jammy
+  ros2_kortex-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_kortex-release.git
+    version: debian/ros-humble-kortex-bringup_0.2.2-1_jammy
+  ros2_kortex-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_kortex-release.git
+    version: debian/ros-humble-kortex-description_0.2.2-1_jammy
+  ros2_kortex-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_kortex-release.git
+    version: debian/ros-humble-kortex-driver_0.2.2-1_jammy
+  ros2launch_security-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2launch_security-release.git
+    version: debian/ros-humble-ros2launch-security-examples_1.0.0-3_jammy
+  ros2launch_security-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2launch_security-release.git
+    version: debian/ros-humble-ros2launch-security_1.0.0-3_jammy
+  ros2_message_filters-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_message_filters-release.git
+    version: debian/ros-humble-message-filters_4.3.3-2_jammy
+  ros2_ouster_drivers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_ouster_drivers-release.git
+    version: debian/ros-humble-ouster-msgs_0.4.2-1_jammy
+  ros2_ouster_drivers-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_ouster_drivers-release.git
+    version: debian/ros-humble-ros2-ouster_0.4.2-1_jammy
+  ros2_planning_system-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-bringup_2.0.9-1_jammy
+  ros2_planning_system-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-bt-actions_2.0.9-1_jammy
+  ros2_planning_system-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-core_2.0.9-1_jammy
+  ros2_planning_system-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-domain-expert_2.0.9-1_jammy
+  ros2_planning_system-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-executor_2.0.9-1_jammy
+  ros2_planning_system-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-lifecycle-manager_2.0.9-1_jammy
+  ros2_planning_system-release6:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-msgs_2.0.9-1_jammy
+  ros2_planning_system-release7:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-pddl-parser_2.0.9-1_jammy
+  ros2_planning_system-release8:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-planner_2.0.9-1_jammy
+  ros2_planning_system-release9:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-popf-plan-solver_2.0.9-1_jammy
+  ros2_planning_system-release10:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-problem-expert_2.0.9-1_jammy
+  ros2_planning_system-release11:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-terminal_2.0.9-1_jammy
+  ros2_planning_system-release12:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_planning_system-release.git
+    version: debian/ros-humble-plansys2-tools_2.0.9-1_jammy
+  ros2_robotiq_gripper-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_robotiq_gripper-release.git
+    version: debian/ros-humble-robotiq-controllers_0.0.1-1_jammy
+  ros2_robotiq_gripper-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_robotiq_gripper-release.git
+    version: debian/ros-humble-robotiq-description_0.0.1-1_jammy
+  ros2_socketcan-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_socketcan-release.git
+    version: debian/ros-humble-ros2-socketcan_1.1.0-3_jammy
+  ros2_tracing-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_tracing-release.git
+    version: debian/ros-humble-ros2trace_4.1.1-1_jammy
+  ros2_tracing-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_tracing-release.git
+    version: debian/ros-humble-tracetools-launch_4.1.1-1_jammy
+  ros2_tracing-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_tracing-release.git
+    version: debian/ros-humble-tracetools-read_4.1.1-1_jammy
+  ros2_tracing-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_tracing-release.git
+    version: debian/ros-humble-tracetools-test_4.1.1-1_jammy
+  ros2_tracing-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_tracing-release.git
+    version: debian/ros-humble-tracetools-trace_4.1.1-1_jammy
+  ros2_tracing-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_tracing-release.git
+    version: debian/ros-humble-tracetools_4.1.1-1_jammy
+  ros2_v4l2_camera-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros2_v4l2_camera-release.git
+    version: debian/ros-humble-v4l2-camera_0.6.2-1_jammy
+  rosbag2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-mcap-vendor_0.15.7-1_jammy
+  rosbag2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-ros2bag_0.15.7-1_jammy
+  rosbag2-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-compression-zstd_0.15.7-1_jammy
+  rosbag2-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-compression_0.15.7-1_jammy
+  rosbag2-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-cpp_0.15.7-1_jammy
+  rosbag2-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-interfaces_0.15.7-1_jammy
+  rosbag2-release6:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-performance-benchmarking_0.15.7-1_jammy
+  rosbag2-release7:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-py_0.15.7-1_jammy
+  rosbag2-release8:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-storage-default-plugins_0.15.7-1_jammy
+  rosbag2-release9:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-storage-mcap-testdata_0.15.7-1_jammy
+  rosbag2-release10:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-storage-mcap_0.15.7-1_jammy
+  rosbag2-release11:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-storage_0.15.7-1_jammy
+  rosbag2-release12:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-test-common_0.15.7-1_jammy
+  rosbag2-release13:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-tests_0.15.7-1_jammy
+  rosbag2-release14:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2-transport_0.15.7-1_jammy
+  rosbag2-release15:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-rosbag2_0.15.7-1_jammy
+  rosbag2-release16:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-shared-queues-vendor_0.15.7-1_jammy
+  rosbag2-release17:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-sqlite3-vendor_0.15.7-1_jammy
+  rosbag2-release18:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2-release.git
+    version: debian/ros-humble-zstd-vendor_0.15.7-1_jammy
+  rosbag2_storage_mcap-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2_storage_mcap-release.git
+    version: debian/ros-humble-mcap-vendor_0.6.0-1_jammy
+  rosbag2_storage_mcap-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2_storage_mcap-release.git
+    version: debian/ros-humble-rosbag2-storage-mcap-testdata_0.6.0-1_jammy
+  rosbag2_storage_mcap-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rosbag2_storage_mcap-release.git
+    version: debian/ros-humble-rosbag2-storage-mcap_0.6.0-1_jammy
+  rosbridge_suite-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosbridge_suite-release.git
+    version: debian/ros-humble-rosapi-msgs_1.3.1-1_jammy
+  rosbridge_suite-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rosbridge_suite-release.git
+    version: debian/ros-humble-rosapi_1.3.1-1_jammy
+  rosbridge_suite-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rosbridge_suite-release.git
+    version: debian/ros-humble-rosbridge-library_1.3.1-1_jammy
+  rosbridge_suite-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rosbridge_suite-release.git
+    version: debian/ros-humble-rosbridge-msgs_1.3.1-1_jammy
+  rosbridge_suite-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rosbridge_suite-release.git
+    version: debian/ros-humble-rosbridge-server_1.3.1-1_jammy
+  rosbridge_suite-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rosbridge_suite-release.git
+    version: debian/ros-humble-rosbridge-suite_1.3.1-1_jammy
+  rosbridge_suite-release6:
+    type: git
+    url: https://github.com/ros2-gbp/rosbridge_suite-release.git
+    version: debian/ros-humble-rosbridge-test-msgs_1.3.1-1_jammy
+  ros_canopen-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_canopen-release.git
+    version: debian/ros-humble-can-msgs_2.0.0-4_jammy
+  ros_environment-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_environment-release.git
+    version: debian/ros-humble-ros-environment_3.2.2-1_jammy
+  ros_foxglove_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_foxglove_msgs-release.git
+    version: debian/ros-humble-foxglove-msgs_2.2.0-1_jammy
+  rosidl_dds-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_dds-release.git
+    version: debian/ros-humble-rosidl-generator-dds-idl_0.8.1-2_jammy
+  rosidl_defaults-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_defaults-release.git
+    version: debian/ros-humble-rosidl-default-generators_1.2.0-2_jammy
+  rosidl_defaults-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_defaults-release.git
+    version: debian/ros-humble-rosidl-default-runtime_1.2.0-2_jammy
+  rosidl_python-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_python-release.git
+    version: debian/ros-humble-rosidl-generator-py_0.14.4-1_jammy
+  rosidl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-adapter_3.1.5-2_jammy
+  rosidl-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-cli_3.1.5-2_jammy
+  rosidl-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-cmake_3.1.5-2_jammy
+  rosidl-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-generator-c_3.1.5-2_jammy
+  rosidl-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-generator-cpp_3.1.5-2_jammy
+  rosidl-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-parser_3.1.5-2_jammy
+  rosidl-release6:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-runtime-c_3.1.5-2_jammy
+  rosidl-release7:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-runtime-cpp_3.1.5-2_jammy
+  rosidl-release8:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-typesupport-interface_3.1.5-2_jammy
+  rosidl-release9:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-typesupport-introspection-c_3.1.5-2_jammy
+  rosidl-release10:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl-release.git
+    version: debian/ros-humble-rosidl-typesupport-introspection-cpp_3.1.5-2_jammy
+  rosidl_runtime_py-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_runtime_py-release.git
+    version: debian/ros-humble-rosidl-runtime-py_0.9.3-1_jammy
+  rosidl_typesupport_fastrtps-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release.git
+    version: debian/ros-humble-fastrtps-cmake-module_2.2.1-1_jammy
+  rosidl_typesupport_fastrtps-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release.git
+    version: debian/ros-humble-rosidl-typesupport-fastrtps-c_2.2.1-1_jammy
+  rosidl_typesupport_fastrtps-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release.git
+    version: debian/ros-humble-rosidl-typesupport-fastrtps-cpp_2.2.1-1_jammy
+  rosidl_typesupport_gurumdds-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_typesupport_gurumdds-release.git
+    version: debian/ros-humble-gurumdds-cmake-module_3.1.1-1_jammy
+  rosidl_typesupport-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_typesupport-release.git
+    version: debian/ros-humble-rosidl-typesupport-c_2.0.1-1_jammy
+  rosidl_typesupport-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rosidl_typesupport-release.git
+    version: debian/ros-humble-rosidl-typesupport-cpp_2.0.1-1_jammy
+  ros_ign-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-bridge_0.244.9-1_jammy
+  ros_ign-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-image_0.244.9-1_jammy
+  ros_ign-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-interfaces_0.244.9-1_jammy
+  ros_ign-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-sim-demos_0.244.9-1_jammy
+  ros_ign-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-sim_0.244.9-1_jammy
+  ros_ign-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz_0.244.9-1_jammy
+  ros_ign-release6:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-bridge_0.244.9-1_jammy
+  ros_ign-release7:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-gazebo-demos_0.244.9-1_jammy
+  ros_ign-release8:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-gazebo_0.244.9-1_jammy
+  ros_ign-release9:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-image_0.244.9-1_jammy
+  ros_ign-release10:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-interfaces_0.244.9-1_jammy
+  ros_ign-release11:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign_0.244.9-1_jammy
+  ros_image_to_qimage-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_image_to_qimage-release.git
+    version: debian/ros-humble-ros-image-to-qimage_0.2.1-1_jammy
+  ros_industrial_cmake_boilerplate-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_industrial_cmake_boilerplate-release.git
+    version: debian/ros-humble-ros-industrial-cmake-boilerplate_0.4.0-1_jammy
+  rospy_message_converter-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rospy_message_converter-release.git
+    version: debian/ros-humble-rclpy-message-converter-msgs_2.0.1-1_jammy
+  rospy_message_converter-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rospy_message_converter-release.git
+    version: debian/ros-humble-rclpy-message-converter_2.0.1-1_jammy
+  ros_system_fingerprint-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_system_fingerprint-release.git
+    version: debian/ros-humble-system-fingerprint_0.7.0-1_jammy
+  ros_testing-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_testing-release.git
+    version: debian/ros-humble-ros-testing_0.4.0-3_jammy
+  ros_testing-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ros_testing-release.git
+    version: debian/ros-humble-ros2test_0.4.0-3_jammy
+  ros_tutorials-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_tutorials-release.git
+    version: debian/ros-humble-turtlesim_1.4.2-1_jammy
+  ros_workspace-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ros_workspace-release.git
+    version: debian/ros-humble-ros-workspace_1.0.2-2_jammy
+  rot_conv_lib-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rot_conv_lib-release.git
+    version: debian/ros-humble-rot-conv_1.0.11-2_jammy
+  rplidar_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rplidar_ros-release.git
+    version: debian/ros-humble-rplidar-ros_2.1.4-1_jammy
+  rpyutils-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rpyutils-release.git
+    version: debian/ros-humble-rpyutils_0.2.1-2_jammy
+  rqt_action-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_action-release.git
+    version: debian/ros-humble-rqt-action_2.0.1-3_jammy
+  rqt_bag-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_bag-release.git
+    version: debian/ros-humble-rqt-bag-plugins_1.1.4-1_jammy
+  rqt_bag-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_bag-release.git
+    version: debian/ros-humble-rqt-bag_1.1.4-1_jammy
+  rqt_common_plugins-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_common_plugins-release.git
+    version: debian/ros-humble-rqt-common-plugins_1.2.0-1_jammy
+  rqt_console-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_console-release.git
+    version: debian/ros-humble-rqt-console_2.0.2-3_jammy
+  rqt_graph-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_graph-release.git
+    version: debian/ros-humble-rqt-graph_1.3.0-1_jammy
+  rqt_image_overlay-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_image_overlay-release.git
+    version: debian/ros-humble-rqt-image-overlay-layer_0.1.3-1_jammy
+  rqt_image_overlay-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_image_overlay-release.git
+    version: debian/ros-humble-rqt-image-overlay_0.1.3-1_jammy
+  rqt_image_view-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_image_view-release.git
+    version: debian/ros-humble-rqt-image-view_1.2.0-2_jammy
+  rqt_moveit-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_moveit-release.git
+    version: debian/ros-humble-rqt-moveit_1.0.1-3_jammy
+  rqt_msg-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_msg-release.git
+    version: debian/ros-humble-rqt-msg_1.2.0-1_jammy
+  rqt_plot-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_plot-release.git
+    version: debian/ros-humble-rqt-plot_1.1.2-1_jammy
+  rqt_publisher-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_publisher-release.git
+    version: debian/ros-humble-rqt-publisher_1.5.0-1_jammy
+  rqt_py_console-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_py_console-release.git
+    version: debian/ros-humble-rqt-py-console_1.0.2-3_jammy
+  rqt_reconfigure-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_reconfigure-release.git
+    version: debian/ros-humble-rqt-reconfigure_1.1.1-1_jammy
+  rqt-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt-release.git
+    version: debian/ros-humble-rqt-gui-cpp_1.1.5-2_jammy
+  rqt-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rqt-release.git
+    version: debian/ros-humble-rqt-gui-py_1.1.5-2_jammy
+  rqt-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rqt-release.git
+    version: debian/ros-humble-rqt-gui_1.1.5-2_jammy
+  rqt-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rqt-release.git
+    version: debian/ros-humble-rqt-py-common_1.1.5-2_jammy
+  rqt-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rqt-release.git
+    version: debian/ros-humble-rqt_1.1.5-2_jammy
+  rqt_robot_dashboard-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_robot_dashboard-release.git
+    version: debian/ros-humble-rqt-robot-dashboard_0.6.1-3_jammy
+  rqt_robot_monitor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_robot_monitor-release.git
+    version: debian/ros-humble-rqt-robot-monitor_1.0.5-2_jammy
+  rqt_robot_steering-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_robot_steering-release.git
+    version: debian/ros-humble-rqt-robot-steering_1.0.0-4_jammy
+  rqt_runtime_monitor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_runtime_monitor-release.git
+    version: debian/ros-humble-rqt-runtime-monitor_1.0.0-3_jammy
+  rqt_service_caller-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_service_caller-release.git
+    version: debian/ros-humble-rqt-service-caller_1.0.5-3_jammy
+  rqt_shell-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_shell-release.git
+    version: debian/ros-humble-rqt-shell_1.0.2-3_jammy
+  rqt_srv-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_srv-release.git
+    version: debian/ros-humble-rqt-srv_1.0.3-3_jammy
+  rqt_tf_tree-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_tf_tree-release.git
+    version: debian/ros-humble-rqt-tf-tree_1.0.4-1_jammy
+  rqt_topic-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_topic-release.git
+    version: debian/ros-humble-rqt-topic_1.5.0-1_jammy
+  rqt_top-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rqt_top-release.git
+    version: debian/ros-humble-rqt-top_1.0.2-3_jammy
+  rsl-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rsl-release.git
+    version: debian/ros-humble-rsl_0.2.2-1_jammy
+  rtabmap-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rtabmap-release.git
+    version: debian/ros-humble-rtabmap_0.21.1-1_jammy
+  rtcm_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rtcm_msgs-release.git
+    version: debian/ros-humble-rtcm-msgs_1.1.6-1_jammy
+  rt_manipulators_cpp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rt_manipulators_cpp-release.git
+    version: debian/ros-humble-rt-manipulators-cpp_1.0.0-1_jammy
+  rt_manipulators_cpp-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rt_manipulators_cpp-release.git
+    version: debian/ros-humble-rt-manipulators-examples_1.0.0-1_jammy
+  rt_usb_9axisimu_driver-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rt_usb_9axisimu_driver-release.git
+    version: debian/ros-humble-rt-usb-9axisimu-driver_2.0.2-1_jammy
+  ruckig-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ruckig-release.git
+    version: debian/ros-humble-ruckig_0.9.2-1_jammy
+  rviz_2d_overlay_plugins-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rviz_2d_overlay_plugins-release.git
+    version: debian/ros-humble-rviz-2d-overlay-msgs_1.3.0-1_jammy
+  rviz_2d_overlay_plugins-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rviz_2d_overlay_plugins-release.git
+    version: debian/ros-humble-rviz-2d-overlay-plugins_1.3.0-1_jammy
+  rviz-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rviz-release.git
+    version: debian/ros-humble-rviz-assimp-vendor_11.2.7-1_jammy
+  rviz-release1:
+    type: git
+    url: https://github.com/ros2-gbp/rviz-release.git
+    version: debian/ros-humble-rviz-common_11.2.7-1_jammy
+  rviz-release2:
+    type: git
+    url: https://github.com/ros2-gbp/rviz-release.git
+    version: debian/ros-humble-rviz-default-plugins_11.2.7-1_jammy
+  rviz-release3:
+    type: git
+    url: https://github.com/ros2-gbp/rviz-release.git
+    version: debian/ros-humble-rviz-ogre-vendor_11.2.7-1_jammy
+  rviz-release4:
+    type: git
+    url: https://github.com/ros2-gbp/rviz-release.git
+    version: debian/ros-humble-rviz-rendering-tests_11.2.7-1_jammy
+  rviz-release5:
+    type: git
+    url: https://github.com/ros2-gbp/rviz-release.git
+    version: debian/ros-humble-rviz-rendering_11.2.7-1_jammy
+  rviz-release6:
+    type: git
+    url: https://github.com/ros2-gbp/rviz-release.git
+    version: debian/ros-humble-rviz-visual-testing-framework_11.2.7-1_jammy
+  rviz-release7:
+    type: git
+    url: https://github.com/ros2-gbp/rviz-release.git
+    version: debian/ros-humble-rviz2_11.2.7-1_jammy
+  rviz_visual_tools-release0:
+    type: git
+    url: https://github.com/ros2-gbp/rviz_visual_tools-release.git
+    version: debian/ros-humble-rviz-visual-tools_4.1.4-1_jammy
+  schunk_svh_library-release0:
+    type: git
+    url: https://github.com/ros2-gbp/schunk_svh_library-release.git
+    version: debian/ros-humble-schunk-svh-library_1.0.1-1_jammy
+  schunk_svh_ros_driver-release0:
+    type: git
+    url: https://github.com/ros2-gbp/schunk_svh_ros_driver-release.git
+    version: debian/ros-humble-schunk-svh-description_2.1.1-1_jammy
+  schunk_svh_ros_driver-release1:
+    type: git
+    url: https://github.com/ros2-gbp/schunk_svh_ros_driver-release.git
+    version: debian/ros-humble-schunk-svh-driver_2.1.1-1_jammy
+  schunk_svh_ros_driver-release2:
+    type: git
+    url: https://github.com/ros2-gbp/schunk_svh_ros_driver-release.git
+    version: debian/ros-humble-schunk-svh-tests_2.1.1-1_jammy
+  sdformat_urdf-release0:
+    type: git
+    url: https://github.com/ros2-gbp/sdformat_urdf-release.git
+    version: debian/ros-humble-sdformat-test-files_1.0.1-1_jammy
+  sdformat_urdf-release1:
+    type: git
+    url: https://github.com/ros2-gbp/sdformat_urdf-release.git
+    version: debian/ros-humble-sdformat-urdf_1.0.1-1_jammy
+  septentrio_gnss_driver_ros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/septentrio_gnss_driver_ros2-release.git
+    version: debian/ros-humble-septentrio-gnss-driver_1.3.1-1_jammy
+  simple_actions-release0:
+    type: git
+    url: https://github.com/ros2-gbp/simple_actions-release.git
+    version: debian/ros-humble-simple-actions_0.2.2-1_jammy
+  simple_launch-release0:
+    type: git
+    url: https://github.com/ros2-gbp/simple_launch-release.git
+    version: debian/ros-humble-simple-launch_1.7.1-1_jammy
+  slider_publisher-release0:
+    type: git
+    url: https://github.com/ros2-gbp/slider_publisher-release.git
+    version: debian/ros-humble-slider-publisher_2.2.1-1_jammy
+  SMACC2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/SMACC2-release.git
+    version: debian/ros-humble-smacc2-msgs_0.4.0-2_jammy
+  SMACC2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/SMACC2-release.git
+    version: debian/ros-humble-smacc2_0.4.0-2_jammy
+  snowbot_release0:
+    type: git
+    url: https://github.com/ros2-gbp/snowbot_release.git
+    version: debian/ros-humble-snowbot-operating-system_0.1.2-3_jammy
+  soccer_interfaces-release0:
+    type: git
+    url: https://github.com/ros2-gbp/soccer_interfaces-release.git
+    version: debian/ros-humble-soccer-interfaces_0.1.0-1_jammy
+  soccer_interfaces-release1:
+    type: git
+    url: https://github.com/ros2-gbp/soccer_interfaces-release.git
+    version: debian/ros-humble-soccer-vision-2d-msgs_0.1.0-1_jammy
+  soccer_interfaces-release2:
+    type: git
+    url: https://github.com/ros2-gbp/soccer_interfaces-release.git
+    version: debian/ros-humble-soccer-vision-3d-msgs_0.1.0-1_jammy
+  soccer_interfaces-release3:
+    type: git
+    url: https://github.com/ros2-gbp/soccer_interfaces-release.git
+    version: debian/ros-humble-soccer-vision-attribute-msgs_0.1.0-1_jammy
+  soccer_object_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/soccer_object_msgs-release.git
+    version: debian/ros-humble-soccer-object-msgs_1.0.1-4_jammy
+  soccer_visualization-release0:
+    type: git
+    url: https://github.com/ros2-gbp/soccer_visualization-release.git
+    version: debian/ros-humble-soccer-marker-generation_0.0.2-3_jammy
+  social_nav_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/social_nav_ros-release.git
+    version: debian/ros-humble-social-nav-msgs_0.1.0-1_jammy
+  social_nav_ros-release1:
+    type: git
+    url: https://github.com/ros2-gbp/social_nav_ros-release.git
+    version: debian/ros-humble-social-nav-util_0.1.0-1_jammy
+  sol_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/sol_vendor-release.git
+    version: debian/ros-humble-sol-vendor_0.0.3-3_jammy
+  sophus-release0:
+    type: git
+    url: https://github.com/ros2-gbp/sophus-release.git
+    version: debian/ros-humble-sophus_1.3.1-1_jammy
+  spdlog_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/spdlog_vendor-release.git
+    version: debian/ros-humble-spdlog-vendor_1.3.1-1_jammy
+  srdfdom-release0:
+    type: git
+    url: https://github.com/ros2-gbp/srdfdom-release.git
+    version: debian/ros-humble-srdfdom_2.0.4-1_jammy
+  sros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/sros2-release.git
+    version: debian/ros-humble-sros2-cmake_0.10.4-2_jammy
+  sros2-release1:
+    type: git
+    url: https://github.com/ros2-gbp/sros2-release.git
+    version: debian/ros-humble-sros2_0.10.4-2_jammy
+  stomp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/stomp-release.git
+    version: debian/ros-humble-stomp_0.1.2-1_jammy
+  stubborn_buddies-release0:
+    type: git
+    url: https://github.com/ros2-gbp/stubborn_buddies-release.git
+    version: debian/ros-humble-stubborn-buddies-msgs_1.0.0-5_jammy
+  stubborn_buddies-release1:
+    type: git
+    url: https://github.com/ros2-gbp/stubborn_buddies-release.git
+    version: debian/ros-humble-stubborn-buddies_1.0.0-5_jammy
+  swri_console-release0:
+    type: git
+    url: https://github.com/ros2-gbp/swri_console-release.git
+    version: debian/ros-humble-swri-console_2.0.4-1_jammy
+  system_modes-release0:
+    type: git
+    url: https://github.com/ros2-gbp/system_modes-release.git
+    version: debian/ros-humble-launch-system-modes_0.9.0-5_jammy
+  system_modes-release1:
+    type: git
+    url: https://github.com/ros2-gbp/system_modes-release.git
+    version: debian/ros-humble-system-modes-examples_0.9.0-5_jammy
+  system_modes-release2:
+    type: git
+    url: https://github.com/ros2-gbp/system_modes-release.git
+    version: debian/ros-humble-system-modes-msgs_0.9.0-5_jammy
+  system_modes-release3:
+    type: git
+    url: https://github.com/ros2-gbp/system_modes-release.git
+    version: debian/ros-humble-system-modes_0.9.0-5_jammy
+  system_modes-release4:
+    type: git
+    url: https://github.com/ros2-gbp/system_modes-release.git
+    version: debian/ros-humble-test-launch-system-modes_0.9.0-5_jammy
+  tango_icons_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tango_icons_vendor-release.git
+    version: debian/ros-humble-tango-icons-vendor_0.1.1-3_jammy
+  teleop_tools-release0:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-joy-teleop_1.3.0-2_jammy
+  teleop_tools-release1:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-key-teleop_1.3.0-2_jammy
+  teleop_tools-release2:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-mouse-teleop_1.3.0-2_jammy
+  teleop_tools-release3:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-teleop-tools-msgs_1.3.0-2_jammy
+  teleop_tools-release4:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-teleop-tools_1.3.0-2_jammy
+  teleop_twist_joy-release0:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_twist_joy-release.git
+    version: debian/ros-humble-teleop-twist-joy_2.4.5-1_jammy
+  teleop_twist_keyboard-release0:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_twist_keyboard-release.git
+    version: debian/ros-humble-teleop-twist-keyboard_2.3.2-4_jammy
+  tensorrt_cmake_module-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tensorrt_cmake_module-release.git
+    version: debian/ros-humble-tensorrt-cmake-module_0.0.3-1_jammy
+  test_interface_files-release0:
+    type: git
+    url: https://github.com/ros2-gbp/test_interface_files-release.git
+    version: debian/ros-humble-test-interface-files_0.9.1-2_jammy
+  tf_transformations_release0:
+    type: git
+    url: https://github.com/ros2-gbp/tf_transformations_release.git
+    version: debian/ros-humble-tf-transformations_1.0.1-3_jammy
+  tinyspline_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tinyspline_vendor-release.git
+    version: debian/ros-humble-tinyspline-vendor_0.6.0-2_jammy
+  tinyxml2_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tinyxml2_vendor-release.git
+    version: debian/ros-humble-tinyxml2-vendor_0.7.5-2_jammy
+  tinyxml_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tinyxml_vendor-release.git
+    version: debian/ros-humble-tinyxml-vendor_0.8.3-2_jammy
+  tlsf-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tlsf-release.git
+    version: debian/ros-humble-tlsf_0.7.0-2_jammy
+  topic_tools-release0:
+    type: git
+    url: https://github.com/ros2-gbp/topic_tools-release.git
+    version: debian/ros-humble-topic-tools-interfaces_1.0.0-2_jammy
+  topic_tools-release1:
+    type: git
+    url: https://github.com/ros2-gbp/topic_tools-release.git
+    version: debian/ros-humble-topic-tools_1.0.0-2_jammy
+  tracetools_acceleration-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tracetools_acceleration-release.git
+    version: debian/ros-humble-tracetools-acceleration_0.4.1-2_jammy
+  tracetools_analysis-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tracetools_analysis-release.git
+    version: debian/ros-humble-ros2trace-analysis_3.0.0-4_jammy
+  tracetools_analysis-release1:
+    type: git
+    url: https://github.com/ros2-gbp/tracetools_analysis-release.git
+    version: debian/ros-humble-tracetools-analysis_3.0.0-4_jammy
+  transport_drivers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/transport_drivers-release.git
+    version: debian/ros-humble-asio-cmake-module_1.2.0-3_jammy
+  transport_drivers-release1:
+    type: git
+    url: https://github.com/ros2-gbp/transport_drivers-release.git
+    version: debian/ros-humble-io-context_1.2.0-3_jammy
+  transport_drivers-release2:
+    type: git
+    url: https://github.com/ros2-gbp/transport_drivers-release.git
+    version: debian/ros-humble-serial-driver_1.2.0-3_jammy
+  transport_drivers-release3:
+    type: git
+    url: https://github.com/ros2-gbp/transport_drivers-release.git
+    version: debian/ros-humble-udp-driver_1.2.0-3_jammy
+  turbojpeg_compressed_image_transport-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turbojpeg_compressed_image_transport-release.git
+    version: debian/ros-humble-turbojpeg-compressed-image-transport_0.1.3-1_jammy
+  turtlebot3_manipulation-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_manipulation-release.git
+    version: debian/ros-humble-turtlebot3-manipulation-bringup_2.1.1-1_jammy
+  turtlebot3_manipulation-release1:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_manipulation-release.git
+    version: debian/ros-humble-turtlebot3-manipulation-cartographer_2.1.1-1_jammy
+  turtlebot3_manipulation-release2:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_manipulation-release.git
+    version: debian/ros-humble-turtlebot3-manipulation-description_2.1.1-1_jammy
+  turtlebot3_manipulation-release3:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_manipulation-release.git
+    version: debian/ros-humble-turtlebot3-manipulation-hardware_2.1.1-1_jammy
+  turtlebot3_manipulation-release4:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_manipulation-release.git
+    version: debian/ros-humble-turtlebot3-manipulation-moveit-config_2.1.1-1_jammy
+  turtlebot3_manipulation-release5:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_manipulation-release.git
+    version: debian/ros-humble-turtlebot3-manipulation-navigation2_2.1.1-1_jammy
+  turtlebot3_manipulation-release6:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_manipulation-release.git
+    version: debian/ros-humble-turtlebot3-manipulation-teleop_2.1.1-1_jammy
+  turtlebot3_manipulation-release7:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_manipulation-release.git
+    version: debian/ros-humble-turtlebot3-manipulation_2.1.1-1_jammy
+  turtlebot3_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_msgs-release.git
+    version: debian/ros-humble-turtlebot3-msgs_2.2.3-1_jammy
+  turtlebot3_simulations-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_simulations-release.git
+    version: debian/ros-humble-turtlebot3-fake-node_2.2.5-3_jammy
+  turtlebot3_simulations-release1:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_simulations-release.git
+    version: debian/ros-humble-turtlebot3-gazebo_2.2.5-3_jammy
+  turtlebot3_simulations-release2:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot3_simulations-release.git
+    version: debian/ros-humble-turtlebot3-simulations_2.2.5-3_jammy
+  turtlebot4_desktop-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_desktop-release.git
+    version: debian/ros-humble-turtlebot4-desktop_1.0.0-1_jammy
+  turtlebot4_desktop-release1:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_desktop-release.git
+    version: debian/ros-humble-turtlebot4-viz_1.0.0-1_jammy
+  turtlebot4-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4-release.git
+    version: debian/ros-humble-turtlebot4-description_1.0.3-1_jammy
+  turtlebot4-release1:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4-release.git
+    version: debian/ros-humble-turtlebot4-msgs_1.0.3-1_jammy
+  turtlebot4-release2:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4-release.git
+    version: debian/ros-humble-turtlebot4-navigation_1.0.3-1_jammy
+  turtlebot4-release3:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4-release.git
+    version: debian/ros-humble-turtlebot4-node_1.0.3-1_jammy
+  turtlebot4_robot-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_robot-release.git
+    version: debian/ros-humble-turtlebot4-base_1.0.1-1_jammy
+  turtlebot4_robot-release1:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_robot-release.git
+    version: debian/ros-humble-turtlebot4-bringup_1.0.1-1_jammy
+  turtlebot4_robot-release2:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_robot-release.git
+    version: debian/ros-humble-turtlebot4-diagnostics_1.0.1-1_jammy
+  turtlebot4_robot-release3:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_robot-release.git
+    version: debian/ros-humble-turtlebot4-robot_1.0.1-1_jammy
+  turtlebot4_robot-release4:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_robot-release.git
+    version: debian/ros-humble-turtlebot4-tests_1.0.1-1_jammy
+  turtlebot4_setup-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_setup-release.git
+    version: debian/ros-humble-turtlebot4-setup_1.0.2-1_jammy
+  turtlebot4_simulator-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_simulator-release.git
+    version: debian/ros-humble-turtlebot4-ignition-bringup_1.0.0-1_jammy
+  turtlebot4_simulator-release1:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_simulator-release.git
+    version: debian/ros-humble-turtlebot4-ignition-gui-plugins_1.0.0-1_jammy
+  turtlebot4_simulator-release2:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_simulator-release.git
+    version: debian/ros-humble-turtlebot4-ignition-toolbox_1.0.0-1_jammy
+  turtlebot4_simulator-release3:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_simulator-release.git
+    version: debian/ros-humble-turtlebot4-simulator_1.0.0-1_jammy
+  turtlebot4_tutorials-release0:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_tutorials-release.git
+    version: debian/ros-humble-turtlebot4-cpp-tutorials_1.0.1-1_jammy
+  turtlebot4_tutorials-release1:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_tutorials-release.git
+    version: debian/ros-humble-turtlebot4-python-tutorials_1.0.1-1_jammy
+  turtlebot4_tutorials-release2:
+    type: git
+    url: https://github.com/ros2-gbp/turtlebot4_tutorials-release.git
+    version: debian/ros-humble-turtlebot4-tutorials_1.0.1-1_jammy
+  tuw_geometry-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tuw_geometry-release.git
+    version: debian/ros-humble-tuw-geometry_0.0.9-1_jammy
+  tvm_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/tvm_vendor-release.git
+    version: debian/ros-humble-tvm-vendor_0.9.1-1_jammy
+  twist_mux_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/twist_mux_msgs-release.git
+    version: debian/ros-humble-twist-mux-msgs_3.0.1-1_jammy
+  twist_mux-release0:
+    type: git
+    url: https://github.com/ros2-gbp/twist_mux-release.git
+    version: debian/ros-humble-twist-mux_4.1.0-3_jammy
+  twist_stamper-release0:
+    type: git
+    url: https://github.com/ros2-gbp/twist_stamper-release.git
+    version: debian/ros-humble-twist-stamper_0.0.3-1_jammy
+  ublox_dgnss-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ublox_dgnss-release.git
+    version: debian/ros-humble-ntrip-client-node_0.4.4-1_jammy
+  ublox_dgnss-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ublox_dgnss-release.git
+    version: debian/ros-humble-ublox-dgnss-node_0.4.4-1_jammy
+  ublox_dgnss-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ublox_dgnss-release.git
+    version: debian/ros-humble-ublox-dgnss_0.4.4-1_jammy
+  ublox_dgnss-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ublox_dgnss-release.git
+    version: debian/ros-humble-ublox-nav-sat-fix-hp-node_0.4.4-1_jammy
+  ublox_dgnss-release4:
+    type: git
+    url: https://github.com/ros2-gbp/ublox_dgnss-release.git
+    version: debian/ros-humble-ublox-ubx-interfaces_0.4.4-1_jammy
+  ublox_dgnss-release5:
+    type: git
+    url: https://github.com/ros2-gbp/ublox_dgnss-release.git
+    version: debian/ros-humble-ublox-ubx-msgs_0.4.4-1_jammy
+  ublox-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ublox-release.git
+    version: debian/ros-humble-ublox-gps_2.3.0-2_jammy
+  ublox-release1:
+    type: git
+    url: https://github.com/ros2-gbp/ublox-release.git
+    version: debian/ros-humble-ublox-msgs_2.3.0-2_jammy
+  ublox-release2:
+    type: git
+    url: https://github.com/ros2-gbp/ublox-release.git
+    version: debian/ros-humble-ublox-serialization_2.3.0-2_jammy
+  ublox-release3:
+    type: git
+    url: https://github.com/ros2-gbp/ublox-release.git
+    version: debian/ros-humble-ublox_2.3.0-2_jammy
+  udp_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/udp_msgs-release.git
+    version: debian/ros-humble-udp-msgs_0.0.3-5_jammy
+  uncrustify_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/uncrustify_vendor-release.git
+    version: debian/ros-humble-uncrustify-vendor_2.0.2-2_jammy
+  unique_identifier_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/unique_identifier_msgs-release.git
+    version: debian/ros-humble-unique-identifier-msgs_2.2.1-3_jammy
+  Universal_Robots_Client_Library-release0:
+    type: git
+    url: https://github.com/ros2-gbp/Universal_Robots_Client_Library-release.git
+    version: debian/ros-humble-ur-client-library_1.3.2-1_jammy
+  Universal_Robots_ROS2_Driver-release0:
+    type: git
+    url: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release.git
+    version: debian/ros-humble-ur-bringup_2.2.8-1_jammy
+  Universal_Robots_ROS2_Driver-release1:
+    type: git
+    url: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release.git
+    version: debian/ros-humble-ur-calibration_2.2.8-1_jammy
+  Universal_Robots_ROS2_Driver-release2:
+    type: git
+    url: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release.git
+    version: debian/ros-humble-ur-controllers_2.2.8-1_jammy
+  Universal_Robots_ROS2_Driver-release3:
+    type: git
+    url: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release.git
+    version: debian/ros-humble-ur-dashboard-msgs_2.2.8-1_jammy
+  Universal_Robots_ROS2_Driver-release4:
+    type: git
+    url: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release.git
+    version: debian/ros-humble-ur-moveit-config_2.2.8-1_jammy
+  Universal_Robots_ROS2_Driver-release5:
+    type: git
+    url: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release.git
+    version: debian/ros-humble-ur-robot-driver_2.2.8-1_jammy
+  Universal_Robots_ROS2_Driver-release6:
+    type: git
+    url: https://github.com/ros2-gbp/Universal_Robots_ROS2_Driver-release.git
+    version: debian/ros-humble-ur_2.2.8-1_jammy
+  ur_description-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ur_description-release.git
+    version: debian/ros-humble-ur-description_2.1.0-1_jammy
+  urdfdom_headers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom_headers-release.git
+    version: debian/ros-humble-urdfdom-headers_1.0.6-2_jammy
+  urdfdom_py-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom_py-release.git
+    version: debian/ros-humble-urdfdom-py_1.2.1-1_jammy
+  urdfdom-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom-release.git
+    version: debian/ros-humble-urdfdom_3.0.2-2_jammy
+  urdf_launch-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urdf_launch-release.git
+    version: debian/ros-humble-urdf-launch_0.1.0-1_jammy
+  urdf-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urdf-release.git
+    version: debian/ros-humble-urdf-parser-plugin_2.6.0-2_jammy
+  urdf-release1:
+    type: git
+    url: https://github.com/ros2-gbp/urdf-release.git
+    version: debian/ros-humble-urdf_2.6.0-2_jammy
+  urdf_tutorial-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urdf_tutorial-release.git
+    version: debian/ros-humble-urdf-tutorial_1.0.0-3_jammy
+  urg_c-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urg_c-release.git
+    version: debian/ros-humble-urg-c_1.0.4001-4_jammy
+  urg_node_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urg_node_msgs-release.git
+    version: debian/ros-humble-urg-node-msgs_1.0.1-6_jammy
+  urg_node-release0:
+    type: git
+    url: https://github.com/ros2-gbp/urg_node-release.git
+    version: debian/ros-humble-urg-node_1.1.1-1_jammy
+  ur_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/ur_msgs-release.git
+    version: debian/ros-humble-ur-msgs_2.0.0-2_jammy
+  usb_cam-release0:
+    type: git
+    url: https://github.com/ros2-gbp/usb_cam-release.git
+    version: debian/ros-humble-usb-cam_0.6.0-1_jammy
+  variants-release0:
+    type: git
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-desktop-full_0.10.0-1_jammy
+  variants-release1:
+    type: git
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-desktop_0.10.0-1_jammy
+  variants-release2:
+    type: git
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-perception_0.10.0-1_jammy
+  variants-release3:
+    type: git
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-ros-base_0.10.0-1_jammy
+  variants-release4:
+    type: git
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-ros-core_0.10.0-1_jammy
+  variants-release5:
+    type: git
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-simulation_0.10.0-1_jammy
+  velodyne-release0:
+    type: git
+    url: https://github.com/ros2-gbp/velodyne-release.git
+    version: debian/ros-humble-velodyne-driver_2.4.0-1_jammy
+  velodyne-release1:
+    type: git
+    url: https://github.com/ros2-gbp/velodyne-release.git
+    version: debian/ros-humble-velodyne-laserscan_2.4.0-1_jammy
+  velodyne-release2:
+    type: git
+    url: https://github.com/ros2-gbp/velodyne-release.git
+    version: debian/ros-humble-velodyne-msgs_2.4.0-1_jammy
+  velodyne-release3:
+    type: git
+    url: https://github.com/ros2-gbp/velodyne-release.git
+    version: debian/ros-humble-velodyne-pointcloud_2.4.0-1_jammy
+  velodyne-release4:
+    type: git
+    url: https://github.com/ros2-gbp/velodyne-release.git
+    version: debian/ros-humble-velodyne_2.4.0-1_jammy
+  velodyne_simulator-release0:
+    type: git
+    url: https://github.com/ros2-gbp/velodyne_simulator-release.git
+    version: debian/ros-humble-velodyne-description_2.0.3-1_jammy
+  velodyne_simulator-release1:
+    type: git
+    url: https://github.com/ros2-gbp/velodyne_simulator-release.git
+    version: debian/ros-humble-velodyne-gazebo-plugins_2.0.3-1_jammy
+  velodyne_simulator-release2:
+    type: git
+    url: https://github.com/ros2-gbp/velodyne_simulator-release.git
+    version: debian/ros-humble-velodyne-simulator_2.0.3-1_jammy
+  vision_msgs_layers-release0:
+    type: git
+    url: https://github.com/ros2-gbp/vision_msgs_layers-release.git
+    version: debian/ros-humble-vision-msgs-layers_0.1.0-1_jammy
+  vision_msgs-release0:
+    type: git
+    url: https://github.com/ros2-gbp/vision_msgs-release.git
+    version: debian/ros-humble-vision-msgs-rviz-plugins_4.1.0-1_jammy
+  vision_msgs-release1:
+    type: git
+    url: https://github.com/ros2-gbp/vision_msgs-release.git
+    version: debian/ros-humble-vision-msgs_4.1.0-1_jammy
+  vision_opencv-release0:
+    type: git
+    url: https://github.com/ros2-gbp/vision_opencv-release.git
+    version: debian/ros-humble-cv-bridge_3.2.1-1_jammy
+  vision_opencv-release1:
+    type: git
+    url: https://github.com/ros2-gbp/vision_opencv-release.git
+    version: debian/ros-humble-image-geometry_3.2.1-1_jammy
+  vision_opencv-release2:
+    type: git
+    url: https://github.com/ros2-gbp/vision_opencv-release.git
+    version: debian/ros-humble-vision-opencv_3.2.1-1_jammy
+  visp-release0:
+    type: git
+    url: https://github.com/ros2-gbp/visp-release.git
+    version: debian/ros-humble-visp_3.5.0-2_jammy
+  vitis_common-release0:
+    type: git
+    url: https://github.com/ros2-gbp/vitis_common-release.git
+    version: debian/ros-humble-vitis-common_0.4.2-2_jammy
+  vrpn_mocap-release0:
+    type: git
+    url: https://github.com/ros2-gbp/vrpn_mocap-release.git
+    version: debian/ros-humble-vrpn-mocap_1.0.4-1_jammy
+  vrpn-release0:
+    type: git
+    url: https://github.com/ros2-gbp/vrpn-release.git
+    version: debian/ros-humble-vrpn_7.35.0-9_jammy
+  wall_follower_ros2-release0:
+    type: git
+    url: https://github.com/ros2-gbp/wall_follower_ros2-release.git
+    version: debian/ros-humble-wall-follower-ros2_0.0.1-1_jammy
+  warehouse_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/warehouse_ros-release.git
+    version: debian/ros-humble-warehouse-ros_2.0.4-3_jammy
+  warehouse_ros_sqlite-release0:
+    type: git
+    url: https://github.com/ros2-gbp/warehouse_ros_sqlite-release.git
+    version: debian/ros-humble-warehouse-ros-sqlite_1.0.3-1_jammy
+  xacro-release0:
+    type: git
+    url: https://github.com/ros2-gbp/xacro-release.git
+    version: debian/ros-humble-xacro_2.0.8-1_jammy
+  yaml_cpp_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/yaml_cpp_vendor-release.git
+    version: debian/ros-humble-yaml-cpp-vendor_8.0.2-1_jammy
+  zbar_ros-release0:
+    type: git
+    url: https://github.com/ros2-gbp/zbar_ros-release.git
+    version: debian/ros-humble-zbar-ros_0.4.0-2_jammy
+  zenoh_bridge_dds-release0:
+    type: git
+    url: https://github.com/ros2-gbp/zenoh_bridge_dds-release.git
+    version: debian/ros-humble-zenoh-bridge-dds_0.5.0-3_jammy
+  zmqpp_vendor-release0:
+    type: git
+    url: https://github.com/ros2-gbp/zmqpp_vendor-release.git
+    version: debian/ros-humble-zmqpp-vendor_0.0.2-1_jammy
