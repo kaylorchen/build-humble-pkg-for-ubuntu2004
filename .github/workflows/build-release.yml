@@ -3,6 +3,8 @@ name: build ros2 release packages
 env:
   PKG: build-release
   DOCKER_IMG: kaylor/focal_humble_env:v1.1
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 on: 
   workflow_dispatch:
   push:
@@ -67,9 +69,6 @@ jobs:
             gh run cancel ${{ github.run_id }}
             gh run watch ${{ github.run_id }}
           fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN}}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
       
       - name: sync files
         uses: burnett01/rsync-deployments@6.0.0
