@@ -19,18 +19,10 @@ jobs:
     
     - name: Prepare
       run: |
-        ./check_package.py --cfg user.repos
-        cat updates.repos
-        echo "*********************"
-        ./check_package.py --cfg user.repos
-        cat updates.repos
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DE86F73ED9E67D5E
         echo "deb [arch=amd64] http://42.194.233.81:60000/ros2_humble_focal focal main" | sudo tee /etc/apt/sources.list.d/kaylor-ros2.list > /dev/null
-        ./check_package.py --cfg user.repos
-        cat updates.repos
-        echo "*********************"
         sudo apt update
         sudo apt install -y tree python3-vcstool python3-apt
         ./check_package.py --cfg user.repos
@@ -41,6 +33,7 @@ jobs:
         python3 get_package_path.py
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
+        ls -al
 
     - name: upload artifact
       uses: actions/upload-artifact@v3
@@ -62,39 +55,37 @@ jobs:
         run: |
           ls -R all/
           cd all/
-
-
-
-
-
-    # - name: build
-    #   run: |
-    #     git clone https://github.com/ros2-gbp/${PKG}.git -b ${{ matrix.branch }} --depth 1
-    #     sed -i 's/jammy/focal/g' ${PKG}/debian/changelog
-    #     cat ${PKG}/debian/changelog
-    #     sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' ${PKG}/debian/rules
-    #     cat ${PKG}/debian/rules
-    #     docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/focal_humble_env:v1.1 sh -c "cd /root/src/${PKG} && fakeroot debian/rules binary && mkdir deb && mv ../ros-* deb/"
-    #     ls -alR ${PKG}/deb
+          if [ -f packages-path.txt${{ matrix.index }} ]; then
+            mkdir -p deb
+            num=$(cat packages-path.txt${{ matrix.index }} | wc -l)
+            echo "new packages number total: ${num}"
+            echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
+            docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build.sh packages-path.txt${{ matrix.index }}"
+            tree deb
+          else
+            echo "packages-path.txt${{ matrix.index }}: no such this file"
+            exit
+          fi
+          
       
-    # - name: sync files
-    #   uses: burnett01/rsync-deployments@6.0.0
-    #   with:
-    #     switches: -avzr
-    #     path: ${PKG}/deb/
-    #     remote_path: ~/github/${PKG}
-    #     remote_host: ${{ secrets.HOST }}
-    #     remote_user: ${{ secrets.USERNAME }}
-    #     remote_key: ${{ secrets.SSH_KEY }}
-    #     remote_port: ${{ secrets.PORT }}
+      - name: sync files
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -avzr
+          path: all/deb/
+          remote_path: ~/github/release
+          remote_host: ${{ secrets.HOST }}
+          remote_user: ${{ secrets.USERNAME }}
+          remote_key: ${{ secrets.SSH_KEY }}
+          remote_port: ${{ secrets.PORT }}
   
-    # - name: Aptly release
-    #   uses: appleboy/ssh-action@v1.0.0
-    #   with:
-    #     host: ${{ secrets.HOST }}
-    #     username: ${{ secrets.USERNAME }}
-    #     key: ${{ secrets.SSH_KEY }}
-    #     port: ${{ secrets.PORT }}
-    #     script: |
-    #       aptly repo add ros2_humble_focal github/*
-    #       aptly publish update -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
+      - name: Aptly release
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            aptly repo add ros2_humble_focal github/*
+            aptly publish update -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
