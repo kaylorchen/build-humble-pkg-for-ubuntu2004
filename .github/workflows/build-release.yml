@@ -60,7 +60,7 @@ jobs:
             num=$(cat packages-path.txt${{ matrix.index }} | wc -l)
             echo "new packages number total: ${num}"
             echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
-            docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build.sh packages-path.txt${{ matrix.index }}"
+            docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build_focal_humble_env.sh packages-path.txt${{ matrix.index }}"
             tree deb
           else
             echo "packages-path.txt${{ matrix.index }}: no such this file"
@@ -68,7 +68,8 @@ jobs:
             gh run watch ${{ github.run_id }}
           fi
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN}} 
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
       
       - name: sync files
         uses: burnett01/rsync-deployments@6.0.0
