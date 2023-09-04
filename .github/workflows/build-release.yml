@@ -64,7 +64,7 @@ jobs:
             tree deb
           else
             echo "packages-path.txt${{ matrix.index }}: no such this file"
-            exit
+            exit 0
           fi
           
       
