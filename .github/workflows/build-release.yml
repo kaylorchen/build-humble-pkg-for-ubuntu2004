@@ -68,7 +68,7 @@ jobs:
             gh run watch ${{ github.run_id }}
           fi
         env:
-          GH_TOKEN: ${{ github.token }} 
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN}} 
       
       - name: sync files
         uses: burnett01/rsync-deployments@6.0.0
