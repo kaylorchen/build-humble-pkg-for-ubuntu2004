@@ -21,7 +21,7 @@ jobs:
       run: |
         ./check_package.py --cfg user.repos
         cat updates.repos
-        echo "*********************
+        echo "*********************"
         ./check_package.py --cfg user.repos
         cat updates.repos
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
