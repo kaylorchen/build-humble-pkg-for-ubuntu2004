@@ -25,6 +25,7 @@ jobs:
         echo "deb [arch=amd64] http://42.194.233.81:60000/ros2_humble_focal focal main" | sudo tee /etc/apt/sources.list.d/kaylor-ros2.list > /dev/null
         sudo apt update
         ./check_package.py --cfg user.repos
+        cat updates.repos
         sudo apt install -y tree python3-vcstool
         mkdir -p src
         vcs import src < updates.repos
