@@ -13,27 +13,49 @@ on:
 jobs:
   prepare:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        branch: [ tag ]
     steps:
     - name: Checkout Source Code
       uses: actions/checkout@v3
     
     - name: Prepare
       run: |
-        ./check_package.py --cfg user.repos
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DE86F73ED9E67D5E
         echo "deb [arch=amd64] http://42.194.233.81:60000/ros2_humble_focal focal main" | sudo tee /etc/apt/sources.list.d/kaylor-ros2.list > /dev/null
         sudo apt update
+        ./check_package.py --cfg user.repos
         sudo apt install -y tree python3-vcstool
         mkdir -p src
         vcs import src < updates.repos
         python3 get_package_path.py
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
+
+    - name: upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: all
+        path: ./
+    
+  build:
+    runs-on: ubuntu-latest
+    needs: [prepare]
+    strategy:
+      matrix:
+        index: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+    steps:
+      - name: download artifact
+        uses: actions/download-artifact@v3
+
+      - name: build
+        run: |
+          ls -R all/
+          cd all/
+
+
+
+
 
     # - name: build
     #   run: |
