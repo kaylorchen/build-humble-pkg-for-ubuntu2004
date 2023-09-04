@@ -25,10 +25,10 @@ for pkg in config.get('repositories').keys():
   try:
     tmp = cache[pkg]
     if tmp.candidate:
-      print(pkg + ' is available')
+      # print(pkg + ' is available, skipping')
       update_config.get('repositories').pop(pkg)
   except:
-    print(pkg + ' is not available')
-print(config)
-print(update_config)
+    print(pkg + ' is not available, and need to compile')
+# print(config)
+# print(update_config)
 save_dict_to_yaml(update_config, './updates.repos')
