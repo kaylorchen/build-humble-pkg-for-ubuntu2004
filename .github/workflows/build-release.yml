@@ -64,7 +64,8 @@ jobs:
             tree deb
           else
             echo "packages-path.txt${{ matrix.index }}: no such this file"
-            exit 1
+            gh run cancel ${{ github.run_id }}
+            gh run watch ${{ github.run_id }}
           fi
           
       
