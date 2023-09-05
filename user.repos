@@ -115,3 +115,11 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/launch_ros-release.git
     version: debian/ros-humble-ros2launch_0.19.5-2_jammy
+  ros-humble-sros2-cmake:
+    type: git
+    url: https://github.com/ros2-gbp/sros2-release.git
+    version: debian/ros-humble-sros2-cmake_0.10.4-2_jammy
+  ros-humble-sros2:
+    type: git
+    url: https://github.com/ros2-gbp/sros2-release.git
+    version: debian/ros-humble-sros2_0.10.4-2_jammy
