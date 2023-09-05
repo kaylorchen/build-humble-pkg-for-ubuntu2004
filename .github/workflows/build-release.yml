@@ -53,7 +53,7 @@ jobs:
 
       - name: build
         run: |
-          ls -R all/
+          lsb_release -a
           cd all/
           if [ -f packages-path.txt${{ matrix.index }} ]; then
             mkdir -p deb
