@@ -1,8 +1,4 @@
 repositories:
-  ros-humble-urdf:
-    type: git
-    url: https://github.com/ros2-gbp/urdf-release.git
-    version: debian/ros-humble-urdf_2.6.0-2_jammy
   ros-humble-desktop-full:
     type: git
     url: https://github.com/ros2-gbp/variants-release.git
@@ -27,3 +23,31 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/rclcpp-release.git
     version: debian/ros-humble-rclcpp_16.0.5-2_jammy
+  ros-humble-urdfdom-headers:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom_headers-release.git
+    version: debian/ros-humble-urdfdom-headers_1.0.6-2_jammy
+  ros-humble-urdfdom-py:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom_py-release.git
+    version: debian/ros-humble-urdfdom-py_1.2.1-1_jammy
+  ros-humble-urdfdom:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom-release.git
+    version: debian/ros-humble-urdfdom_3.0.2-2_jammy
+  ros-humble-urdf-launch:
+    type: git
+    url: https://github.com/ros2-gbp/urdf_launch-release.git
+    version: debian/ros-humble-urdf-launch_0.1.0-1_jammy
+  ros-humble-urdf-parser-plugin:
+    type: git
+    url: https://github.com/ros2-gbp/urdf-release.git
+    version: debian/ros-humble-urdf-parser-plugin_2.6.0-2_jammy
+  ros-humble-urdf:
+    type: git
+    url: https://github.com/ros2-gbp/urdf-release.git
+    version: debian/ros-humble-urdf_2.6.0-2_jammy
+  ros-humble-urdf-tutorial:
+    type: git
+    url: https://github.com/ros2-gbp/urdf_tutorial-release.git
+    version: debian/ros-humble-urdf-tutorial_1.0.0-3_jammy
