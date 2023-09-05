@@ -1,3 +1,7 @@
 deb/
 packages-path.txt
 src/
+.idea/
+.vscode/
+test/
+updates.repos
