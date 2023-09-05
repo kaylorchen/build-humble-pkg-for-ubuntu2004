@@ -3,7 +3,6 @@ name: build ros2 release packages
 env:
   PKG: build-release
   DOCKER_IMG: kaylor/focal_humble_env:v1.1
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 on: 
   workflow_dispatch:
   push:
@@ -65,8 +64,8 @@ jobs:
             tree deb
           else
             echo "packages-path.txt${{ matrix.index }}: no such this file"
-            gh run cancel ${{ github.run_id }}
-            gh run watch ${{ github.run_id }}
+            mkdir -pv deb
+            touch deb/build${{ matrix.index }}.txt
           fi
       
       - name: sync files
