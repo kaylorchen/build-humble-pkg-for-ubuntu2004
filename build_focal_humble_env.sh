@@ -2,6 +2,7 @@
 
 pkg_list=${1}
 MAIN_DIR=$(pwd)
+echo "MAIN_DIR is $MAIN_DIR"
 ROS_DISTRO=humble
 ARCH=amd64
 DIST=$(lsb_release -c | awk '{print $2}')
@@ -20,7 +21,7 @@ do
     else
       sed -i 's/jammy/focal/g' debian/changelog 
       sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' debian/rules
-      cat ${PKG}/debian/rules
+      cat debian/rules
       DEB_BUILD_OPTIONS='parallel=16' fakeroot debian/rules binary
       echo -e "\033[35m move ${DEB_PREFIX} package \033[0m"
       mv ../*.deb ${MAIN_DIR}/deb
