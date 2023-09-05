@@ -75,3 +75,43 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/rcl-release.git
     version: debian/ros-humble-rcl_5.3.4-3_jammy
+  ros-humble-launch-param-builder:
+    type: git
+    url: https://github.com/ros2-gbp/launch_param_builder-release.git
+    version: debian/ros-humble-launch-param-builder_0.1.1-1_jammy
+  ros-humble-launch-pytest:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-pytest_1.0.4-1_jammy
+  ros-humble-launch-testing-ament-cmake:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-testing-ament-cmake_1.0.4-1_jammy
+  ros-humble-launch-testing:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-testing_1.0.4-1_jammy
+  ros-humble-launch-xml:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-xml_1.0.4-1_jammy
+  ros-humble-launch-yaml:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch-yaml_1.0.4-1_jammy
+  ros-humble-launch:
+    type: git
+    url: https://github.com/ros2-gbp/launch-release.git
+    version: debian/ros-humble-launch_1.0.4-1_jammy
+  ros-humble-launch-ros:
+    type: git
+    url: https://github.com/ros2-gbp/launch_ros-release.git
+    version: debian/ros-humble-launch-ros_0.19.5-2_jammy
+  ros-humble-launch-testing-ros:
+    type: git
+    url: https://github.com/ros2-gbp/launch_ros-release.git
+    version: debian/ros-humble-launch-testing-ros_0.19.5-2_jammy
+  ros-humble-ros2launch:
+    type: git
+    url: https://github.com/ros2-gbp/launch_ros-release.git
+    version: debian/ros-humble-ros2launch_0.19.5-2_jammy
