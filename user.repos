@@ -3,3 +3,71 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/class_loader-release.git
     version: debian/ros-humble-class-loader_2.2.0-3_jammy
+  ros-humble-unique-identifier-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/unique_identifier_msgs-release.git
+    version: debian/ros-humble-unique-identifier-msgs_2.2.1-3_jammy
+  ros-humble-action-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-action-msgs_1.2.1-1_jammy
+  ros-humble-builtin-interfaces:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-builtin-interfaces_1.2.1-1_jammy
+  ros-humble-composition-interfaces:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-composition-interfaces_1.2.1-1_jammy
+  ros-humble-lifecycle-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-lifecycle-msgs_1.2.1-1_jammy
+  ros-humble-rcl-interfaces:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-rcl-interfaces_1.2.1-1_jammy
+  ros-humble-rosgraph-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-rosgraph-msgs_1.2.1-1_jammy
+  ros-humble-statistics-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-statistics-msgs_1.2.1-1_jammy
+  ros-humble-test-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_interfaces-release.git
+    version: debian/ros-humble-test-msgs_1.2.1-1_jammy
+  ros-humble-rcl-logging-interface:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_logging-release.git
+    version: debian/ros-humble-rcl-logging-interface_2.3.1-1_jammy
+  ros-humble-rcl-logging-noop:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_logging-release.git
+    version: debian/ros-humble-rcl-logging-noop_2.3.1-1_jammy
+  ros-humble-rcl-logging-spdlog:
+    type: git
+    url: https://github.com/ros2-gbp/rcl_logging-release.git
+    version: debian/ros-humble-rcl-logging-spdlog_2.3.1-1_jammy
+  ros-humble-rclpy:
+    type: git
+    url: https://github.com/ros2-gbp/rclpy-release.git
+    version: debian/ros-humble-rclpy_3.3.9-1_jammy
+  ros-humble-rcl-action:
+    type: git
+    url: https://github.com/ros2-gbp/rcl-release.git
+    version: debian/ros-humble-rcl-action_5.3.4-3_jammy
+  ros-humble-rcl-lifecycle:
+    type: git
+    url: https://github.com/ros2-gbp/rcl-release.git
+    version: debian/ros-humble-rcl-lifecycle_5.3.4-3_jammy
+  ros-humble-rcl-yaml-param-parser:
+    type: git
+    url: https://github.com/ros2-gbp/rcl-release.git
+    version: debian/ros-humble-rcl-yaml-param-parser_5.3.4-3_jammy
+  ros-humble-rcl:
+    type: git
+    url: https://github.com/ros2-gbp/rcl-release.git
+    version: debian/ros-humble-rcl_5.3.4-3_jammy
