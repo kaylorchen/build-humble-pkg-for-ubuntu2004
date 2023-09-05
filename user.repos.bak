@@ -1,0 +1,109 @@
+repositories:
+  ros-humble-desktop-full:
+    type: git
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-desktop-full_0.10.0-1_jammy
+  ros-humble-desktop:
+    type: git
+    url: https://github.com/ros2-gbp/variants-release.git
+    version: debian/ros-humble-desktop_0.10.0-1_jammy
+  ros-humble-rclcpp-action:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-action_16.0.5-2_jammy
+  ros-humble-rclcpp-components:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-components_16.0.5-2_jammy
+  ros-humble-rclcpp-lifecycle:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp-lifecycle_16.0.5-2_jammy
+  ros-humble-rclcpp:
+    type: git
+    url: https://github.com/ros2-gbp/rclcpp-release.git
+    version: debian/ros-humble-rclcpp_16.0.5-2_jammy
+  ros-humble-urdfdom-headers:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom_headers-release.git
+    version: debian/ros-humble-urdfdom-headers_1.0.6-2_jammy
+  ros-humble-urdfdom-py:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom_py-release.git
+    version: debian/ros-humble-urdfdom-py_1.2.1-1_jammy
+  ros-humble-urdfdom:
+    type: git
+    url: https://github.com/ros2-gbp/urdfdom-release.git
+    version: debian/ros-humble-urdfdom_3.0.2-2_jammy
+  ros-humble-urdf-launch:
+    type: git
+    url: https://github.com/ros2-gbp/urdf_launch-release.git
+    version: debian/ros-humble-urdf-launch_0.1.0-1_jammy
+  ros-humble-urdf-parser-plugin:
+    type: git
+    url: https://github.com/ros2-gbp/urdf-release.git
+    version: debian/ros-humble-urdf-parser-plugin_2.6.0-2_jammy
+  ros-humble-urdf:
+    type: git
+    url: https://github.com/ros2-gbp/urdf-release.git
+    version: debian/ros-humble-urdf_2.6.0-2_jammy
+  ros-humble-urdf-tutorial:
+    type: git
+    url: https://github.com/ros2-gbp/urdf_tutorial-release.git
+    version: debian/ros-humble-urdf-tutorial_1.0.0-3_jammy
+  ros-humble-joy-teleop:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-joy-teleop_1.3.0-2_jammy
+  ros-humble-key-teleop:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-key-teleop_1.3.0-2_jammy
+  ros-humble-mouse-teleop:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-mouse-teleop_1.3.0-2_jammy
+  ros-humble-teleop-tools-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-teleop-tools-msgs_1.3.0-2_jammy
+  ros-humble-teleop-tools:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_tools-release.git
+    version: debian/ros-humble-teleop-tools_1.3.0-2_jammy
+  ros-humble-teleop-twist-joy:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_twist_joy-release.git
+    version: debian/ros-humble-teleop-twist-joy_2.4.5-1_jammy
+  ros-humble-teleop-twist-keyboard:
+    type: git
+    url: https://github.com/ros2-gbp/teleop_twist_keyboard-release.git
+    version: debian/ros-humble-teleop-twist-keyboard_2.3.2-4_jammy
+  ros-humble-tensorrt-cmake-module:
+    type: git
+    url: https://github.com/ros2-gbp/tensorrt_cmake_module-release.git
+    version: debian/ros-humble-tensorrt-cmake-module_0.0.3-1_jammy
+  ros-humble-test-interface-files:
+    type: git
+    url: https://github.com/ros2-gbp/test_interface_files-release.git
+    version: debian/ros-humble-test-interface-files_0.9.1-2_jammy
+  ros-humble-tf-transformations:
+    type: git
+    url: https://github.com/ros2-gbp/tf_transformations_release.git
+    version: debian/ros-humble-tf-transformations_1.0.1-3_jammy
+  ros-humble-tinyspline-vendor:
+    type: git
+    url: https://github.com/ros2-gbp/tinyspline_vendor-release.git
+    version: debian/ros-humble-tinyspline-vendor_0.6.0-2_jammy
+  ros-humble-tinyxml2-vendor:
+    type: git
+    url: https://github.com/ros2-gbp/tinyxml2_vendor-release.git
+    version: debian/ros-humble-tinyxml2-vendor_0.7.5-2_jammy
+  ros-humble-tinyxml-vendor:
+    type: git
+    url: https://github.com/ros2-gbp/tinyxml_vendor-release.git
+    version: debian/ros-humble-tinyxml-vendor_0.8.3-2_jammy
+  ros-humble-pluginlib:
+    type: git
+    url: https://github.com/ros2-gbp/pluginlib-release.git
+    version: debian/ros-humble-pluginlib_5.1.0-3_jammy

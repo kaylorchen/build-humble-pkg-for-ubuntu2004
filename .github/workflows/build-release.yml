@@ -9,6 +9,7 @@ on:
   push:
     paths:
       - ".github/workflows/build-release.yml"
+      - "user.repos"
   
 
 jobs:
