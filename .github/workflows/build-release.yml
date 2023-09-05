@@ -30,11 +30,6 @@ jobs:
         ./check_package.py --cfg user.repos
         cat updates.repos
         echo "*********************"
-        # mkdir -p src
-        # vcs import src < updates.repos
-        # python3 get_package_path.py
-        # num=$(cat packages-path.txt | wc -l)
-        # echo "packages number total: ${num}"
         ls -al
 
     - name: upload artifact
@@ -57,19 +52,20 @@ jobs:
         run: |
           lsb_release -a
           cd all/
-          ls -R
-          # if [ -f packages-path.txt${{ matrix.index }} ]; then
-          #   mkdir -p deb
-          #   num=$(cat packages-path.txt${{ matrix.index }} | wc -l)
-          #   echo "new packages number total: ${num}"
-          #   echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
-          #   docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build_focal_humble_env.sh packages-path.txt${{ matrix.index }}"
-          #   tree deb
-          # else
-          #   echo "packages-path.txt${{ matrix.index }}: no such this file"
-          #   mkdir -pv deb
-          #   touch deb/build${{ matrix.index }}.txt
-          # fi
+          mkdir -pv src
+          vcs import src < repos${{ matrix.index }}.repos
+          python3 get_package_path.py
+          num=$(cat packages-path.txt | wc -l)
+          echo "packages number total: ${num}"
+          echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
+          if [ -f packages-path.txt ]; then
+            docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build_focal_humble_env.sh packages-path.txt"
+            tree deb
+          else
+            echo "packages-path.txt: no such this file"
+            mkdir -pv deb
+            touch deb/build${{ matrix.index }}.txt
+          fi
       
       - name: sync files
         uses: burnett01/rsync-deployments@6.0.0
