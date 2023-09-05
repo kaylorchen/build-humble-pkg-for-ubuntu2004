@@ -41,14 +41,16 @@ jobs:
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
         echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
-        if [ -f packages-path.txt ]; then
+        if [ ${num} -ne 0 ]; then
           docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build_focal_humble_env.sh packages-path.txt"
           tree deb
         else
-          echo "packages-path.txt: no such this file"
           mkdir -pv deb
           touch deb/build${{ matrix.index }}.txt
         fi
+        echo -e "\033[35m"  
+        cat packages-path.txt
+        echo -e "\033[0m"
 
     - name: sync files
       uses: burnett01/rsync-deployments@6.0.0

@@ -26,7 +26,7 @@ do
       chmod a+x debian/rules
       ll debian/rules
       DEB_BUILD_OPTIONS='parallel=16' fakeroot debian/rules binary
-      echo -e "\033[35m move ${DEB_PREFIX} package \033[0m"
+      echo -e "\033[35m move package \033[0m"
       mv ../*.deb ${MAIN_DIR}/deb
       mv ../*.ddeb ${MAIN_DIR}/deb
       apt install -y ${MAIN_DIR}/deb/*.deb
