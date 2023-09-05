@@ -1,4 +1,8 @@
 repositories:
+  ros-humble-uncrustify-vendor:
+    type: git
+    url: https://github.com/ros2-gbp/uncrustify_vendor-release.git
+    version: debian/ros-humble-uncrustify-vendor_2.0.2-2_jammy
   ros-humble-class-loader:
     type: git
     url: https://github.com/ros2-gbp/class_loader-release.git
