@@ -22,9 +22,9 @@ do
       sed -i 's/jammy/focal/g' debian/changelog 
       sed -i 's|dh_shlibdeps |dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info |' debian/rules
       cat debian/rules
-      ll debian/rules
+      ls -al debian/rules
       chmod a+x debian/rules
-      ll debian/rules
+      ls -al debian/rules
       DEB_BUILD_OPTIONS='parallel=16' fakeroot debian/rules binary
       echo -e "\033[35m move package \033[0m"
       mv ../*.deb ${MAIN_DIR}/deb
