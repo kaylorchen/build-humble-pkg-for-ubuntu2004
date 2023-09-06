@@ -291,3 +291,59 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/image_pipeline-release.git
     version: debian/ros-humble-tracetools-image-pipeline_3.0.0-1_jammy
+  ros-humble-ros-gz-bridge:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-bridge_0.244.9-1_jammy
+  ros-humble-ros-gz-image:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-image_0.244.9-1_jammy
+  ros-humble-ros-gz-interfaces:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-interfaces_0.244.9-1_jammy
+  ros-humble-ros-gz-sim-demos:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-sim-demos_0.244.9-1_jammy
+  ros-humble-ros-gz-sim:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz-sim_0.244.9-1_jammy
+  ros-humble-ros-gz:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-gz_0.244.9-1_jammy
+  ros-humble-sdformat-test-files:
+    type: git
+    url: https://github.com/ros2-gbp/sdformat_urdf-release.git
+    version: debian/ros-humble-sdformat-test-files_1.0.1-1_jammy
+  ros-humble-sdformat-urdf:
+    type: git
+    url: https://github.com/ros2-gbp/sdformat_urdf-release.git
+    version: debian/ros-humble-sdformat-urdf_1.0.1-1_jammy
+  ros-humble-ros-ign-bridge:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-bridge_0.244.9-1_jammy
+  ros-humble-ros-ign-gazebo-demos:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-gazebo-demos_0.244.9-1_jammy
+  ros-humble-ros-ign-gazebo:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-gazebo_0.244.9-1_jammy
+  ros-humble-ros-ign-image:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-image_0.244.9-1_jammy
+  ros-humble-ros-ign-interfaces:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign-interfaces_0.244.9-1_jammy
+  ros-humble-ros-ign:
+    type: git
+    url: https://github.com/ros2-gbp/ros_ign-release.git
+    version: debian/ros-humble-ros-ign_0.244.9-1_jammy

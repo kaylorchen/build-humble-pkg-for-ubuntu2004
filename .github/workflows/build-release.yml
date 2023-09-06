@@ -2,7 +2,7 @@ name: build ros2 release packages
 
 env:
   PKG: build-release
-  DOCKER_IMG: kaylor/focal_humble_env:compile1.1
+  DOCKER_IMG: kaylor/focal_humble_env:compile1.2
   # DOCKER_IMG: kaylor/focal_humble_env:v1.1
   #DOCKER_IMG: kaylor/ubuntu2004_humble:latest
 on: 
