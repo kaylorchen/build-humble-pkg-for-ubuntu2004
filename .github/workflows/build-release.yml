@@ -2,7 +2,7 @@ name: build ros2 release packages
 
 env:
   PKG: build-release
-  DOCKER_IMG: kaylor/focal_humble_env:compile1.0
+  DOCKER_IMG: kaylor/focal_humble_env:compile1.1
   # DOCKER_IMG: kaylor/focal_humble_env:v1.1
   #DOCKER_IMG: kaylor/ubuntu2004_humble:latest
 on: 
@@ -78,5 +78,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          aptly repo add -force-replace ros2_humble_focal github/release
+          aptly repo add ros2_humble_focal github/release
           aptly publish update  --force-overwrite  -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 

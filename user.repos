@@ -243,3 +243,51 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/webots_ros2-release.git
     version: debian/ros-humble-webots-ros2_2023.1.1-2_jammy
+  ros-humble-laser-filters:
+    type: git
+    url: https://github.com/ros2-gbp/laser_filters-release.git
+    version: debian/ros-humble-laser-filters_2.0.7-1_jammy
+  ros-humble-laser-geometry:
+    type: git
+    url: https://github.com/ros2-gbp/laser_geometry-release.git
+    version: debian/ros-humble-laser-geometry_2.4.0-2_jammy
+  ros-humble-laser-proc:
+    type: git
+    url: https://github.com/ros2-gbp/laser_proc-release.git
+    version: debian/ros-humble-laser-proc_1.0.2-5_jammy
+  ros-humble-camera-calibration:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-camera-calibration_3.0.0-1_jammy
+  ros-humble-depth-image-proc:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-depth-image-proc_3.0.0-1_jammy
+  ros-humble-image-pipeline:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-pipeline_3.0.0-1_jammy
+  ros-humble-image-proc:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-proc_3.0.0-1_jammy
+  ros-humble-image-publisher:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-publisher_3.0.0-1_jammy
+  ros-humble-image-rotate:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-rotate_3.0.0-1_jammy
+  ros-humble-image-view:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-image-view_3.0.0-1_jammy
+  ros-humble-stereo-image-proc:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-stereo-image-proc_3.0.0-1_jammy
+  ros-humble-tracetools-image-pipeline:
+    type: git
+    url: https://github.com/ros2-gbp/image_pipeline-release.git
+    version: debian/ros-humble-tracetools-image-pipeline_3.0.0-1_jammy
