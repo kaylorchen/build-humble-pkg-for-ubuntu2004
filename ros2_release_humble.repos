@@ -899,6 +899,94 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/example_interfaces-release.git
     version: debian/ros-humble-example-interfaces_0.9.3-2_jammy
+  ros-humble-examples-rclcpp-async-client:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-async-client_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-cbg-executor:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-cbg-executor_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-minimal-action-client:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-minimal-action-client_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-minimal-action-server:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-minimal-action-server_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-minimal-client:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-minimal-client_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-minimal-composition:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-minimal-composition_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-minimal-publisher:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-minimal-publisher_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-minimal-service:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-minimal-service_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-minimal-subscriber:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-minimal-subscriber_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-minimal-timer:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-minimal-timer_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-multithreaded-executor:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-multithreaded-executor_0.15.1-1_jammy
+  ros-humble-examples-rclcpp-wait-set:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclcpp-wait-set_0.15.1-1_jammy
+  ros-humble-examples-rclpy-executors:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-executors_0.15.1-1_jammy
+  ros-humble-examples-rclpy-guard-conditions:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-guard-conditions_0.15.1-1_jammy
+  ros-humble-examples-rclpy-minimal-action-client:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-minimal-action-client_0.15.1-1_jammy
+  ros-humble-examples-rclpy-minimal-action-server:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-minimal-action-server_0.15.1-1_jammy
+  ros-humble-examples-rclpy-minimal-client:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-minimal-client_0.15.1-1_jammy
+  ros-humble-examples-rclpy-minimal-publisher:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-minimal-publisher_0.15.1-1_jammy
+  ros-humble-examples-rclpy-minimal-service:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-minimal-service_0.15.1-1_jammy
+  ros-humble-examples-rclpy-minimal-subscriber:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-minimal-subscriber_0.15.1-1_jammy
+  ros-humble-examples-rclpy-pointcloud-publisher:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-examples-rclpy-pointcloud-publisher_0.15.1-1_jammy
+  ros-humble-launch-testing-examples:
+    type: git
+    url: https://github.com/ros2-gbp/examples-release.git
+    version: debian/ros-humble-launch-testing-examples_0.15.1-1_jammy
   ros-humble-executive-smach:
     type: git
     url: https://github.com/ros2-gbp/executive_smach-release.git
@@ -4475,6 +4563,54 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/warehouse_ros_sqlite-release.git
     version: debian/ros-humble-warehouse-ros-sqlite_1.0.3-1_jammy
+  ros-humble-webots-ros2-control:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-control_2023.1.1-2_jammy
+  ros-humble-webots-ros2-driver:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-driver_2023.1.1-2_jammy
+  ros-humble-webots-ros2-epuck:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-epuck_2023.1.1-2_jammy
+  ros-humble-webots-ros2-importer:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-importer_2023.1.1-2_jammy
+  ros-humble-webots-ros2-mavic:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-mavic_2023.1.1-2_jammy
+  ros-humble-webots-ros2-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-msgs_2023.1.1-2_jammy
+  ros-humble-webots-ros2-tesla:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-tesla_2023.1.1-2_jammy
+  ros-humble-webots-ros2-tests:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-tests_2023.1.1-2_jammy
+  ros-humble-webots-ros2-tiago:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-tiago_2023.1.1-2_jammy
+  ros-humble-webots-ros2-turtlebot:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-turtlebot_2023.1.1-2_jammy
+  ros-humble-webots-ros2-universal-robot:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2-universal-robot_2023.1.1-2_jammy
+  ros-humble-webots-ros2:
+    type: git
+    url: https://github.com/ros2-gbp/webots_ros2-release.git
+    version: debian/ros-humble-webots-ros2_2023.1.1-2_jammy
   ros-humble-xacro:
     type: git
     url: https://github.com/ros2-gbp/xacro-release.git
