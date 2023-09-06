@@ -31,45 +31,47 @@ jobs:
         sudo apt install -y tree python3-vcstool python3-apt
         ./check_package.py --cfg user.repos
         cat updates.repos
-    #     echo "*********************"
-    #     ls -al
-    #     cat repos${{ matrix.index }}.repos
-    #     mkdir -pv src
-    #     mkdir -pv deb
-    #     vcs import src < repos${{ matrix.index }}.repos
-    #     python3 get_package_path.py
-    #     num=$(cat packages-path.txt | wc -l)
-    #     echo "packages number total: ${num}"
-    #     echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
-    #     if [ ${num} -ne 0 ]; then
-    #       docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build_focal_humble_env.sh packages-path.txt"
-    #       tree deb
-    #     else
-    #       mkdir -pv deb
-    #       touch deb/build${{ matrix.index }}.txt
-    #     fi
-    #     echo -e "\033[35m"  
-    #     cat packages-path.txt
-    #     echo -e "\033[0m"
+        echo -e "\033[35m"  
+        echo "*********************"
+        echo -e "\033[0m"
+        ls -al
+        cat repos${{ matrix.index }}.repos
+        mkdir -pv src
+        mkdir -pv deb
+        vcs import src < repos${{ matrix.index }}.repos
+        python3 get_package_path.py
+        num=$(cat packages-path.txt | wc -l)
+        echo "packages number total: ${num}"
+        echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
+        if [ ${num} -ne 0 ]; then
+          docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build_focal_humble_env.sh packages-path.txt"
+          tree deb
+        else
+          mkdir -pv deb
+          touch deb/build${{ matrix.index }}.txt
+        fi
+        echo -e "\033[35m"  
+        cat packages-path.txt
+        echo -e "\033[0m"
 
-    # - name: sync files
-    #   uses: burnett01/rsync-deployments@6.0.0
-    #   with:
-    #     switches: -avzr
-    #     path: deb/
-    #     remote_path: ~/github/release
-    #     remote_host: ${{ secrets.HOST }}
-    #     remote_user: ${{ secrets.USERNAME }}
-    #     remote_key: ${{ secrets.SSH_KEY }}
-    #     remote_port: ${{ secrets.PORT }}
+    - name: sync files
+      uses: burnett01/rsync-deployments@6.0.0
+      with:
+        switches: -avzr
+        path: deb/
+        remote_path: ~/github/release
+        remote_host: ${{ secrets.HOST }}
+        remote_user: ${{ secrets.USERNAME }}
+        remote_key: ${{ secrets.SSH_KEY }}
+        remote_port: ${{ secrets.PORT }}
 
-    # - name: Aptly release
-    #   uses: appleboy/ssh-action@v1.0.0
-    #   with:
-    #     host: ${{ secrets.HOST }}
-    #     username: ${{ secrets.USERNAME }}
-    #     key: ${{ secrets.SSH_KEY }}
-    #     port: ${{ secrets.PORT }}
-    #     script: |
-    #       aptly repo add ros2_humble_focal github/*
-    #       aptly publish update -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
+    - name: Aptly release
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          aptly repo add ros2_humble_focal github/*
+          aptly publish update -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
