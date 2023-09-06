@@ -14,7 +14,7 @@ on:
   
 
 jobs:
-  BuildRelease:
+  Build:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
@@ -66,6 +66,10 @@ jobs:
         remote_key: ${{ secrets.SSH_KEY }}
         remote_port: ${{ secrets.PORT }}
 
+  Release:
+    runs-on: ubuntu-20.04
+    needs: Build
+    steps:
     - name: Aptly release
       uses: appleboy/ssh-action@v1.0.0
       with:
