@@ -60,6 +60,23 @@ jobs:
         fi
         tree deb
         cat deb/job${{ matrix.index }}.txt
+    
+    - name: upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: deb
+        path: ./deb
+
+  Release:
+    runs-on: ubuntu-20.04
+    needs: Build
+    steps:
+    - name: download artifact
+      uses: actions/download-artifact@v3
+
+    - name: list file
+      run: |
+        ls -R
 
     - name: sync files
       uses: burnett01/rsync-deployments@6.0.0
@@ -72,10 +89,6 @@ jobs:
         remote_key: ${{ secrets.SSH_KEY }}
         remote_port: ${{ secrets.PORT }}
 
-  Release:
-    runs-on: ubuntu-20.04
-    needs: Build
-    steps:
     - name: Aptly release
       uses: appleboy/ssh-action@v1.0.0
       with:
