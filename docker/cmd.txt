@@ -1,0 +1,3 @@
+docker buildx build -t repos:tag -f Dockerfile_PATH .
+docker buildx build --platform linux/amd64,linux/arm64 .
+docker buildx build --platform linux/arm64 -t kaylor/focal_humble_env:arm64_base .
