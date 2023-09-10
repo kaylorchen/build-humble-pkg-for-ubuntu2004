@@ -24,6 +24,7 @@ jobs:
       uses: actions/checkout@v3
     - name: Prepare
       run: |
+        pwd
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DE86F73ED9E67D5E
@@ -46,6 +47,7 @@ jobs:
 
     - name: Build
       run: |
+        pwd
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
         echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
@@ -56,9 +58,7 @@ jobs:
           mkdir -pv deb
           touch deb/build${{ matrix.index }}.txt
         fi
-        echo -e "\033[35m"  
-        cat packages-path.txt
-        echo -e "\033[0m"
+        tree deb
 
     - name: sync files
       uses: burnett01/rsync-deployments@6.0.0
