@@ -5,4 +5,4 @@ FROM kaylor/focal_humble_env:compile1.3
 LABEL maintainer="kaylor.chen@qq.com"
 
 # 镜像操作命令
-RUN apt-get update && apt-get install -y ros-humble-control-msgs ros-humble-realtime-tools
+RUN apt-get update && apt-get install -y ros-humble-control-msgs ros-humble-realtime-tools ros-humble-cyclonedds ros-humble-desktop-full
