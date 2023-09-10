@@ -33,9 +33,7 @@ jobs:
         sudo apt install -y tree python3-vcstool python3-apt
         ./check_package.py --cfg user.repos
         cat updates.repos
-        echo -e "\033[35m"  
-        echo "*********************"
-        echo -e "\033[0m"
+        echo -e "\033[36m ********************* \033[0m"  
         ls -al
         cat repos${{ matrix.index }}.repos
         mkdir -pv src
@@ -54,22 +52,28 @@ jobs:
         pwd
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
-        echo "job${{ matrix.index }} has ${num} packages" > deb/job${{ matrix.index }}.txt
+        mkdir -pv info
+        echo "job${{ matrix.index }} has ${num} packages" > info/job${{ matrix.index }}.txt
+        cat packages-path.txt | tee -a info/job${{ matrix.index }}.txt
         if [ ${num} -ne 0 ]; then
           docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build_focal_humble_env.sh packages-path.txt"
           tree deb
-        else
-          mkdir -pv deb
-          touch deb/build${{ matrix.index }}.txt
+          cp repos${{ matrix.index }}.repos info
         fi
         tree deb
-        cat deb/job${{ matrix.index }}.txt
+        cat info/job${{ matrix.index }}.txt
     
-    - name: upload artifact
+    - name: upload artifact debian packages
       uses: actions/upload-artifact@v3
       with:
         name: deb
         path: ./deb
+    
+    - name: upload artifact packages info
+      uses: actions/upload-artifact@v3
+      with:
+        name: info
+        path: ./info
 
   Release:
     runs-on: ubuntu-20.04
@@ -81,6 +85,8 @@ jobs:
     - name: list file
       run: |
         ls -R
+        echo -e "\033[36m ********************* \033[0m"
+        cat info/job*
 
     - name: sync files
       uses: burnett01/rsync-deployments@6.0.0
