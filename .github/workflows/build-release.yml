@@ -59,6 +59,7 @@ jobs:
           touch deb/build${{ matrix.index }}.txt
         fi
         tree deb
+        cat deb/job${{ matrix.index }}.txt
 
     - name: sync files
       uses: burnett01/rsync-deployments@6.0.0
