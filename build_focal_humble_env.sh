@@ -26,14 +26,14 @@ do
       ls -al debian/rules
       chmod a+x debian/rules
       ls -al debian/rules
+      src=$(pwd)
+      echo -e "\033[35m src is $src \033[0m"
+      rosdep install --from-paths ${src} --ignore-src -y
       DEB_BUILD_OPTIONS='parallel=16' fakeroot debian/rules binary
       echo -e "\033[35m move package \033[0m"
       mv ../*.deb ${MAIN_DIR}/deb
       mv ../*.ddeb ${MAIN_DIR}/deb
       apt install -y ${MAIN_DIR}/deb/*.deb
-      src=$(pwd)
-      echo -e "\033[35m src is $src \033[0m"
-      rosdep install --from-paths ${src} --ignore-src -y
       fakeroot debian/rules clean
     fi
     echo "********************************"
