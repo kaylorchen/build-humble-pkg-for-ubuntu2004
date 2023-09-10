@@ -42,8 +42,12 @@ jobs:
         mkdir -pv deb
         vcs import src < repos${{ matrix.index }}.repos
         python3 get_package_path.py
+
+    - name: Print Packages paths
+      run: |
         cat packages-path.txt
         cat packages-path.txt | wc -l
+        cat repos${{ matrix.index }}.repos
 
     - name: Build
       run: |
