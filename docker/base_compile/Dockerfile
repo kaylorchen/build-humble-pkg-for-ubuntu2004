@@ -6,8 +6,8 @@ LABEL maintainer="kaylor.chen@qq.com"
 
 COPY 99user /etc/apt/apt.conf.d/
 COPY ros-archive-keyring.gpg /usr/share/keyrings/
-COPY rosdep-humble-backport.yaml /etc/ros/rosdep
-COPY 30-rosdep-humble-backport.list /etc/ros/rosdep/sources.list.d
+COPY rosdep-humble-backport.yaml /etc/ros/rosdep/
+COPY 30-rosdep-humble-backport.list /etc/ros/rosdep/sources.list.d/
 # 镜像操作命令
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://mirrors.cloud.tencent.com/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null && \
     sed -i "s/archive.ubuntu.com/mirrors.cloud.tencent.com/g" /etc/apt/sources.list && \
