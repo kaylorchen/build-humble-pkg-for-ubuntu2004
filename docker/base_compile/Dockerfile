@@ -1,6 +1,8 @@
 # Version 1.0
 FROM ubuntu:20.04
 
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Shanghai
 # 维护者
 LABEL maintainer="kaylor.chen@qq.com"
 
