@@ -351,3 +351,15 @@ repositories:
     type: git
     url: https://github.com/ros2-gbp/ros2_control-release.git
     version: debian/ros-humble-hardware-interface_2.9.0-1_jammy
+  ros-humble-control-box-rst:
+    type: git
+    url: https://github.com/ros2-gbp/control_box_rst-release.git
+    version: debian/ros-humble-control-box-rst_0.0.7-1_jammy
+  ros-humble-control-msgs:
+    type: git
+    url: https://github.com/ros2-gbp/control_msgs-release.git
+    version: debian/ros-humble-control-msgs_4.4.0-1_jammy
+  ros-humble-control-toolbox:
+    type: git
+    url: https://github.com/ros2-gbp/control_toolbox-release.git
+    version: debian/ros-humble-control-toolbox_3.1.0-1_jammy
