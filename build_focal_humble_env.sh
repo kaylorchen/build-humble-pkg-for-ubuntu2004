@@ -30,6 +30,7 @@ do
       mv ../*.deb ${MAIN_DIR}/deb
       mv ../*.ddeb ${MAIN_DIR}/deb
       apt install -y ${MAIN_DIR}/deb/*.deb
+      rosdep install --from-paths $(pwd) --ignore-src -y
       fakeroot debian/rules clean
     fi
     echo "********************************"
