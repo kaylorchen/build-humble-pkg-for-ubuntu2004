@@ -32,5 +32,5 @@ RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/r
     pytest-repeat \
     pytest-rerunfailures && \
     rosdep init && rosdep update && \
-    apt install -y dh-python debhelper git devsrcipt fakeroot python3-bloom
+    apt install -y dh-python debhelper git devscripts fakeroot python3-bloom
 
