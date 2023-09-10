@@ -11,6 +11,7 @@ mkdir -p  $MAIN_DIR/deb
 source /opt/ros/${ROS_DISTRO}/setup.bash
 printenv | grep ROS
 #python3 get_package_path.py
+apt update
 cat ${pkg_list}| while read i
 do
   if [ -d "${i}" ]; then
