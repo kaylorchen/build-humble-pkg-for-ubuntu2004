@@ -66,6 +66,9 @@ jobs:
           docker run --rm -v ${PWD}:/root/ros_humble ${DOCKER_IMG} sh -c "cd /root/ros_humble && bash ./build_focal_humble_env.sh packages-path.txt"
           tree deb
           cp repos${{ matrix.index }}.repos info
+        else
+          mkdir -pv deb
+          touch deb/empty${{ matrix.index }}.txt
         fi
         tree deb
         cat info/job${{ matrix.index }}.txt
