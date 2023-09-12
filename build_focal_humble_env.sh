@@ -33,7 +33,7 @@ do
       echo -e "\033[35m move package \033[0m"
       mv ../*.deb ${MAIN_DIR}/deb
       mv ../*.ddeb ${MAIN_DIR}/deb
-      apt install -y ${MAIN_DIR}/deb/*.deb
+      # apt install -y ${MAIN_DIR}/deb/*.deb
       fakeroot debian/rules clean
     fi
     echo "********************************"
