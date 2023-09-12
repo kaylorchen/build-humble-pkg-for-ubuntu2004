@@ -2,7 +2,7 @@ name: build ros2 release packages
 
 env:
   PKG: build-release
-  DOCKER_IMG: kaylor/focal_humble_env:compile1.4
+  DOCKER_PATH: kaylor/focal_humble_env
   # DOCKER_IMG: kaylor/focal_humble_env:v1.1
   #DOCKER_IMG: kaylor/ubuntu2004_humble:latest
 on: 
@@ -15,20 +15,20 @@ on:
 
 jobs:
   Build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         index: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+        architecture: [ amd64, arm64 ]
     steps:
     - name: Checkout Source Code
       uses: actions/checkout@v3
     - name: Prepare
       run: |
-        pwd
         sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
         echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
         sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DE86F73ED9E67D5E
-        echo "deb [arch=amd64] http://42.194.233.81:60000/ros2_humble_focal focal main" | sudo tee /etc/apt/sources.list.d/kaylor-ros2.list > /dev/null
+        echo "deb [arch=amd64] http://42.194.233.81:60000/ros2/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/kaylor-ros2.list > /dev/null
         sudo apt update
         sudo apt install -y tree python3-vcstool python3-apt
         ./check_package.py --cfg user.repos
@@ -49,7 +49,14 @@ jobs:
 
     - name: Build
       run: |
-        pwd
+        if [ ${{ matrix.architecture}} == arm64 ]; then
+          echo Architecture is ${{ matrix.architecture}}
+          docker run --privileged --rm tonistiigi/binfmt --install all
+          export DOCKER_IMG=${DOCKER_PATH}:${{ matrix.architecture }}_compile_base1.1
+        else 
+          echo Architecture is ${{ matrix.architecture}}
+          export DOCKER_IMG=${DOCKER_PATH}:compile1.4
+        fi
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
         mkdir -pv info
@@ -66,17 +73,20 @@ jobs:
     - name: upload artifact debian packages
       uses: actions/upload-artifact@v3
       with:
-        name: deb
+        name: deb_{{ matrix.architecture }}
         path: ./deb
     
     - name: upload artifact packages info
       uses: actions/upload-artifact@v3
       with:
-        name: info
+        name: info_{{ matrix.architecture }}
         path: ./info
 
   Release:
     runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        architecture: [ amd64, arm64 ]
     needs: Build
     steps:
     - name: download artifact
@@ -86,14 +96,16 @@ jobs:
       run: |
         ls -R
         echo -e "\033[36m ********************* \033[0m"
-        cat info/job*
+        cat info_{{ matrix.architecture }}/job*
+        touch empty.txt
+        mv empty.txt deb_{{ matrix.architecture }}/
 
     - name: sync files
       uses: burnett01/rsync-deployments@6.0.0
       with:
         switches: -avzr
-        path: deb/
-        remote_path: ~/github/release
+        path: deb_{{ matrix.architecture }}/
+        remote_path: ~/deb/{{ matrix.architecture }}/new_humble
         remote_host: ${{ secrets.HOST }}
         remote_user: ${{ secrets.USERNAME }}
         remote_key: ${{ secrets.SSH_KEY }}
@@ -107,5 +119,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          aptly repo add ros2_humble_focal github/release
-          aptly publish update  --force-overwrite  -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
+          aptly repo add ros2_humble_focal deb/{{ matrix.architecture }}/new_humble
+          aptly publish update  --force-overwrite  -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2/ubuntu 
+          mv deb/{{ matrix.architecture }}/new_humble/*deb deb/{{ matrix.architecture }}/humble
