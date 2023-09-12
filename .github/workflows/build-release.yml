@@ -73,13 +73,13 @@ jobs:
     - name: upload artifact debian packages
       uses: actions/upload-artifact@v3
       with:
-        name: deb_{{ matrix.architecture }}
+        name: deb_${{ matrix.architecture }}
         path: ./deb
     
     - name: upload artifact packages info
       uses: actions/upload-artifact@v3
       with:
-        name: info_{{ matrix.architecture }}
+        name: info_${{ matrix.architecture }}
         path: ./info
 
   Release:
@@ -96,16 +96,16 @@ jobs:
       run: |
         ls -R
         echo -e "\033[36m ********************* \033[0m"
-        cat info_{{ matrix.architecture }}/job*
+        cat info_${{ matrix.architecture }}/job*
         touch empty.txt
-        mv empty.txt deb_{{ matrix.architecture }}/
+        mv empty.txt deb_${{ matrix.architecture }}/
 
     - name: sync files
       uses: burnett01/rsync-deployments@6.0.0
       with:
         switches: -avzr
-        path: deb_{{ matrix.architecture }}/
-        remote_path: ~/deb/{{ matrix.architecture }}/new_humble
+        path: deb_${{ matrix.architecture }}/
+        remote_path: ~/deb/${{ matrix.architecture }}/new_humble
         remote_host: ${{ secrets.HOST }}
         remote_user: ${{ secrets.USERNAME }}
         remote_key: ${{ secrets.SSH_KEY }}
@@ -119,6 +119,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          aptly repo add ros2_humble_focal deb/{{ matrix.architecture }}/new_humble
+          aptly repo add ros2_humble_focal deb/${{ matrix.architecture }}/new_humble
           aptly publish update  --force-overwrite  -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2/ubuntu 
-          mv deb/{{ matrix.architecture }}/new_humble/*deb deb/{{ matrix.architecture }}/humble
+          mv deb/${{ matrix.architecture }}/new_humble/*deb deb/${{ matrix.architecture }}/humble
