@@ -126,5 +126,7 @@ jobs:
           aptly publish update  --force-overwrite  -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2/ubuntu 
           ls deb/${{ matrix.architecture }}/new_humble/*deb > /dev/null 2>&1
           if [ $? != "0" ]; then
+            echo "there are not debian packages"
+          else
             mv deb/${{ matrix.architecture }}/new_humble/*deb deb/${{ matrix.architecture }}/humble
           fi
