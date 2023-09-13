@@ -28,8 +28,7 @@ jobs:
           echo Architecture is ${{ matrix.architecture}}
           docker run --privileged --rm tonistiigi/binfmt --install all
         fi
-        docker pull --platform=linux/${{ matrix.architecture}} kaylor/focal_humble_env:latest
-        docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/focal_humble_env:latest sh -c "cd /root/src/${PKG} && DEB_BUILD_OPTIONS="parallel=2 nocheck" fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
+        docker run --platform=linux/${{ matrix.architecture}} --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/focal_humble_env:latest sh -c "cd /root/src/${PKG} && pwd && DEB_BUILD_OPTIONS="parallel=2 nocheck" fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
         ls -alR ${PKG}/deb
       
     - name: sync files
