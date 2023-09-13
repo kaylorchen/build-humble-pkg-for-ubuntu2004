@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         branch: [ debian/ros-humble-ros-workspace_1.0.2-2_jammy ]
+        architecture: [amd64, arm64]
     steps:
     - name: build
       run: |
@@ -23,7 +24,12 @@ jobs:
         cat ${PKG}/debian/rules
         sed -i '/Conflicts/d' ${PKG}/debian/control
         cat ${PKG}/debian/control
-        docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/focal_humble_env:v1.1 sh -c "cd /root/src/${PKG} && fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
+        if [ ${{ matrix.architecture}} == arm64 ]; then
+          echo Architecture is ${{ matrix.architecture}}
+          docker run --privileged --rm tonistiigi/binfmt --install all
+        fi
+        docker pull --platform=linux/${{ matrix.architecture}} kaylor/focal_humble_env:latest
+        docker run --rm -v ${PWD}/${PKG}:/root/src/${PKG} kaylor/focal_humble_env:latest sh -c "cd /root/src/${PKG} && DEB_BUILD_OPTIONS="parallel=2 nocheck" fakeroot debian/rules binary && mkdir deb && mv ../ros-humble-* deb/"
         ls -alR ${PKG}/deb
       
     - name: sync files
@@ -31,7 +37,7 @@ jobs:
       with:
         switches: -avzr
         path: ${PKG}/deb/
-        remote_path: ~/github/${PKG}
+        remote_path: ~/deb/${{ matrix.architecture }}/new_humble
         remote_host: ${{ secrets.HOST }}
         remote_user: ${{ secrets.USERNAME }}
         remote_key: ${{ secrets.SSH_KEY }}
@@ -45,5 +51,11 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          aptly repo add ros2_humble_focal github/*
-          aptly publish update -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2_humble_focal 
+          aptly repo add ros2_humble_focal deb/${{ matrix.architecture }}/new_humble
+          aptly publish update  --force-overwrite  -batch -passphrase="${{ secrets.GPG_PASSPHRASE}}" focal ros2/ubuntu 
+          ls deb/${{ matrix.architecture }}/new_humble/*deb > /dev/null 2>&1
+          if [ $? != "0" ]; then
+            echo "there are not debian packages"
+          else
+            mv deb/${{ matrix.architecture }}/new_humble/*deb deb/${{ matrix.architecture }}/humble
+          fi
