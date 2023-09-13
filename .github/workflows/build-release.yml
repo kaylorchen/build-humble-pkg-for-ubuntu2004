@@ -28,10 +28,10 @@ jobs:
         if [ ${{ matrix.architecture}} == arm64 ]; then
           echo Architecture is ${{ matrix.architecture}}
           docker run --privileged --rm tonistiigi/binfmt --install all
-          export DOCKER_IMG=${DOCKER_PATH}:${{ matrix.architecture }}_compile_base1.1
+          DOCKER_IMG=${DOCKER_PATH}:${{ matrix.architecture }}_compile_base1.1
         else 
           echo Architecture is ${{ matrix.architecture}}
-          export DOCKER_IMG=${DOCKER_PATH}:compile1.4
+          DOCKER_IMG=${DOCKER_PATH}:compile1.4
         fi
         docker run --rm -v ${PWD}:/root/ws ${DOCKER_IMG} sh -c "cd /root/ws && bash ./prepare.sh ${{ matrix.index }}"
 
@@ -43,6 +43,7 @@ jobs:
 
     - name: Build
       run: |
+        echo docker-image is ${DOCKER_IMG}
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
         mkdir -pv info
