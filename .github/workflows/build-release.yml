@@ -25,21 +25,15 @@ jobs:
       uses: actions/checkout@v3
     - name: Prepare
       run: |
-        sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-        # sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DE86F73ED9E67D5E
-        # echo "deb [arch=amd64] http://42.194.233.81:60000/ros2/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/kaylor-ros2.list > /dev/null
-        sudo apt update
-        sudo apt install -y tree python3-vcstool python3-apt
-        ./check_package.py --cfg user.repos
-        cat updates.repos
-        echo -e "\033[36m ********************* \033[0m"  
-        ls -al
-        cat repos${{ matrix.index }}.repos
-        mkdir -pv src
-        mkdir -pv deb
-        vcs import src < repos${{ matrix.index }}.repos
-        python3 get_package_path.py
+        if [ ${{ matrix.architecture}} == arm64 ]; then
+          echo Architecture is ${{ matrix.architecture}}
+          docker run --privileged --rm tonistiigi/binfmt --install all
+          export DOCKER_IMG=${DOCKER_PATH}:${{ matrix.architecture }}_compile_base1.1
+        else 
+          echo Architecture is ${{ matrix.architecture}}
+          export DOCKER_IMG=${DOCKER_PATH}:compile1.4
+        fi
+        docker run --rm -v ${PWD}:/root/ws ${DOCKER_IMG} sh -c "cd /root/ws && bash ./prepare.sh ${{ matrix.index }}"
 
     - name: Print Packages paths
       run: |
@@ -49,14 +43,6 @@ jobs:
 
     - name: Build
       run: |
-        if [ ${{ matrix.architecture}} == arm64 ]; then
-          echo Architecture is ${{ matrix.architecture}}
-          docker run --privileged --rm tonistiigi/binfmt --install all
-          export DOCKER_IMG=${DOCKER_PATH}:${{ matrix.architecture }}_compile_base1.1
-        else 
-          echo Architecture is ${{ matrix.architecture}}
-          export DOCKER_IMG=${DOCKER_PATH}:compile1.4
-        fi
         num=$(cat packages-path.txt | wc -l)
         echo "packages number total: ${num}"
         mkdir -pv info
