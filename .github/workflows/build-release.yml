@@ -62,8 +62,8 @@ jobs:
           tree deb
           cp repos${{ matrix.index }}.repos info
         else
-          mkdir -pv deb
-          touch deb/empty${{ matrix.index }}.txt
+          sudo mkdir -pv deb
+          sudo touch deb/empty${{ matrix.index }}.txt
         fi
         tree deb
         cat info/job${{ matrix.index }}.txt
